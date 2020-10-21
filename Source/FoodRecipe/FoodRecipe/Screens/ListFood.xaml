@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FoodRecipe.Screens"
         mc:Ignorable="d"
-        Title="ListFood" Height="630" Width="1024" Background="#F65D4E">
+        Title="ListFood" Height="630" Width="1024" Background="#F65D4E" Loaded="Window_Loaded">
     
     <StackPanel Orientation="Horizontal"  >
         <StackPanel Width="174" Margin="0,50,0,10">
@@ -28,13 +28,13 @@
                 BorderThickness="1" 
                 Margin="0,10,0,9.667" 
                 Padding="20, 50, 20, 30"
-                Width="825">
+                >
             <StackPanel>
                 <StackPanel Orientation="Horizontal" >
                     <Border Width="700" BorderThickness="1" Background="White" BorderBrush="LightGray" CornerRadius="15">
                         <DockPanel>
                             <Image Source="../Images/magnifier.png" Width="20" Margin="20, 0,0,0"/>
-                            <TextBox Margin="20,0,20,0" BorderThickness="0" Padding="50, 10, 50, 10"/>
+                            <TextBox Margin="20,0,20,0" BorderThickness="0" Padding="10, 10, 50, 10"/>
                         </DockPanel>
 
                     </Border>
@@ -44,7 +44,26 @@
                         </Button>
 
                 </StackPanel>
-                
+                <ListView Name="dataListView" 
+                          ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                          Margin="0,50,0,0"
+                          BorderThickness="0"
+                          Background="Transparent"
+                          Width="700">
+                    <ListView.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel />
+                        </ItemsPanelTemplate>
+                    </ListView.ItemsPanel>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <Image Width="160" Height="80" Source="{Binding CoverImage}"/>
+                                <TextBlock Text="{Binding Name}" FontWeight="Bold"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
             </StackPanel>
         </Border>
     </StackPanel>

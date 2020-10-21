@@ -55,6 +55,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DAO\FoodDAO.cs" />
+    <Compile Include="DTO\Food.cs" />
     <Compile Include="Screens\ListFood.xaml.cs">
       <DependentUpon>ListFood.xaml</DependentUpon>
     </Compile>
@@ -116,5 +118,9 @@
   <ItemGroup>
     <Resource Include="Images\magnifier.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\loupe.png" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
