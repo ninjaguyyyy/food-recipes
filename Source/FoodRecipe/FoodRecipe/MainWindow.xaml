@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FoodRecipe"
         mc:Ignorable="d"
-        Title="MainWindow" Height="630" Width="1024">
-    <Grid>
         
-    </Grid>
+        Title="MainWindow" Height="630" Width="1024" Background="#F65D4E">
+    <Canvas>
+        <TextBlock Width="500"/>
+    </Canvas>
 </Window>
