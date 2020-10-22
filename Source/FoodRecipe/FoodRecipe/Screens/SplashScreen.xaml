@@ -16,7 +16,9 @@
                 </AccessText>
             </Label>
 
-            <CheckBox  Margin="20,150,20,0">Không hiển thị cho lần sau</CheckBox>
+            <ProgressBar Minimum="0" Maximum="5" Value="2" Margin="30, 100, 55, 0" Height="10"/>
+
+            <CheckBox  Margin="20,40,20,0">Không hiển thị cho lần sau</CheckBox>
         </StackPanel>
         <Image Source="../Images/splash0.png" Width="410" Height="375"/>
     </StackPanel>
