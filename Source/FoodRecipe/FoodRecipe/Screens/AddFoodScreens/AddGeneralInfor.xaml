@@ -33,7 +33,7 @@
                     </StackPanel>
                     <Border CornerRadius="8" BorderBrush="LightGray" BorderThickness="1" DockPanel.Dock="Top" Margin="27,0,26,0">
                         <StackPanel Margin="29.667,0,667.333,0">
-                            <Image Opacity="0.5" Source="Images/UploadImage.png" Stretch="Fill" MaxWidth="100" MaxHeight="100" Margin="296,0,-346,0" Height="95"/>
+                            <Image Opacity="0.5" Source="../../Images/UploadImage.png" Stretch="Fill" MaxWidth="100" MaxHeight="100" Margin="296,0,-346,0" Height="95"/>
                         </StackPanel>
                     </Border>
                 </StackPanel>
