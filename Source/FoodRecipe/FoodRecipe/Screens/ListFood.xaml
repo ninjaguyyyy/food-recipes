@@ -34,7 +34,7 @@
                     <Border Width="700" BorderThickness="1" Background="White" BorderBrush="LightGray" CornerRadius="15">
                         <DockPanel>
                             <Image Source="../Images/magnifier.png" Width="20" Margin="20, 0,0,0"/>
-                            <TextBox Margin="20,0,20,0" BorderThickness="0" Padding="10, 10, 50, 10"/>
+                            <TextBox Margin="20,0,20,0" BorderThickness="0" Padding="10, 10, 50, 10" FontSize="15"/>
                         </DockPanel>
 
                     </Border>
@@ -57,9 +57,9 @@
                     </ListView.ItemsPanel>
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <StackPanel>
+                            <StackPanel Margin="0,0,0,15">
                                 <Image Width="160" Height="80" Source="{Binding CoverImage}"/>
-                                <TextBlock Text="{Binding Name}" FontWeight="Bold"/>
+                                <TextBlock Text="{Binding Name}" FontWeight="Bold" Margin="5,5,0,0"/>
                             </StackPanel>
                         </DataTemplate>
                     </ListView.ItemTemplate>
