@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using FoodRecipe.Models.AddFoodModels;
 
 namespace FoodRecipe
 {
@@ -24,9 +25,24 @@ namespace FoodRecipe
         {
             InitializeComponent();
         }
+
+        private void ListFood_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            
+        }
+
+        private void Favourite_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void AddRecipe_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            DataContext = new AddGeneralInfoModel();
+        }
     }
 
-    public class GridHelpers
+    /*public class GridHelpers
     {
         #region RowCount Property
 
@@ -207,5 +223,5 @@ namespace FoodRecipe
                         new GridLength(1, GridUnitType.Star);
             }
         }
-    }
+    }*/
 }
