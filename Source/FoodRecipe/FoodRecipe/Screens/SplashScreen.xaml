@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FoodRecipe.Screens"
         mc:Ignorable="d"
-        Title="SplashScreen" Height="430" Width="710">
+        Title="SplashScreen" Height="430" Width="710" Loaded="Window_Loaded">
     <StackPanel Orientation="Horizontal">
         <StackPanel Width="295">
             <Label Content="Food Recipes" FontSize="40" FontWeight="Bold" Margin="20,80,20,0"/>
@@ -16,9 +16,9 @@
                 </AccessText>
             </Label>
 
-            <ProgressBar Minimum="0" Maximum="5" Value="2" Margin="30, 100, 55, 0" Height="10"/>
+            <ProgressBar x:Name="splashProgress" Minimum="0" Maximum="5" Value="0" Margin="30, 100, 55, 0" Height="10"/>
 
-            <CheckBox  Margin="20,40,20,0">Không hiển thị cho lần sau</CheckBox>
+            <CheckBox Checked="CheckBox_Checked" Margin="20,40,20,0">Không hiển thị cho lần sau</CheckBox>
         </StackPanel>
         <Image Source="../Images/splash0.png" Width="410" Height="375"/>
     </StackPanel>

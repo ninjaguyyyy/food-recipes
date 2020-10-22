@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,9 +20,58 @@ namespace FoodRecipe.Screens
     /// </summary>
     public partial class SplashScreen : Window
     {
+        private System.Timers.Timer timer;
+        private int count = 0;
+        private int target = 5;
         public SplashScreen()
         {
             InitializeComponent();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            var isShowSplash = bool.Parse(ConfigurationManager.AppSettings["ShowSplashScreen"]);
+            if(isShowSplash == false)
+            {
+                var listFoodScreen = new ListFood();
+                listFoodScreen.Show();
+
+                this.Close();
+            } else
+            {
+                timer = new System.Timers.Timer();
+                timer.Elapsed += Timer_Elapsed;
+                timer.Interval = 1000;
+                timer.Start();
+            }
+        }
+
+        private void Timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
+        {
+            count++;
+            if(count == target)
+            {
+                timer.Stop();
+                Dispatcher.Invoke(() =>
+                {
+                    var listFoodScreen = new ListFood();
+                    listFoodScreen.Show();
+
+                    this.Close();
+                });
+            }
+
+            Dispatcher.Invoke(() =>
+            {
+                splashProgress.Value = count;
+            });
+        }
+
+        private void CheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            config.AppSettings.Settings["ShowSplashScreen"].Value = "false";
+            config.Save(ConfigurationSaveMode.Minimal);
         }
     }
 }
