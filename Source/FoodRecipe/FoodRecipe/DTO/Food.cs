@@ -12,6 +12,8 @@ namespace FoodRecipe.DTO
         public string Description { get; set; }
         //hinh anh thanh qua
 
+        public string VideoLink { get; set; }
+
         public FoodStep[] steps;
     }
 

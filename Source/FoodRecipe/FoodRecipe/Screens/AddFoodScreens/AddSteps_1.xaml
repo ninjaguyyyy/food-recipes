@@ -42,10 +42,10 @@
                     </Grid>
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                         <Border CornerRadius="8" BorderBrush="LightGray" BorderThickness="2" Height="30" Margin="20" Width="65">
-                            <Button BorderThickness="0" Content="Trở lại"/>
+                            <Button Click="Button_Click_Back" BorderThickness="0" Content="Trở lại"/>
                         </Border>
                         <Border CornerRadius="8" BorderBrush="LightGray" BorderThickness="2" Height="30" Margin="20" Width="65">
-                            <Button BorderThickness="0" Content="Hoàn tất"/>
+                            <Button Click="Button_Click_Submit" BorderThickness="0" Content="Hoàn tất"/>
                         </Border>
                     </StackPanel>
                 </StackPanel>

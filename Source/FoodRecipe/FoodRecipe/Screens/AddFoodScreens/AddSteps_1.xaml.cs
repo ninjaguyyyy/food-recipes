@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FoodRecipe.Models.AddFoodModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,20 @@ namespace FoodRecipe.Screens.AddFoodScreens
         public AddSteps_1()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click_Back(object sender, RoutedEventArgs e)
+        {
+            Window parentWindow = Application.Current.MainWindow;
+            if (parentWindow.GetType() == typeof(MainWindow))
+            {
+                (parentWindow as MainWindow).DataContext = new AddGeneralInfoModel();
+            }
+        }
+
+        private void Button_Click_Submit(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
