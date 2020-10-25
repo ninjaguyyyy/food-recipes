@@ -8,13 +8,19 @@ namespace FoodRecipe.DTO
 {
     class Food
     {
+        public Food()
+        {
+            Name = "";
+            Description = "";
+        }
+
         public string Name { get; set; }
         public string Description { get; set; }
         //hinh anh thanh qua
 
         public string VideoLink { get; set; }
 
-        public FoodStep[] steps;
+        public List<FoodStep> steps = new List<FoodStep>();
     }
 
     class FoodStep

@@ -14,11 +14,6 @@
                 <screens:AddGeneralInfo_1 DataContext="{Binding}" />
             </UserControl>
         </DataTemplate>
-        <DataTemplate x:Name="addStepsTemplate" DataType="{x:Type screenModels:AddStepsModel}">
-            <UserControl>
-                <screens:AddSteps_1 DataContext="{Binding}" />
-            </UserControl>
-        </DataTemplate>
     </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>

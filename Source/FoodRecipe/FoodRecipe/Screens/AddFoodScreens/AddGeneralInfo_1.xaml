@@ -50,37 +50,40 @@
                 <StackPanel Margin="0 10">
                     <Label Content="Các bước thực hiện *" Margin="25,0"/>
                     <StackPanel Orientation="Horizontal" Margin="25,0">
-                        <Label Content="Bước 1" Width="51" Margin="0,10" />
-                        <Border CornerRadius="8" BorderBrush="LightGray" BorderThickness="1" Margin="25,0" Width="512">
-                            <RichTextBox BorderThickness="0" ScrollViewer.VerticalScrollBarVisibility="Visible"  MaxHeight="150" Margin="8.667,0,9.333,0"/>
-                        </Border>
+                        <StackPanel>
+                            <Label Name="StepLabel" Content="Bước 1" Width="51" Margin="0,10" />
+                            <Label Name="VideoLinkLabel" Content="Video Link" Width="66" Margin="0,10" />
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical">
+                            <Border CornerRadius="8" BorderBrush="LightGray" BorderThickness="1" Margin="25,10" Width="512">
+                                <TextBox Name="DescriptionStep" BorderThickness="0" ScrollViewer.VerticalScrollBarVisibility="Visible"  MaxHeight="150" Margin="8.667,0,9.333,0"/>
+                            </Border>
+                            <Border CornerRadius="8" BorderBrush="LightGray" BorderThickness="1" Margin="25,0" Width="512">
+                                <TextBox Name="VideoStepLink" BorderThickness="0" ScrollViewer.VerticalScrollBarVisibility="Visible"  MaxHeight="150" Margin="8.667,0,9.333,0"/>
+                            </Border>
+                        </StackPanel>
                         <StackPanel VerticalAlignment="Center" Width="67">
                             <Image Opacity="0.5" Source="../../Images/UploadImage.png" MaxWidth="100" MaxHeight="100" Height="40" Width="40" VerticalAlignment="Center"/>
                         </StackPanel>
                         <Border CornerRadius="8" BorderBrush="LightGray" BorderThickness="2" Height="30" Width="63">
-                            <Button BorderThickness="0" Content="Thêm"/>
+                            <Button Click="Button_Add_Step" BorderThickness="0" Content="Thêm"/>
                         </Border>
                     </StackPanel>
 
-                    <Grid Margin="25,0">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="30"/>
-                            <RowDefinition Height="30"/>
-                            <RowDefinition Height="30"/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="40"/>
-                            <ColumnDefinition Width="500"/>
-                            <ColumnDefinition/>
-                        </Grid.ColumnDefinitions>
-                    </Grid>
+                    <TextBox Name="StepsBox"    BorderThickness="0"
+                                                HorizontalScrollBarVisibility="Visible"
+                                                VerticalScrollBarVisibility="Visible"
+                                                TextWrapping="Wrap"
+                                                TextAlignment="Left"
+                                                MaxLength="500"
+                                                IsReadOnly="True" Margin="25,10"/>
                 </StackPanel>
 
                 <StackPanel Margin="0 10">
-                    <Border CornerRadius="8" BorderBrush="LightGray" BorderThickness="2" Height="30">
+                    <Border CornerRadius="8" BorderBrush="LightGray" BorderThickness="2" Height="30" Margin="325,0,325,0">
                         <Button Click="Button_Click" BorderThickness="0" Content="Hoàn tất"/>
                     </Border>
+                    <Label Name="NotiLabel" FontStyle="Italic" FontSize="10" Foreground="Red" HorizontalAlignment="Center" Content="Vui lòng nhập đầy đủ các thông tin bắt buộc" Opacity="0"/>
                 </StackPanel>
             </StackPanel>
         </Border>

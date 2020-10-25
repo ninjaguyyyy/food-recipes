@@ -15,6 +15,8 @@ using System.Windows.Shapes;
 using FoodRecipe;
 using FoodRecipe.Models.AddFoodModels;
 using FoodRecipe.DTO;
+using System.Xml;
+using FoodRecipe.Db;
 
 namespace FoodRecipe.Screens.AddFoodScreens
 {
@@ -52,12 +54,37 @@ namespace FoodRecipe.Screens.AddFoodScreens
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            //change user control
-            Window parentWindow = Application.Current.MainWindow;
-            if (parentWindow.GetType() == typeof(MainWindow))
+            if (myFood.Name.Equals("") && myFood.Description.Equals("") && myFood.steps == null)
             {
-                (parentWindow as MainWindow).DataContext = new AddStepsModel();
+                NotiLabel.Opacity = 100;
+                return;
             }
+
+            myFood.steps = foodSteps;
+
+            DBUtils.write(myFood);
+        }
+
+        private List<FoodStep> foodSteps = new List<FoodStep>();
+        private int step = 0;
+
+        private void Button_Add_Step(object sender, RoutedEventArgs e)
+        {
+            foodSteps.Add ( new FoodStep
+            {
+                DescriptionStep = DescriptionStep.Text,
+                VideoStepLink = VideoStepLink.Text
+            });
+
+            StepsBox.AppendText(StepLabel.Content + ": " + DescriptionStep.Text);
+            StepsBox.AppendText(Environment.NewLine);
+
+            DescriptionStep.Text = "";
+            VideoStepLink.Text = "";
+
+            step++;
+
+            StepLabel.Content = $"Bước {step + 1}";
         }
     }
 }

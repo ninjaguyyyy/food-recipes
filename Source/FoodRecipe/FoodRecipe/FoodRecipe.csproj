@@ -58,19 +58,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Db\DBUtils.cs" />
     <Compile Include="Models\AddFoodModels\AddGeneralInfoModel.cs" />
-    <Compile Include="Models\AddFoodModels\AddStepsModel.cs" />
     <Compile Include="Screens\AddFoodScreens\AddGeneralInfor.xaml.cs">
       <DependentUpon>AddGeneralInfor.xaml</DependentUpon>
     </Compile>
     <Compile Include="Screens\AddFoodScreens\AddGeneralInfo_1.xaml.cs">
       <DependentUpon>AddGeneralInfo_1.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\AddFoodScreens\AddSteps.xaml.cs">
-      <DependentUpon>AddSteps.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\AddFoodScreens\AddSteps_1.xaml.cs">
-      <DependentUpon>AddSteps_1.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -90,14 +84,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Screens\AddFoodScreens\AddGeneralInfo_1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Screens\AddFoodScreens\AddSteps.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Screens\AddFoodScreens\AddSteps_1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -135,6 +121,10 @@
     <Resource Include="Images\book.png" />
     <Resource Include="Images\healthy-eating.png" />
     <Resource Include="Images\like.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Db\DB.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
