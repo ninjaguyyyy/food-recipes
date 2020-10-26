@@ -12,12 +12,12 @@ namespace FoodRecipe.DTO
         {
             Name = "";
             Description = "";
+            ThumbnailPath = "";
         }
 
         public string Name { get; set; }
         public string Description { get; set; }
-        //hinh anh thanh qua
-
+        public string ThumbnailPath { get; set; }
         public string VideoLink { get; set; }
 
         public List<FoodStep> steps = new List<FoodStep>();
@@ -26,7 +26,7 @@ namespace FoodRecipe.DTO
     class FoodStep
     {
         public string DescriptionStep { get; set; }
-        //danh sach hinh anh minh hoa
         public string VideoStepLink { get; set; }
+        public string ImageStepPath { get; set; }
     }
 }

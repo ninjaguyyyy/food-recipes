@@ -122,7 +122,9 @@
     <Resource Include="Images\healthy-eating.png" />
     <Resource Include="Images\like.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Db\Pictures\" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Db\DB.xml" />
   </ItemGroup>

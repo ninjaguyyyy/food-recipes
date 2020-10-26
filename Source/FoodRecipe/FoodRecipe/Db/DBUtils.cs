@@ -69,6 +69,9 @@ namespace FoodRecipe.Db
             xmlWriter.WriteStartElement("description");
             xmlWriter.WriteString(myFood.Description);
             xmlWriter.WriteEndElement(); //</description>
+            xmlWriter.WriteStartElement("thumbnailPath");
+            xmlWriter.WriteString(myFood.ThumbnailPath);
+            xmlWriter.WriteEndElement(); //</thumbnailPath>
             xmlWriter.WriteStartElement("video");
             xmlWriter.WriteString(myFood.VideoLink);
             xmlWriter.WriteEndElement(); //</video>
@@ -80,6 +83,9 @@ namespace FoodRecipe.Db
                 xmlWriter.WriteStartElement("stepdescription");
                 xmlWriter.WriteString(step.DescriptionStep);
                 xmlWriter.WriteEndElement(); //</stepdescription>
+                xmlWriter.WriteStartElement("stepimagepath");
+                xmlWriter.WriteString(step.ImageStepPath);
+                xmlWriter.WriteEndElement(); //</stepimagepath>
                 xmlWriter.WriteStartElement("stepvideo");
                 xmlWriter.WriteString(step.VideoStepLink);
                 xmlWriter.WriteEndElement(); //</stepvideo>
