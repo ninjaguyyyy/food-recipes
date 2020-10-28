@@ -23,3 +23,5 @@ Food Recipes - Phần mềm Window về công thức nấu món ăn
 Số điểm đề nghị: **10** điểm
 ## 📌 Link Youtube demo
 Link: 
+## 🔒 Quyền sử dụng Project
+Có thể share cho các khóa sau
