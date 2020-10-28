@@ -73,16 +73,16 @@
                                     <Image Width="160" Height="80" Source="{Binding ThumbnailPath}"/>
                                 </Button>
 
-                                <StackPanel Orientation="Horizontal" >
+                                <DockPanel Orientation="Horizontal" >
 
-                                    <Button Click="Button_Click_Detail" Background="Transparent" BorderThickness="0" Cursor="Hand">
+                                    <Button DockPanel.Dock="Left" Click="Button_Click_Detail" Background="Transparent" BorderThickness="0" Cursor="Hand">
                                         <TextBlock Text="{Binding Name}" FontWeight="Bold" Margin="5,5,0,0"/>
                                     </Button>
 
-                                    <Button Tag="{Binding Id}" Click="Button_Click_RemoveFav" Background="Transparent" BorderThickness="0" Cursor="Hand">
+                                    <Button DockPanel.Dock="Right" Tag="{Binding Id}" Click="Button_Click_RemoveFav" Background="Transparent" BorderThickness="0" Cursor="Hand">
                                         <Image Width="20" Source="../Images/broken-heart.png" />
                                     </Button>
-                                </StackPanel>
+                                </DockPanel>
                             </StackPanel>
                         </DataTemplate>
                     </ListView.ItemTemplate>
