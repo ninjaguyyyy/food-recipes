@@ -1,5 +1,9 @@
-﻿using System;
+﻿using FoodRecipe.Db;
+using FoodRecipe.DTO;
+using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,54 +14,36 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using FoodRecipe;
-using FoodRecipe.Models.AddFoodModels;
-using FoodRecipe.DTO;
-using System.Xml;
-using FoodRecipe.Db;
-using Microsoft.Win32;
-using System.IO;
 
-namespace FoodRecipe.Screens.AddFoodScreens
+namespace FoodRecipe.Screens
 {
     /// <summary>
-    /// Interaction logic for AddGeneralInfo_1.xaml
+    /// Interaction logic for AddRecipe.xaml
     /// </summary>
-    public partial class AddGeneralInfo_1 : UserControl
+    public partial class AddRecipe : Window
     {
-        /*static AddGeneralInfo_1 _obj;
-
-        public static AddGeneralInfo_1 Instance
-        {
-            get
-            {
-                if (_obj == null)
-                {
-                    _obj = new AddGeneralInfo_1();
-                }
-                return _obj;
-            }
-        }*/
-
-        private Random _rand = new Random();
-
-        public AddGeneralInfo_1()
+        public AddRecipe()
         {
             InitializeComponent();
         }
+
+        private Random _rand = new Random();
 
         private Food myFood = new Food();
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             //binding data 
-            this.DataContext = myFood;
+            //this.DataContext = myFood;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            myFood.Name = txtName.Text;
+            myFood.VideoLink = txtVideoLink.Text;
+            myFood.Description = txtDescription.Text;
+
             if (myFood.Name.Equals("") || myFood.Description.Equals("") || myFood.ThumbnailPath.Equals("") || foodSteps.Count == 0)
             {
                 NotiLabel.Opacity = 100;
@@ -102,7 +88,7 @@ namespace FoodRecipe.Screens.AddFoodScreens
 
         private void Button_Add_Step(object sender, RoutedEventArgs e)
         {
-            foodSteps.Add ( new FoodStep
+            foodSteps.Add(new FoodStep
             {
                 DescriptionStep = DescriptionStep.Text,
                 VideoStepLink = VideoStepLink.Text,
@@ -156,3 +142,4 @@ namespace FoodRecipe.Screens.AddFoodScreens
         }
     }
 }
+

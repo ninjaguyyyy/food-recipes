@@ -95,6 +95,7 @@ namespace FoodRecipe.Db
             xmlWriter.WriteEndElement(); //</steps>
 
             xmlWriter.WriteEndDocument(); //</foods>
+
             xmlWriter.Close();
         }
     }
