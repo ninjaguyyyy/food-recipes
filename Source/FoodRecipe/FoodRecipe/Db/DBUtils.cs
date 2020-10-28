@@ -1,4 +1,5 @@
 ﻿using FoodRecipe.DTO;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Xml;
@@ -17,9 +18,11 @@ namespace FoodRecipe.Db
             foreach (var foodEl in foods)
             {
                 var foodItem = new Food();
+                foodItem.Id = foodEl.Element("id").Value;
                 foodItem.Name = foodEl.Element("name").Value;
                 foodItem.Description = foodEl.Element("description").Value;
                 foodItem.ThumbnailPath = foodEl.Element("thumbnailPath").Value;
+                foodItem.IsFavorite = Boolean.Parse(foodEl.Element("isFavorite").Value);
 
                 data.Add(foodItem);
             }

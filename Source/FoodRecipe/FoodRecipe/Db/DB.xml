@@ -1,10 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <foods>
   <record>
+    <id>1</id>
     <name>canh chua</name>
     <description>abcyuyrqwuyiquwy</description>
     <thumbnailPath>https://www.huongnghiepaau.com/wp-content/uploads/2018/03/a12228b73ec867e8092bb529c347c8be.jpg</thumbnailPath>
     <video />
+    <isFavorite>false</isFavorite>
     <steps>
       <astep>
         <stepdescription>abchksadhakjshd</stepdescription>

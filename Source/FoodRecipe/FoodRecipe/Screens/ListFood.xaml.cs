@@ -32,10 +32,10 @@ namespace FoodRecipe.Screens
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            var result = DBUtils.read();
+            //var result = DBUtils.read();
             
             _list = FoodDAO.GetAll();
-            dataListView.ItemsSource = result;
+            dataListView.ItemsSource = _list;
 
         }
 
@@ -53,9 +53,13 @@ namespace FoodRecipe.Screens
 
         private void Button_Click_AddToFav(object sender, RoutedEventArgs e)
         {
+            Food result = FoodDAO.getById("2");
+            if(result != null)
+            {
+                MessageBox.Show(result.Name);
+            }
             MessageBox.Show("Đã thêm vào danh sách yêu thích", "Thông báo");
         }
-
 
         private void Button_Click_Detail(object sender, RoutedEventArgs e)
         {
