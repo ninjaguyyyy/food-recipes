@@ -58,5 +58,26 @@ namespace FoodRecipe.DAO
 
             return result;
         }
+
+        public static bool updateIsFavorite(string id, bool isFav)
+        {
+            var result = false;
+
+            XDocument xdocument = XDocument.Load("../../Db/DB.xml");
+            IEnumerable<XElement> foods = xdocument.Root.Elements();
+            foreach (var foodEl in foods)
+            {
+                if (id == foodEl.Element("id").Value)
+                {
+                    foodEl.SetElementValue("isFavorite", isFav.ToString());
+
+                    result = true;
+                    break;
+                }
+            }
+
+            xdocument.Save("../../Db/DB.xml");
+            return result;
+        }
     }
 }

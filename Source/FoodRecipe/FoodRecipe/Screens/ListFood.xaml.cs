@@ -53,11 +53,10 @@ namespace FoodRecipe.Screens
 
         private void Button_Click_AddToFav(object sender, RoutedEventArgs e)
         {
-            Food result = FoodDAO.getById("2");
-            if(result != null)
-            {
-                MessageBox.Show(result.Name);
-            }
+            bool result = FoodDAO.updateIsFavorite("1", true);
+            
+            MessageBox.Show(result.ToString());
+            
             MessageBox.Show("Đã thêm vào danh sách yêu thích", "Thông báo");
         }
 
