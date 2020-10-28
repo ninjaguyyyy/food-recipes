@@ -60,12 +60,17 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="DAO\FoodDAO.cs" />
+    <Compile Include="DAO\FoodPreviewDAO.cs" />
     <Compile Include="Db\DBUtils.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DTO\Food.cs" />
+    <Compile Include="DTO\FoodPreview.cs" />
+    <Compile Include="Screens\FavoriteFood.xaml.cs">
+      <DependentUpon>FavoriteFood.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Screens\ListFood.xaml.cs">
       <DependentUpon>ListFood.xaml</DependentUpon>
     </Compile>
@@ -101,12 +106,18 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Db\Pictures\" />
-    <Folder Include="NewFolder1\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Db\DB.xml" />
+    <None Include="Images\splash0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Screens\FavoriteFood.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Screens\ListFood.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -123,7 +134,31 @@
     <Resource Include="Images\like.png" />
     <Resource Include="Images\loupe.png" />
     <Resource Include="Images\magnifier.png" />
-    <Resource Include="Images\splash0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\not_favorite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\broken-heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Db\PreviewFoods.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\splash1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\splash3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

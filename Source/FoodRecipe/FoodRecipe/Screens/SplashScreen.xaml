@@ -8,19 +8,29 @@
         mc:Ignorable="d"
         Title="SplashScreen" Height="430" Width="710" Loaded="Window_Loaded">
     <StackPanel Orientation="Horizontal">
-        <StackPanel Width="295">
-            <Label Content="Food Recipes" FontSize="40" FontWeight="Bold" Margin="20,80,20,0"/>
+        <Grid Width="295" Margin="0, 40, 0, 10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            
+            <Label Grid.Row="0" Content="Food Recipes" FontSize="40" FontWeight="Bold" Margin="20,0,20,0"/>
 
-            <Label HorizontalAlignment="Left" Padding="30, 10, 55, 0" FontSize="14" Foreground="#757575">
-                <AccessText TextWrapping="WrapWithOverflow">
+            <Label Grid.Row="1" 
+                   Padding="30, 10, 55, 0" FontSize="14" Foreground="#757575">
+                <AccessText TextAlignment="Left" Name="IntroAccessText" TextWrapping="WrapWithOverflow">
                     Chào mừng bạn đến với một siêu phẩm phần mềm hiện đại - sách hướng dẫn nấu ăn online.
                 </AccessText>
             </Label>
 
-            <ProgressBar x:Name="splashProgress" Minimum="0" Maximum="5" Value="0" Margin="30, 100, 55, 0" Height="10"/>
+            <ProgressBar Grid.Row="2" x:Name="splashProgress" 
+                         Minimum="0" Maximum="5" Value="0" 
+                         Margin="30, 0, 55, 0" Height="10"/>
 
-            <CheckBox Checked="CheckBox_Checked" Margin="20,40,20,0">Không hiển thị cho lần sau</CheckBox>
-        </StackPanel>
-        <Image Source="../Images/splash0.png" Width="410" Height="375"/>
+            <CheckBox Grid.Row="3" Checked="CheckBox_Checked" Margin="20,00,20,0">Không hiển thị cho lần sau</CheckBox>
+        </Grid>
+        <Image x:Name="previewImage" Source="../Images/splash0.png" Width="410" Height="375"/>
     </StackPanel>
 </Window>
