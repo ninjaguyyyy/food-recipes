@@ -1,0 +1,70 @@
+﻿<Window x:Class="FoodRecipe.Screens.ListFood"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FoodRecipe.Screens"
+        mc:Ignorable="d"
+        Title="ListFood" Height="630" Width="1024" Background="#F65D4E" Loaded="Window_Loaded">
+
+    <StackPanel Orientation="Horizontal"  >
+        <StackPanel Width="174" Margin="0,50,0,10">
+            <Image Source="../Images/healthy-eating.png" Width="90"  />
+            <StackPanel Orientation="Horizontal" Margin="10,40,10,20">
+                <Image Source="../Images/book.png" Width="40"/>
+                <Label Content="Danh sách món" Foreground="White" FontSize="15" FontWeight="Bold"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10,0,10,0">
+                <Image Source="../Images/like.png" Width="40" />
+                <Label Content="Yêu thích" Foreground="White" FontSize="15" FontWeight="Bold"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10,20,10,0">
+                <Image Source="../Images/add.png" Width="40" />
+                <Label Content="Tạo món" Foreground="White" FontSize="15" FontWeight="Bold"/>
+            </StackPanel>
+        </StackPanel>
+        <Border CornerRadius="50" 
+                Background="#faf9fd" 
+                BorderThickness="1" 
+                Margin="0,10,0,9.667" 
+                Padding="20, 50, 20, 30"
+                >
+            <StackPanel>
+                <StackPanel Orientation="Horizontal" >
+                    <Border Width="700" BorderThickness="1" Background="White" BorderBrush="LightGray" CornerRadius="15">
+                        <DockPanel>
+                            <Image Source="../Images/magnifier.png" Width="20" Margin="20, 0,0,0"/>
+                            <TextBox Margin="20,0,20,0" BorderThickness="0" Padding="10, 10, 50, 10" FontSize="15"/>
+                        </DockPanel>
+
+                    </Border>
+
+                    <Button Padding="10" BorderThickness="0" Background="#F65D4E" Margin="20,0,0,0">
+                        <Image Source="../Images/loupe.png" Width="20"/>
+                    </Button>
+
+                </StackPanel>
+                <ListView Name="dataListView" 
+                          ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                          Margin="0,50,0,0"
+                          BorderThickness="0"
+                          Background="Transparent"
+                          Width="700">
+                    <ListView.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel />
+                        </ItemsPanelTemplate>
+                    </ListView.ItemsPanel>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Margin="0,0,0,15">
+                                <Image Width="160" Height="80" Source="{Binding CoverImage}"/>
+                                <TextBlock Text="{Binding Name}" FontWeight="Bold" Margin="5,5,0,0"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackPanel>
+        </Border>
+    </StackPanel>
+</Window>
