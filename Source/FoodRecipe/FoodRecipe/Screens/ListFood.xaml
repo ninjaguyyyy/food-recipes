@@ -87,13 +87,15 @@
                                     <Image Width="160" Height="80" Source="{Binding ThumbnailPath}"/>
                                 </Button>
                                 
-                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+                                <StackPanel Orientation="Horizontal" >
+                                    
                                     <Button Click="Button_Click_Detail" Background="Transparent" BorderThickness="0" Cursor="Hand">
                                         <TextBlock Text="{Binding Name}" FontWeight="Bold" Margin="5,5,0,0"/>
                                     </Button>
 
-                                    <Button Margin="60, 0, 0, 0" Click="Button_Click_AddToFav" Background="Transparent" BorderThickness="0" Cursor="Hand">
-                                        <Image Source="../Images/favorite.png" Width="20" />
+                                    <Button Tag="{Binding Id}" Click="Button_Click_AddToFav" 
+                                            Background="Transparent" BorderThickness="0" Cursor="Hand">
+                                        <Image Width="20" Source="../Images/heart.png" />
                                     </Button>
                                 </StackPanel>
                                 

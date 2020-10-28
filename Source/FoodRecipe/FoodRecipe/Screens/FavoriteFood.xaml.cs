@@ -30,9 +30,32 @@ namespace FoodRecipe.Screens
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            _list = FoodDAO.GetAll();
+            _list = FoodDAO.GetFavorites();
             dataListView.ItemsSource = _list;
 
+        }
+
+        private void Button_Click_Detail(object sender, RoutedEventArgs e)
+        {
+            var favScreen = new FavoriteFood();
+            favScreen.Show();
+        }
+
+        private void Button_Click_RemoveFav(object sender, RoutedEventArgs e)
+        {
+            var id = ((Button)sender).Tag;
+            bool result = FoodDAO.updateIsFavorite(id.ToString(), false);
+
+            if (!result)
+            {
+                MessageBox.Show("Lỗi id không đúng", "Thông báo");
+            }
+
+            MessageBox.Show("Đã xóa khỏi danh sách yêu thích", "Thông báo");
+
+            this.Close();
+            var updatedScreen = new FavoriteFood();
+            updatedScreen.Show();
         }
     }
 }

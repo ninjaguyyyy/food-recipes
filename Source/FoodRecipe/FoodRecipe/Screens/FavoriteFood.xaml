@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FoodRecipe.Screens"
         mc:Ignorable="d"
-        Title="FavoriteFood" Height="630" Width="1024" Background="#F65D4E">
+        Title="FavoriteFood" Height="630" Width="1024" Background="#F65D4E" Loaded="Window_Loaded">
 
     <StackPanel Orientation="Horizontal"  >
         <StackPanel Width="174" Margin="0,50,0,10">
@@ -69,8 +69,20 @@
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <StackPanel Margin="0,0,0,15">
-                                <Image Width="160" Height="80" Source="{Binding CoverImage}"/>
-                                <TextBlock Text="{Binding Name}" FontWeight="Bold" Margin="5,5,0,0"/>
+                                <Button Click="Button_Click_Detail" Background="Transparent" BorderThickness="0" Cursor="Hand">
+                                    <Image Width="160" Height="80" Source="{Binding ThumbnailPath}"/>
+                                </Button>
+
+                                <StackPanel Orientation="Horizontal" >
+
+                                    <Button Click="Button_Click_Detail" Background="Transparent" BorderThickness="0" Cursor="Hand">
+                                        <TextBlock Text="{Binding Name}" FontWeight="Bold" Margin="5,5,0,0"/>
+                                    </Button>
+
+                                    <Button Tag="{Binding Id}" Click="Button_Click_RemoveFav" Background="Transparent" BorderThickness="0" Cursor="Hand">
+                                        <Image Width="20" Source="../Images/broken-heart.png" />
+                                    </Button>
+                                </StackPanel>
                             </StackPanel>
                         </DataTemplate>
                     </ListView.ItemTemplate>

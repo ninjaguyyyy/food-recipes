@@ -33,6 +33,30 @@ namespace FoodRecipe.DAO
             return result;
         }
 
+        public static BindingList<Food> GetFavorites()
+        {
+            var result = new BindingList<Food>();
+
+            XDocument xdocument = XDocument.Load("../../Db/DB.xml");
+            IEnumerable<XElement> foods = xdocument.Root.Elements();
+            foreach (var foodEl in foods)
+            {
+                if (Boolean.Parse(foodEl.Element("isFavorite").Value))
+                {
+                    var foodItem = new Food();
+                    foodItem.Id = foodEl.Element("id").Value;
+                    foodItem.Name = foodEl.Element("name").Value;
+                    foodItem.Description = foodEl.Element("description").Value;
+                    foodItem.ThumbnailPath = foodEl.Element("thumbnailPath").Value;
+                    foodItem.IsFavorite = Boolean.Parse(foodEl.Element("isFavorite").Value);
+
+                    result.Add(foodItem);
+                }
+                   
+            }
+
+            return result;
+        }
 
         public static Food getById(string id)
         {
