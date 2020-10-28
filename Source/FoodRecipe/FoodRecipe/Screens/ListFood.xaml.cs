@@ -1,4 +1,5 @@
 ﻿using FoodRecipe.DAO;
+using FoodRecipe.Db;
 using FoodRecipe.DTO;
 using System;
 using System.Collections.Generic;
@@ -31,9 +32,35 @@ namespace FoodRecipe.Screens
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            var result = DBUtils.read();
+            
             _list = FoodDAO.GetAll();
-            dataListView.ItemsSource = _list;
+            dataListView.ItemsSource = result;
 
+        }
+
+        private void Button_Click_Fav(object sender, RoutedEventArgs e)
+        {
+            var favScreen = new FavoriteFood();
+            favScreen.Show();
+        }
+
+
+        private void Button_Click_Add(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_AddToFav(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Đã thêm vào danh sách yêu thích", "Thông báo");
+        }
+
+
+        private void Button_Click_Detail(object sender, RoutedEventArgs e)
+        {
+            var favScreen = new FavoriteFood();
+            favScreen.Show();
         }
     }
 }

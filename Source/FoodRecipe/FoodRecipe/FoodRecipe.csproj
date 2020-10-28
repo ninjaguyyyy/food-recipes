@@ -66,6 +66,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DTO\Food.cs" />
+    <Compile Include="Screens\FavoriteFood.xaml.cs">
+      <DependentUpon>FavoriteFood.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Screens\ListFood.xaml.cs">
       <DependentUpon>ListFood.xaml</DependentUpon>
     </Compile>
@@ -101,12 +104,15 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Db\Pictures\" />
-    <Folder Include="NewFolder1\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Db\DB.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Screens\FavoriteFood.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Screens\ListFood.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -124,6 +130,12 @@
     <Resource Include="Images\loupe.png" />
     <Resource Include="Images\magnifier.png" />
     <Resource Include="Images\splash0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\favorite.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
