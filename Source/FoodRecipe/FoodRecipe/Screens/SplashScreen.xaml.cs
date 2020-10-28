@@ -1,5 +1,8 @@
-﻿using System;
+﻿using FoodRecipe.DAO;
+using FoodRecipe.DTO;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Configuration;
 using System.Linq;
 using System.Text;
@@ -23,6 +26,7 @@ namespace FoodRecipe.Screens
         private System.Timers.Timer timer;
         private int count = 0;
         private int target = 5;
+        private BindingList<FoodPreview> _list = new BindingList<FoodPreview>();
         public SplashScreen()
         {
             InitializeComponent();
@@ -30,7 +34,17 @@ namespace FoodRecipe.Screens
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            _list = FoodPreviewDAO.GetAll();
+            Random _rng = new Random();
+            int indexRandom = _rng.Next(_list.Count);
+
+            var folder = AppDomain.CurrentDomain.BaseDirectory;
+            var imagePath = $"{folder}Images\\{_list[indexRandom].ImageNameFile}";
+            previewImage.Source = new BitmapImage(new Uri(imagePath, UriKind.Absolute));
+            IntroAccessText.Text = _list[indexRandom].Intro;
+
             var isShowSplash = bool.Parse(ConfigurationManager.AppSettings["ShowSplashScreen"]);
+
             if (isShowSplash == false)
             {
                 var listFoodScreen = new ListFood();

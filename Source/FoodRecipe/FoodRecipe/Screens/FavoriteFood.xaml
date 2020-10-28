@@ -73,7 +73,7 @@
                                     <Image Width="160" Height="80" Source="{Binding ThumbnailPath}"/>
                                 </Button>
 
-                                <DockPanel Orientation="Horizontal" >
+                                <DockPanel >
 
                                     <Button DockPanel.Dock="Left" Click="Button_Click_Detail" Background="Transparent" BorderThickness="0" Cursor="Hand">
                                         <TextBlock Text="{Binding Name}" FontWeight="Bold" Margin="5,5,0,0"/>
