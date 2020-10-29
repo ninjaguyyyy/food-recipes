@@ -99,8 +99,8 @@
                         </ListView.ItemTemplate>
 
                     </ListView>
-                    <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
-                        <Button Content="x"/>
+                    <StackPanel x:Name="pagingStackPanel" Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                        
                     </StackPanel>
                 </Grid>
                 
