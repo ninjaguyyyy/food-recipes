@@ -6,6 +6,181 @@
     <description>abcyuyrqwuyiquwy</description>
     <thumbnailPath>https://www.huongnghiepaau.com/wp-content/uploads/2018/03/a12228b73ec867e8092bb529c347c8be.jpg</thumbnailPath>
     <video />
+    <isFavorite>True</isFavorite>
+    <steps>
+      <astep>
+        <stepdescription>abchksadhakjshd</stepdescription>
+        <stepimagepath>../Db/Pictures\36/0.jpg</stepimagepath>
+        <stepvideo></stepvideo>
+      </astep>
+      <astep>
+        <stepdescription>dasdasdasd</stepdescription>
+        <stepimagepath>../Db/Pictures\36/1.jpg</stepimagepath>
+        <stepvideo></stepvideo>
+      </astep>
+      <astep>
+        <stepdescription>dasdasdasda</stepdescription>
+        <stepimagepath>../Db/Pictures\36/2.jpg</stepimagepath>
+        <stepvideo></stepvideo>
+      </astep>
+    </steps>
+  </record>
+  <record>
+    <id>2</id>
+    <name>canh chua 1</name>
+    <description>abcyuyrqwuyiquwy</description>
+    <thumbnailPath>https://www.huongnghiepaau.com/wp-content/uploads/2018/03/a12228b73ec867e8092bb529c347c8be.jpg</thumbnailPath>
+    <video />
+    <isFavorite>False</isFavorite>
+    <steps>
+      <astep>
+        <stepdescription>abchksadhakjshd</stepdescription>
+        <stepimagepath>../Db/Pictures\36/0.jpg</stepimagepath>
+        <stepvideo></stepvideo>
+      </astep>
+      <astep>
+        <stepdescription>dasdasdasd</stepdescription>
+        <stepimagepath>../Db/Pictures\36/1.jpg</stepimagepath>
+        <stepvideo></stepvideo>
+      </astep>
+      <astep>
+        <stepdescription>dasdasdasda</stepdescription>
+        <stepimagepath>../Db/Pictures\36/2.jpg</stepimagepath>
+        <stepvideo></stepvideo>
+      </astep>
+    </steps>
+  </record>
+  <record>
+    <id>2</id>
+    <name>canh chua 1</name>
+    <description>abcyuyrqwuyiquwy</description>
+    <thumbnailPath>https://www.huongnghiepaau.com/wp-content/uploads/2018/03/a12228b73ec867e8092bb529c347c8be.jpg</thumbnailPath>
+    <video />
+    <isFavorite>False</isFavorite>
+    <steps>
+      <astep>
+        <stepdescription>abchksadhakjshd</stepdescription>
+        <stepimagepath>../Db/Pictures\36/0.jpg</stepimagepath>
+        <stepvideo></stepvideo>
+      </astep>
+      <astep>
+        <stepdescription>dasdasdasd</stepdescription>
+        <stepimagepath>../Db/Pictures\36/1.jpg</stepimagepath>
+        <stepvideo></stepvideo>
+      </astep>
+      <astep>
+        <stepdescription>dasdasdasda</stepdescription>
+        <stepimagepath>../Db/Pictures\36/2.jpg</stepimagepath>
+        <stepvideo></stepvideo>
+      </astep>
+    </steps>
+  </record>
+  <record>
+    <id>2</id>
+    <name>canh chua 1</name>
+    <description>abcyuyrqwuyiquwy</description>
+    <thumbnailPath>https://www.huongnghiepaau.com/wp-content/uploads/2018/03/a12228b73ec867e8092bb529c347c8be.jpg</thumbnailPath>
+    <video />
+    <isFavorite>False</isFavorite>
+    <steps>
+      <astep>
+        <stepdescription>abchksadhakjshd</stepdescription>
+        <stepimagepath>../Db/Pictures\36/0.jpg</stepimagepath>
+        <stepvideo></stepvideo>
+      </astep>
+      <astep>
+        <stepdescription>dasdasdasd</stepdescription>
+        <stepimagepath>../Db/Pictures\36/1.jpg</stepimagepath>
+        <stepvideo></stepvideo>
+      </astep>
+      <astep>
+        <stepdescription>dasdasdasda</stepdescription>
+        <stepimagepath>../Db/Pictures\36/2.jpg</stepimagepath>
+        <stepvideo></stepvideo>
+      </astep>
+    </steps>
+  </record>
+  <record>
+    <id>2</id>
+    <name>canh chua 1</name>
+    <description>abcyuyrqwuyiquwy</description>
+    <thumbnailPath>https://www.huongnghiepaau.com/wp-content/uploads/2018/03/a12228b73ec867e8092bb529c347c8be.jpg</thumbnailPath>
+    <video />
+    <isFavorite>False</isFavorite>
+    <steps>
+      <astep>
+        <stepdescription>abchksadhakjshd</stepdescription>
+        <stepimagepath>../Db/Pictures\36/0.jpg</stepimagepath>
+        <stepvideo></stepvideo>
+      </astep>
+      <astep>
+        <stepdescription>dasdasdasd</stepdescription>
+        <stepimagepath>../Db/Pictures\36/1.jpg</stepimagepath>
+        <stepvideo></stepvideo>
+      </astep>
+      <astep>
+        <stepdescription>dasdasdasda</stepdescription>
+        <stepimagepath>../Db/Pictures\36/2.jpg</stepimagepath>
+        <stepvideo></stepvideo>
+      </astep>
+    </steps>
+  </record>
+  <record>
+    <id>2</id>
+    <name>canh chua 1</name>
+    <description>abcyuyrqwuyiquwy</description>
+    <thumbnailPath>https://www.huongnghiepaau.com/wp-content/uploads/2018/03/a12228b73ec867e8092bb529c347c8be.jpg</thumbnailPath>
+    <video />
+    <isFavorite>False</isFavorite>
+    <steps>
+      <astep>
+        <stepdescription>abchksadhakjshd</stepdescription>
+        <stepimagepath>../Db/Pictures\36/0.jpg</stepimagepath>
+        <stepvideo></stepvideo>
+      </astep>
+      <astep>
+        <stepdescription>dasdasdasd</stepdescription>
+        <stepimagepath>../Db/Pictures\36/1.jpg</stepimagepath>
+        <stepvideo></stepvideo>
+      </astep>
+      <astep>
+        <stepdescription>dasdasdasda</stepdescription>
+        <stepimagepath>../Db/Pictures\36/2.jpg</stepimagepath>
+        <stepvideo></stepvideo>
+      </astep>
+    </steps>
+  </record>
+  <record>
+    <id>2</id>
+    <name>canh chua 1</name>
+    <description>abcyuyrqwuyiquwy</description>
+    <thumbnailPath>https://www.huongnghiepaau.com/wp-content/uploads/2018/03/a12228b73ec867e8092bb529c347c8be.jpg</thumbnailPath>
+    <video />
+    <isFavorite>False</isFavorite>
+    <steps>
+      <astep>
+        <stepdescription>abchksadhakjshd</stepdescription>
+        <stepimagepath>../Db/Pictures\36/0.jpg</stepimagepath>
+        <stepvideo></stepvideo>
+      </astep>
+      <astep>
+        <stepdescription>dasdasdasd</stepdescription>
+        <stepimagepath>../Db/Pictures\36/1.jpg</stepimagepath>
+        <stepvideo></stepvideo>
+      </astep>
+      <astep>
+        <stepdescription>dasdasdasda</stepdescription>
+        <stepimagepath>../Db/Pictures\36/2.jpg</stepimagepath>
+        <stepvideo></stepvideo>
+      </astep>
+    </steps>
+  </record>
+  <record>
+    <id>2</id>
+    <name>canh chua 1</name>
+    <description>abcyuyrqwuyiquwy</description>
+    <thumbnailPath>https://www.huongnghiepaau.com/wp-content/uploads/2018/03/a12228b73ec867e8092bb529c347c8be.jpg</thumbnailPath>
+    <video />
     <isFavorite>False</isFavorite>
     <steps>
       <astep>

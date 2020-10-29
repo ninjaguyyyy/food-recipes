@@ -56,42 +56,55 @@
                     </Button>
 
                 </StackPanel>
-                
-                <ListView Name="dataListView" 
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+
+                    <ListView Name="dataListView" 
                           ScrollViewer.HorizontalScrollBarVisibility="Disabled"
-                          Margin="0,50,0,0"
+                          Margin="0,20,0,0" Grid.Row="0"
                           BorderThickness="0"
                           Background="Transparent"
                           Width="700">
-                    
-                    <ListView.ItemsPanel>
-                        <ItemsPanelTemplate>
-                            <WrapPanel />
-                        </ItemsPanelTemplate>
-                    </ListView.ItemsPanel>
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <StackPanel Margin="10,0,10,15">
-                                <Button Click="Button_Click_Detail" Background="Transparent" BorderThickness="0" Cursor="Hand">
-                                    <Image Width="auto" Height="80" Source="{Binding ThumbnailPath}"/>
-                                </Button>
-                                
-                                <DockPanel >
-                                    <Button DockPanel.Dock="Left" Click="Button_Click_Detail" Background="Transparent" BorderThickness="0" Cursor="Hand">
-                                        <TextBlock Text="{Binding Name}" FontWeight="Bold" Margin="5,5,0,0"/>
+
+                        <ListView.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapPanel />
+                            </ItemsPanelTemplate>
+                        </ListView.ItemsPanel>
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Margin="15,0,15,15">
+                                    <Button Click="Button_Click_Detail" Background="Transparent" BorderThickness="0" Cursor="Hand">
+                                        <Image Width="auto" Height="80" Source="{Binding ThumbnailPath}"/>
                                     </Button>
 
-                                    <Button HorizontalAlignment="Right" DockPanel.Dock="Right" Tag="{Binding Id}" Click="Button_Click_AddToFav" 
+                                    <DockPanel >
+                                        <Button DockPanel.Dock="Left" Click="Button_Click_Detail" Background="Transparent" BorderThickness="0" Cursor="Hand">
+                                            <TextBlock Text="{Binding Name}" FontWeight="Bold" Margin="5,5,0,0"/>
+                                        </Button>
+
+                                        <Button HorizontalAlignment="Right" DockPanel.Dock="Right" Tag="{Binding Id}" Click="Button_Click_AddToFav" 
                                             Background="Transparent" BorderThickness="0" Cursor="Hand">
-                                        <Image Width="20" Source="../Images/heart.png" />
-                                    </Button>
-                                </DockPanel>
-                                
-                            </StackPanel>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                    
-                </ListView>
+                                            <Image Width="20" Source="../Images/heart.png" />
+                                        </Button>
+                                    </DockPanel>
+
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+
+                    </ListView>
+                    <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Button Content="x"/>
+                    </StackPanel>
+                </Grid>
+                
+                
             </StackPanel>
         </Border>
     </StackPanel>
