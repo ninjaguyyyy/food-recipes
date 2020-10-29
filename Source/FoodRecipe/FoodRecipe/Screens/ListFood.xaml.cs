@@ -4,6 +4,7 @@ using FoodRecipe.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,7 +25,7 @@ namespace FoodRecipe.Screens
     public partial class ListFood : Window
     {
         private BindingList<Food> _list = new BindingList<Food>();
-        private int perPage = 4;
+        private int perPage;
         private int page = 1;
         private int totalPage = 1;
 
@@ -35,12 +36,21 @@ namespace FoodRecipe.Screens
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            perPage = int.Parse(config.AppSettings.Settings["PerPage"].Value);
+
             int totalFood = FoodDAO.GetLengthAll();
-            totalPage = (totalFood / perPage) + 1;
-            
+            totalPage = (totalFood % perPage == 0)? (totalFood / perPage): (totalFood / perPage) + 1;
+            perPageTextbox.Text = perPage.ToString();
+
             _list = FoodDAO.GetAll(perPage, page);
             dataListView.ItemsSource = _list;
 
+            createPagingUI(totalPage);
+        }
+
+        private void createPagingUI(int totalPage)
+        {
             var firstCreatedButton = createPagingButton(true, "1");
             pagingStackPanel.Children.Add(firstCreatedButton);
 
@@ -119,6 +129,27 @@ namespace FoodRecipe.Screens
         {
             var favScreen = new FavoriteFood();
             favScreen.Show();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_ChangePerPage(object sender, RoutedEventArgs e)
+        {
+            string enteredPerPage = perPageTextbox.Text;
+
+            perPage = int.Parse(enteredPerPage);
+
+            var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            config.AppSettings.Settings["PerPage"].Value = enteredPerPage;
+            config.Save(ConfigurationSaveMode.Minimal);
+
+            var listFoodScreen = new ListFood();
+            listFoodScreen.Show();
+            this.Close();
+            
         }
     }
 }

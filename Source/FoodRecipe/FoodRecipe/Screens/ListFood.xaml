@@ -99,9 +99,17 @@
                         </ListView.ItemTemplate>
 
                     </ListView>
-                    <StackPanel x:Name="pagingStackPanel" Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
-                        
+
+                    <StackPanel Grid.Row="1" Orientation="Horizontal">
+                        <StackPanel x:Name="pagingStackPanel" Orientation="Horizontal" HorizontalAlignment="Center">
+
+                        </StackPanel>
+
+                        <TextBox x:Name="perPageTextbox" Width="20"/>
+                        <Button Content="Submit" Click="Button_Click_ChangePerPage" />
                     </StackPanel>
+                    
+                    
                 </Grid>
                 
                 
