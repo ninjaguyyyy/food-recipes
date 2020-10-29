@@ -35,8 +35,6 @@ namespace FoodRecipe.Screens
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            //var result = DBUtils.read();
-
             int totalFood = FoodDAO.GetLengthAll();
             totalPage = (totalFood / perPage) + 1;
             

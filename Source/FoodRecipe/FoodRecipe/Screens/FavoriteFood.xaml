@@ -55,38 +55,50 @@
                     </Button>
 
                 </StackPanel>
-                <ListView Name="dataListView" 
+                <Grid>
+                    <Grid.RowDefinitions>
+
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+
+                    <ListView Name="dataListView" 
                                   ScrollViewer.HorizontalScrollBarVisibility="Disabled"
-                                  Margin="0,50,0,0"
+                                  Margin="0,50,0,0" Grid.Row="0"
                                   BorderThickness="0"
                                   Background="Transparent"
                                   Width="700">
-                    <ListView.ItemsPanel>
-                        <ItemsPanelTemplate>
-                            <WrapPanel />
-                        </ItemsPanelTemplate>
-                    </ListView.ItemsPanel>
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <StackPanel Margin="0,0,0,15">
-                                <Button Click="Button_Click_Detail" Background="Transparent" BorderThickness="0" Cursor="Hand">
-                                    <Image Width="160" Height="80" Source="{Binding ThumbnailPath}"/>
-                                </Button>
-
-                                <DockPanel >
-
-                                    <Button DockPanel.Dock="Left" Click="Button_Click_Detail" Background="Transparent" BorderThickness="0" Cursor="Hand">
-                                        <TextBlock Text="{Binding Name}" FontWeight="Bold" Margin="5,5,0,0"/>
+                        <ListView.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapPanel />
+                            </ItemsPanelTemplate>
+                        </ListView.ItemsPanel>
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Margin="0,0,0,15">
+                                    <Button Click="Button_Click_Detail" Background="Transparent" BorderThickness="0" Cursor="Hand">
+                                        <Image Width="160" Height="80" Source="{Binding ThumbnailPath}"/>
                                     </Button>
 
-                                    <Button DockPanel.Dock="Right" Tag="{Binding Id}" Click="Button_Click_RemoveFav" Background="Transparent" BorderThickness="0" Cursor="Hand">
-                                        <Image Width="20" Source="../Images/broken-heart.png" />
-                                    </Button>
-                                </DockPanel>
-                            </StackPanel>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
+                                    <DockPanel >
+
+                                        <Button DockPanel.Dock="Left" Click="Button_Click_Detail" Background="Transparent" BorderThickness="0" Cursor="Hand">
+                                            <TextBlock Text="{Binding Name}" FontWeight="Bold" Margin="5,5,0,0"/>
+                                        </Button>
+
+                                        <Button DockPanel.Dock="Right" Tag="{Binding Id}" Click="Button_Click_RemoveFav" Background="Transparent" BorderThickness="0" Cursor="Hand">
+                                            <Image Width="20" Source="../Images/broken-heart.png" />
+                                        </Button>
+                                    </DockPanel>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    <StackPanel x:Name="pagingStackPanel" Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+
+                    </StackPanel>
+                </Grid>
+                
             </StackPanel>
         </Border>
     </StackPanel>
