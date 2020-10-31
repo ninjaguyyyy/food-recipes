@@ -28,8 +28,7 @@ namespace FoodRecipe.Screens
         private int perPage;
         private int page = 1;
         private int totalFoods;
-        private string sortName;
-        private string sortDate;
+        private string sortBy;
 
         public ListFood()
         {
@@ -46,7 +45,7 @@ namespace FoodRecipe.Screens
             int totalPage = (totalFoods % perPage == 0)? (totalFoods / perPage): (totalFoods / perPage) + 1;
             perPageTextbox.Text = perPage.ToString();
 
-            _list = FoodDAO.GetAll(perPage, page, sortName, sortDate);
+            _list = FoodDAO.GetAll(perPage, page, sortBy);
             dataListView.ItemsSource = _list;
 
             createPagingUI(totalPage);
@@ -74,7 +73,7 @@ namespace FoodRecipe.Screens
 
             var pageSelected = ((Button)sender).Content;
             
-            _list = FoodDAO.GetAll(perPage, int.Parse(pageSelected.ToString()), sortName, sortDate);
+            _list = FoodDAO.GetAll(perPage, int.Parse(pageSelected.ToString()), sortBy);
             dataListView.ItemsSource = _list;
         }
 
@@ -103,6 +102,15 @@ namespace FoodRecipe.Screens
                 ((Button)el).Background = Brushes.Transparent;
             }
             
+        }
+
+        private void resetInitialPagingButton()
+        {
+            resetActivePagingButton();
+            var firstButton = pagingStackPanel.Children.OfType<Button>().FirstOrDefault();
+            if (firstButton != null) { 
+                firstButton.Background = Brushes.Red;
+            }
         }
 
         private void Button_Click_Fav(object sender, RoutedEventArgs e)
@@ -139,7 +147,7 @@ namespace FoodRecipe.Screens
             perPage = int.Parse(enteredPerPage);
             int totalPage = (totalFoods % perPage == 0) ? (totalFoods / perPage) : (totalFoods / perPage) + 1;
 
-            _list = FoodDAO.GetAll(perPage, page, sortName, sortDate);
+            _list = FoodDAO.GetAll(perPage, page, sortBy);
             dataListView.ItemsSource = _list;
 
             createPagingUI(totalPage);
@@ -149,21 +157,19 @@ namespace FoodRecipe.Screens
             config.Save(ConfigurationSaveMode.Minimal);
         }
 
-        private void byNameComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void sortComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            sortName = ((ComboBoxItem)byNameComboBox.SelectedItem).Tag.ToString();
+            sortBy = ((ComboBoxItem)sortComboBox.SelectedItem).Tag.ToString();
 
-            _list = FoodDAO.GetAll(perPage, page, sortName, sortDate);
+            _list = FoodDAO.GetAll(perPage, page, sortBy);
             dataListView.ItemsSource = _list;
+
+            if (pagingStackPanel != null) {
+                resetInitialPagingButton();
+            };
         }
 
-        private void byDateComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            sortDate = ((ComboBoxItem)byDateComboBox.SelectedItem).Tag.ToString();
-
-            _list = FoodDAO.GetAll(perPage, page, sortName, sortDate);
-            dataListView.ItemsSource = _list;
-        }
+        
 
     }
 }

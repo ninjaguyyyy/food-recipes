@@ -108,21 +108,16 @@
                         <TextBox x:Name="perPageTextbox" Width="20"/>
                         <Button Content="Submit" Click="Button_Click_ChangePerPage" />
 
-                        <Label Margin="20, 0, 10, 0" Content="Sắp xếp theo tên: " />
-                        <ComboBox Name="byNameComboBox" SelectionChanged="byNameComboBox_SelectionChanged">
+                        <Label Margin="20, 0, 10, 0" Content="Sắp xếp: " />
+                        <ComboBox Name="sortComboBox" SelectionChanged="sortComboBox_SelectionChanged">
                             <ComboBoxItem Tag="default" IsSelected="True">Mặc định</ComboBoxItem>
-                            <ComboBoxItem Tag="az">A -> Z</ComboBoxItem>
-                            <ComboBoxItem Tag="za">Z -> A</ComboBoxItem>
+                            <ComboBoxItem Tag="az">Theo tên: A -> Z</ComboBoxItem>
+                            <ComboBoxItem Tag="za">Theo tên: Z -> A</ComboBoxItem>
+                            <ComboBoxItem Tag="newold">Theo ngày tạo: Mới -> Cũ</ComboBoxItem>
+                            <ComboBoxItem Tag="oldnew">Theo ngày tạo: Cũ -> Mới</ComboBoxItem>
                         </ComboBox>
 
-                        <Label Margin="20, 0, 10, 0" Content="Sắp xếp theo ngày tạo: " />
-                        <ComboBox Name="byDateComboBox" SelectionChanged="byDateComboBox_SelectionChanged">
-                            <ComboBoxItem Tag="default" IsSelected="True">Mặc định</ComboBoxItem>
-                            <ComboBoxItem Tag="newold" >Mới -> Cũ</ComboBoxItem>
-                            <ComboBoxItem Tag="oldnew">Cũ -> Mới</ComboBoxItem>
-                        </ComboBox>
-
-                        </StackPanel>
+                    </StackPanel>
 
                     
                     
