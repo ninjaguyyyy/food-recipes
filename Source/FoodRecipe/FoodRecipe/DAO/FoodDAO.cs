@@ -35,7 +35,7 @@ namespace FoodRecipe.DAO
             return result;
         }
 
-        public static BindingList<Food> GetAll(int perPage, int page)
+        public static BindingList<Food> GetAll(int perPage, int page, string sortName, string sortDate)
         {
             var result = new BindingList<Food>();
 
@@ -43,9 +43,29 @@ namespace FoodRecipe.DAO
 
 
             XDocument xdocument = XDocument.Load("../../Db/DB.xml");
-            IEnumerable<XElement> foodsElements = xdocument.Root.Elements().Skip(skipValue).Take(perPage);
+            IEnumerable<XElement> foodsElements = xdocument.Root.Elements();
 
+            if (sortName == "az")
+            {
+                foodsElements = foodsElements.OrderBy(s => s.Element("name").Value);
+            }
+            
+            if (sortName == "za")
+            {
+                foodsElements = foodsElements.OrderByDescending(s => s.Element("name").Value);
+            }
 
+            if (sortDate == "newold")
+            {
+                foodsElements = foodsElements.OrderBy(s => Convert.ToDateTime(s.Element("createdAt").Value));
+            }
+
+            if (sortDate == "oldnew")
+            {
+                foodsElements = foodsElements.OrderByDescending(s => Convert.ToDateTime(s.Element("createdAt").Value));
+            }
+
+            foodsElements = foodsElements.Skip(skipValue).Take(perPage);
 
             result = ConvertListXmlElementToFoods(foodsElements);
 

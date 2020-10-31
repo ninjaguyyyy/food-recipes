@@ -88,5 +88,12 @@ namespace FoodRecipe.Screens
             config.AppSettings.Settings["ShowSplashScreen"].Value = "false";
             config.Save(ConfigurationSaveMode.Minimal);
         }
+
+        private void saveShowCheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            config.AppSettings.Settings["ShowSplashScreen"].Value = "true";
+            config.Save(ConfigurationSaveMode.Minimal);
+        }
     }
 }
