@@ -29,7 +29,7 @@
                          Minimum="0" Maximum="5" Value="0" 
                          Margin="30, 0, 55, 0" Height="10"/>
 
-            <CheckBox Grid.Row="3" Checked="CheckBox_Checked" Margin="20,00,20,0">Không hiển thị cho lần sau</CheckBox>
+            <CheckBox Grid.Row="3" x:Name="saveShowCheckBox" Unchecked="saveShowCheckBox_Unchecked" Checked="CheckBox_Checked" Margin="20,00,20,0">Không hiển thị cho lần sau</CheckBox>
         </Grid>
         <Image x:Name="previewImage" Source="../Images/splash0.png" Width="410" Height="375"/>
     </StackPanel>

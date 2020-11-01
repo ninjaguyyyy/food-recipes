@@ -23,6 +23,9 @@ namespace FoodRecipe.Screens
     public partial class FavoriteFood : Window
     {
         private BindingList<Food> _list = new BindingList<Food>();
+        private int perPage = 6;
+        private int page = 1;
+        private int totalPage = 1;
         public FavoriteFood()
         {
             InitializeComponent();
@@ -30,8 +33,63 @@ namespace FoodRecipe.Screens
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            _list = FoodDAO.GetFavorites();
+            int totalFood = FoodDAO.GetLengthFavs();
+            totalPage = (totalFood / perPage) + 1;
+
+            _list = FoodDAO.GetFavorites(perPage, page);
             dataListView.ItemsSource = _list;
+
+            var firstCreatedButton = createPagingButton(true, "1");
+            pagingStackPanel.Children.Add(firstCreatedButton);
+
+            for (int i = 2; i <= totalPage; i++)
+            {
+                var createdButton = createPagingButton(false, i.ToString());
+
+                pagingStackPanel.Children.Add(createdButton);
+            }
+        }
+
+        private void pagingButton_Click(object sender, RoutedEventArgs e)
+        {
+            resetActivePagingButton();
+            ((Button)sender).Background = Brushes.LightBlue;
+
+            var pageSelected = ((Button)sender).Content;
+
+            _list = FoodDAO.GetFavorites(perPage, int.Parse(pageSelected.ToString()));
+            dataListView.ItemsSource = _list;
+        }
+
+        private Button createPagingButton(bool isFirst, string content)
+        {
+            var result = new Button();
+
+            result.Content = content;
+            Thickness margin = result.Margin;
+            margin.Left = 10;
+            margin.Right = 10;
+            result.Margin = margin;
+            Thickness padding = result.Padding;
+            padding.Left = 5;
+            padding.Right = 5;
+            padding.Top = 5;
+            padding.Bottom = 5;
+            result.Padding = padding;
+            result.Cursor = Cursors.Hand;
+            result.Background = isFirst ? Brushes.LightBlue : Brushes.Transparent;
+            result.Click += pagingButton_Click;
+
+            return result;
+        }
+        private void resetActivePagingButton()
+        {
+            var pagingButtons = pagingStackPanel.Children;
+
+            foreach (var el in pagingButtons)
+            {
+                ((Button)el).Background = Brushes.Transparent;
+            }
 
         }
 
