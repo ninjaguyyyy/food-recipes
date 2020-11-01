@@ -141,8 +141,9 @@ namespace FoodRecipe.Screens
 
         private void Button_Click_Detail(object sender, RoutedEventArgs e)
         {
-            var favScreen = new FavoriteFood();
-            favScreen.Show();
+            //var detailScreen = new RecipeDetail();
+            //detailScreen.Show();
+            this.Close();
         }
 
 
