@@ -35,11 +35,11 @@
                         Background="#faf9fd" 
                         BorderThickness="1" 
                         Margin="0,10,0,9.667" 
-                        Padding="20, 50, 20, 30"
+                        Padding="20, 30, 20, 30"
                         >
             <StackPanel>
-                <StackPanel>
-                    <Label Content="Danh sách yêu thích" />
+                <StackPanel HorizontalAlignment="Center">
+                    <Label Content="Danh sách yêu thích" FontSize="23" FontWeight="Bold" Foreground="#F65D4E"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" >
                     <Border Width="700" BorderThickness="1" Background="White" BorderBrush="LightGray" CornerRadius="15">

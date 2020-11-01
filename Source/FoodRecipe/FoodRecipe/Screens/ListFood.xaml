@@ -51,7 +51,7 @@
 
                     </Border>
 
-                    <Button Padding="10" BorderThickness="0" Background="#F65D4E" Margin="20,0,0,0">
+                    <Button Padding="10" BorderThickness="0" Background="#F65D4E" Cursor="Hand" Margin="20,0,0,0">
                         <Image Source="../Images/loupe.png" Width="20"/>
                     </Button>
 

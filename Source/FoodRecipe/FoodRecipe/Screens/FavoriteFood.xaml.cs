@@ -23,7 +23,7 @@ namespace FoodRecipe.Screens
     public partial class FavoriteFood : Window
     {
         private BindingList<Food> _list = new BindingList<Food>();
-        private int perPage = 3;
+        private int perPage = 6;
         private int page = 1;
         private int totalPage = 1;
         public FavoriteFood()
@@ -53,7 +53,7 @@ namespace FoodRecipe.Screens
         private void pagingButton_Click(object sender, RoutedEventArgs e)
         {
             resetActivePagingButton();
-            ((Button)sender).Background = Brushes.Red;
+            ((Button)sender).Background = Brushes.LightBlue;
 
             var pageSelected = ((Button)sender).Content;
 
@@ -70,8 +70,14 @@ namespace FoodRecipe.Screens
             margin.Left = 10;
             margin.Right = 10;
             result.Margin = margin;
+            Thickness padding = result.Padding;
+            padding.Left = 5;
+            padding.Right = 5;
+            padding.Top = 5;
+            padding.Bottom = 5;
+            result.Padding = padding;
             result.Cursor = Cursors.Hand;
-            result.Background = isFirst ? Brushes.Red : Brushes.Transparent;
+            result.Background = isFirst ? Brushes.LightBlue : Brushes.Transparent;
             result.Click += pagingButton_Click;
 
             return result;
