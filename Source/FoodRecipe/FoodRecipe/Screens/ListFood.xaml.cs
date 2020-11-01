@@ -69,7 +69,7 @@ namespace FoodRecipe.Screens
         private void pagingButton_Click(object sender, RoutedEventArgs e)
         {
             resetActivePagingButton();
-            ((Button)sender).Background = Brushes.Red;
+            ((Button)sender).Background = Brushes.LightBlue;
 
             var pageSelected = ((Button)sender).Content;
             
@@ -86,8 +86,14 @@ namespace FoodRecipe.Screens
             margin.Left = 10;
             margin.Right = 10;
             result.Margin = margin;
+            Thickness padding = result.Padding;
+            padding.Left = 5;
+            padding.Right = 5;
+            padding.Top = 5;
+            padding.Bottom = 5;
+            result.Padding = padding;
             result.Cursor = Cursors.Hand;
-            result.Background = isFirst? Brushes.Red: Brushes.Transparent;
+            result.Background = isFirst? Brushes.LightBlue: Brushes.Transparent;
             result.Click += pagingButton_Click;
 
             return result;
@@ -109,7 +115,7 @@ namespace FoodRecipe.Screens
             resetActivePagingButton();
             var firstButton = pagingStackPanel.Children.OfType<Button>().FirstOrDefault();
             if (firstButton != null) { 
-                firstButton.Background = Brushes.Red;
+                firstButton.Background = Brushes.LightBlue;
             }
         }
 
@@ -142,8 +148,13 @@ namespace FoodRecipe.Screens
 
         private void Button_Click_ChangePerPage(object sender, RoutedEventArgs e)
         {
-            string enteredPerPage = perPageTextbox.Text;
 
+            string enteredPerPage = perPageTextbox.Text;
+            if(int.Parse(enteredPerPage) > 12)
+            {
+                MessageBox.Show("Chương trình chỉ hỗ trợ tối đa 12 sản phẩm trên 1 trang", "Thông báo");
+                return;
+            }
             perPage = int.Parse(enteredPerPage);
             int totalPage = (totalFoods % perPage == 0) ? (totalFoods / perPage) : (totalFoods / perPage) + 1;
 
