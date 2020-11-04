@@ -7,143 +7,148 @@
         mc:Ignorable="d"
         Title="ListFood" Height="630" Width="1024" Background="#F65D4E" Loaded="Window_Loaded">
 
-    <StackPanel Orientation="Horizontal">
-        <StackPanel Width="174" Margin="0,50,0,10">
-            <Image Source="../Images/healthy-eating.png" Width="90"  Margin="0, 0, 0, 30"/>
-            <Button Background="Transparent" BorderThickness="0">
-                <StackPanel Orientation="Horizontal" Margin="10,10,10,10">
-                    <Image Source="../Images/book.png" Width="40"/>
-                    <Label Content="Danh sách món" Foreground="White" FontSize="15" FontWeight="Bold"/>
-                </StackPanel>
-            </Button>
-            <Button Background="Transparent" BorderThickness="0" Cursor="Hand" Click="Button_Click_Fav">
-                <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="10,10,10,10">
-                    <Image Source="../Images/like.png" Width="40" />
-                    <Label Content="Yêu thích" 
+    
+        <DockPanel >
+            <StackPanel DockPanel.Dock="Left" Width="174" Margin="0,50,0,10">
+                <Image Source="../Images/healthy-eating.png" Width="90"  Margin="0, 0, 0, 30"/>
+                <Button Background="Transparent" BorderThickness="0">
+                    <StackPanel Orientation="Horizontal" Margin="10,10,10,10">
+                        <Image Source="../Images/book.png" Width="40"/>
+                        <Label Content="Danh sách món" Foreground="White" FontSize="15" FontWeight="Bold"/>
+                    </StackPanel>
+                </Button>
+                <Button Background="Transparent" BorderThickness="0" Cursor="Hand" Click="Button_Click_Fav">
+                    <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="10,10,10,10">
+                        <Image Source="../Images/like.png" Width="40" />
+                        <Label Content="Yêu thích" 
                        Foreground="White" 
                        FontSize="15" FontWeight="Bold"/>
-                </StackPanel>
-            </Button>
-            <Button Background="Transparent" BorderThickness="0" Cursor="Hand" >
-                <StackPanel Orientation="Horizontal" Margin="10,10,10,10">
-                    <Image Source="../Images/add.png" Width="40" />
-                    <Label Content="Tạo món" Foreground="White" FontSize="15" FontWeight="Bold"/>
-                </StackPanel>
-            </Button>
-        </StackPanel>
-        <Border CornerRadius="50" 
+                    </StackPanel>
+                </Button>
+                <Button Background="Transparent" BorderThickness="0" Cursor="Hand" >
+                    <StackPanel Orientation="Horizontal" Margin="10,10,10,10">
+                        <Image Source="../Images/add.png" Width="40" />
+                        <Label Content="Tạo món" Foreground="White" FontSize="15" FontWeight="Bold"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+            <StackPanel Margin="0, 0, 20, 0">
+                <Border CornerRadius="50" 
                 Background="#faf9fd" 
                 BorderThickness="1" 
                 Margin="0,10,0,9.667" 
                 Padding="20, 30, 20, 30"
                 >
-            <StackPanel Orientation="Vertical">
-                <StackPanel HorizontalAlignment="Center" Margin="0, 0, 0, 10">
-                    <Label Content="Danh sách tất cả" FontSize="23" FontWeight="Bold" Foreground="#F65D4E"/>
-                </StackPanel>
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel HorizontalAlignment="Center" Margin="0, 0, 0, 10">
+                            <Label Content="Danh sách tất cả" FontSize="23" FontWeight="Bold" Foreground="#F65D4E"/>
+                        </StackPanel>
 
-                <StackPanel Orientation="Horizontal" >
-                    <Border Width="700" BorderThickness="1" Background="White" BorderBrush="LightGray" CornerRadius="15">
-                        <DockPanel>
-                            <Image Source="../Images/magnifier.png" Width="20" Margin="20, 0,0,0"/>
-                            <TextBox Margin="20,0,20,0" BorderThickness="0" Padding="10, 10, 50, 10" FontSize="15"/>
-                        </DockPanel>
+                        <StackPanel Orientation="Horizontal" >
+                            <Border Width="700" BorderThickness="1" Background="White" BorderBrush="LightGray" CornerRadius="15">
+                                <DockPanel>
+                                    <Image Source="../Images/magnifier.png" Width="20" Margin="20, 0,0,0"/>
+                                    <TextBox Margin="20,0,20,0" BorderThickness="0" Padding="10, 10, 50, 10" FontSize="15"/>
+                                </DockPanel>
 
-                    </Border>
+                            </Border>
 
-                    <Button Padding="10" BorderThickness="0" Background="#F65D4E" Cursor="Hand" Margin="20,0,0,0">
-                        <Image Source="../Images/loupe.png" Width="20"/>
-                    </Button>
+                            <Button Padding="10" BorderThickness="0" Background="#F65D4E" Cursor="Hand" Margin="20,0,0,0">
+                                <Image Source="../Images/loupe.png" Width="20"/>
+                            </Button>
 
-                </StackPanel>
+                        </StackPanel>
 
-                <Grid>
-                    <Grid.RowDefinitions>
-                        
-                        <RowDefinition Height="*" />
-                        <RowDefinition Height="auto" />
-                    </Grid.RowDefinitions>
+                        <Grid>
+                            <Grid.RowDefinitions>
 
-                    <ListView Name="dataListView" 
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="auto" />
+                            </Grid.RowDefinitions>
+
+                            <ListView Name="dataListView" 
                           ScrollViewer.HorizontalScrollBarVisibility="Disabled"
                           Margin="0,20,0,0" Grid.Row="0"
                           BorderThickness="0"
                           Background="Transparent"
-                          Width="700">
+                              >
 
-                        <ListView.ItemsPanel>
-                            <ItemsPanelTemplate>
-                                <WrapPanel />
-                            </ItemsPanelTemplate>
-                        </ListView.ItemsPanel>
-                        <ListView.ItemTemplate>
-                            <DataTemplate>
-                                <StackPanel Margin="15,0,15,12">
-                                    <Button Click="Button_Click_Detail" Background="Transparent" BorderThickness="0" Cursor="Hand">
-                                        <Image Width="auto" Height="80" Source="{Binding ThumbnailPath}"/>
-                                    </Button>
+                                <ListView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapPanel />
+                                    </ItemsPanelTemplate>
+                                </ListView.ItemsPanel>
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Margin="15,0,15,12">
+                                            <Button Click="Button_Click_Detail" Background="Transparent" BorderThickness="0" Cursor="Hand">
+                                                <Image Width="auto" Height="80" Source="{Binding ThumbnailPath}"/>
+                                            </Button>
 
-                                    <DockPanel >
-                                        <Button DockPanel.Dock="Left" Click="Button_Click_Detail" Background="Transparent" BorderThickness="0" Cursor="Hand">
-                                            <TextBlock Text="{Binding Name}" FontWeight="Bold" Margin="5,5,0,0"/>
-                                        </Button>
+                                            <DockPanel >
+                                                <Button DockPanel.Dock="Left" Click="Button_Click_Detail" Background="Transparent" BorderThickness="0" Cursor="Hand">
+                                                    <TextBlock Text="{Binding Name}" FontWeight="Bold" Margin="5,5,0,0"/>
+                                                </Button>
 
-                                        <Button HorizontalAlignment="Right" DockPanel.Dock="Right" Tag="{Binding Id}" Click="Button_Click_AddToFav" 
+                                                <Button HorizontalAlignment="Right" DockPanel.Dock="Right" Tag="{Binding Id}" Click="Button_Click_AddToFav" 
                                             Background="Transparent" BorderThickness="0" Cursor="Hand">
-                                            <Image Width="20" Source="../Images/heart.png" />
-                                        </Button>
-                                    </DockPanel>
+                                                    <Image Width="20" Source="../Images/heart.png" />
+                                                </Button>
+                                            </DockPanel>
 
-                                </StackPanel>
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
 
-                    </ListView>
+                            </ListView>
 
 
-                    <Grid HorizontalAlignment="Center" Grid.Row="1" Width="700">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="auto" />
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="auto" />
-                        </Grid.ColumnDefinitions>
+                            <Grid HorizontalAlignment="Center" Grid.Row="1" Width="700">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="auto" />
+                                </Grid.ColumnDefinitions>
 
-                        <StackPanel Grid.Column="0" Orientation="Horizontal">
-                            <Label Content="Hiển thị mỗi trang: " />
-                            <TextBox x:Name="perPageTextbox" Height="auto" VerticalAlignment="Center" Padding="5, 0, 5, 0"/>
-                            <Button Click="Button_Click_ChangePerPage" 
+                                <StackPanel Grid.Column="0" Orientation="Horizontal">
+                                    <Label Content="Hiển thị mỗi trang: " />
+                                    <TextBox x:Name="perPageTextbox" Height="auto" VerticalAlignment="Center" Padding="5, 0, 5, 0"/>
+                                    <Button Click="Button_Click_ChangePerPage" 
                                     Cursor="Hand" BorderThickness="0" Background="Transparent" Margin="5, 0, 0,0">
-                                <Image Source="../Images/pagination.png" Width="20"/>
-                            </Button>
-                        </StackPanel>
-                        
+                                        <Image Source="../Images/pagination.png" Width="20"/>
+                                    </Button>
+                                </StackPanel>
 
-                        <StackPanel x:Name="pagingStackPanel" 
+
+                                <StackPanel x:Name="pagingStackPanel" 
                                     Orientation="Horizontal" HorizontalAlignment="Center" 
                                     Grid.Column="1">
 
-                        </StackPanel>
+                                </StackPanel>
 
-                        <StackPanel Grid.Column="2" Orientation="Horizontal">
-                            <Label Margin="20, 0, 10, 0" Content="Sắp xếp: " />
-                            <ComboBox Background="Red" Name="sortComboBox" SelectionChanged="sortComboBox_SelectionChanged">
-                                <ComboBoxItem Tag="default" IsSelected="True">Mặc định</ComboBoxItem>
-                                <ComboBoxItem Tag="az">Theo tên: A -> Z</ComboBoxItem>
-                                <ComboBoxItem Tag="za">Theo tên: Z -> A</ComboBoxItem>
-                                <ComboBoxItem Tag="newold">Theo ngày tạo: Mới -> Cũ</ComboBoxItem>
-                                <ComboBoxItem Tag="oldnew">Theo ngày tạo: Cũ -> Mới</ComboBoxItem>
-                            </ComboBox>
-                        </StackPanel>
-                        
-
-                    </Grid>
+                                <StackPanel Grid.Column="2" Orientation="Horizontal">
+                                    <Label Margin="20, 0, 10, 0" Content="Sắp xếp: " />
+                                    <ComboBox Background="Red" Name="sortComboBox" SelectionChanged="sortComboBox_SelectionChanged">
+                                        <ComboBoxItem Tag="default" IsSelected="True">Mặc định</ComboBoxItem>
+                                        <ComboBoxItem Tag="az">Theo tên: A -> Z</ComboBoxItem>
+                                        <ComboBoxItem Tag="za">Theo tên: Z -> A</ComboBoxItem>
+                                        <ComboBoxItem Tag="newold">Theo ngày tạo: Mới -> Cũ</ComboBoxItem>
+                                        <ComboBoxItem Tag="oldnew">Theo ngày tạo: Cũ -> Mới</ComboBoxItem>
+                                    </ComboBox>
+                                </StackPanel>
 
 
+                            </Grid>
 
-                </Grid>
-                
-                
+
+
+                        </Grid>
+
+
+                    </StackPanel>
+                </Border>
             </StackPanel>
-        </Border>
-    </StackPanel>
+        </DockPanel>
+  
+   
 </Window>
