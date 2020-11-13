@@ -80,6 +80,9 @@ namespace FoodRecipe.Screens
             }
 
             DBUtils.write(myFood);
+
+            SuccessLabel.Opacity = 100;
+
         }
 
         private List<FoodStep> foodSteps = new List<FoodStep>();

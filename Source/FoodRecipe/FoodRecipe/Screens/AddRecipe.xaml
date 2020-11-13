@@ -100,6 +100,7 @@
                             <Button Click="Button_Click" BorderThickness="0" Content="Hoàn tất"/>
                         </Border>
                         <Label Name="NotiLabel" FontStyle="Italic" FontSize="10" Foreground="Red" HorizontalAlignment="Center" Content="Vui lòng nhập đầy đủ các thông tin bắt buộc" Opacity="0"/>
+                        <Label Name="SuccessLabel" FontStyle="Italic" FontSize="10" Foreground="Red" HorizontalAlignment="Center" Content="Lưu thành công" Opacity="0"/>
                     </StackPanel>
                 </StackPanel>
             </StackPanel>
