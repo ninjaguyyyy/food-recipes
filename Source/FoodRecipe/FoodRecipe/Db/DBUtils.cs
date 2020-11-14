@@ -93,15 +93,20 @@ namespace FoodRecipe.Db
             xmlWriter.WriteEndElement(); //</video>
             xmlWriter.WriteStartElement("steps");
 
-            foreach (FoodStep step in myFood.steps)
+            foreach (FoodStep step in myFood.Steps)
             {
                 xmlWriter.WriteStartElement("astep");
                 xmlWriter.WriteStartElement("stepdescription");
                 xmlWriter.WriteString(step.DescriptionStep);
                 xmlWriter.WriteEndElement(); //</stepdescription>
-                xmlWriter.WriteStartElement("stepimagepath");
-                xmlWriter.WriteString(step.ImageStepPath);
-                xmlWriter.WriteEndElement(); //</stepimagepath>
+                xmlWriter.WriteStartElement("stepimagepaths");
+                foreach (var path in step.ImageStepPath)
+                {
+                    xmlWriter.WriteStartElement("stepimagepath");
+                    xmlWriter.WriteString(path);
+                    xmlWriter.WriteEndElement(); //</stepimagepath>
+                }
+                xmlWriter.WriteEndElement(); //</stepimagepaths>
                 xmlWriter.WriteStartElement("stepvideo");
                 xmlWriter.WriteString(step.VideoStepLink);
                 xmlWriter.WriteEndElement(); //</stepvideo>

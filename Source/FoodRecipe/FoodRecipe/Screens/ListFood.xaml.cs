@@ -141,7 +141,8 @@ namespace FoodRecipe.Screens
 
         private void Button_Click_Detail(object sender, RoutedEventArgs e)
         {
-            var detailScreen = new RecipeDetail();
+            var id = int.Parse(((Button)sender).Tag.ToString());
+            var detailScreen = new RecipeDetail(id);
             detailScreen.Show();
             this.Close();
         }
