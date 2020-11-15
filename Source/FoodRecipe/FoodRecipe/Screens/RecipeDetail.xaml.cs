@@ -10,6 +10,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
@@ -46,8 +47,7 @@ namespace FoodRecipe.Screens
                     for (int j = 0; j < steps[i].ImageStepPath.Count; j++)
                     {
                         Image image = new Image() {
-                            Height = 170,
-                            Margin = new Thickness(10)
+                            Margin = new Thickness(20, 5, 20, 5)
                         };
                         BitmapImage bi = new BitmapImage();
                         bi.BeginInit();
@@ -93,6 +93,31 @@ namespace FoodRecipe.Screens
         private void Button_Click_List(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void Image_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            DoubleAnimation da = new DoubleAnimation
+            {
+                From = 0,
+                To = 1,
+                Duration = new Duration(TimeSpan.FromSeconds(0.5)),
+            };
+            foreach (var element in imageStack.Children)
+                ((Image)element).BeginAnimation(OpacityProperty, da);
+            var action = ((Image)sender).Tag.ToString();
+            if (action.Equals("next"))
+            {
+                var el = (Image)imageStack.Children[0];
+                imageStack.Children.RemoveAt(0);
+                imageStack.Children.Add(el);
+            }
+            else
+            {
+                var el = (Image)imageStack.Children[imageStack.Children.Count - 1];
+                imageStack.Children.RemoveAt(imageStack.Children.Count - 1);
+                imageStack.Children.Insert(0, el);
+            }
         }
     }
 }

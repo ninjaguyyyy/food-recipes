@@ -77,7 +77,7 @@
     <Compile Include="Screens\SplashScreen.xaml.cs">
       <DependentUpon>SplashScreen.xaml</DependentUpon>
     </Compile>
-	 <Compile Include="Screens\RecipeDetail.xaml.cs">
+    <Compile Include="Screens\RecipeDetail.xaml.cs">
       <DependentUpon>RecipeDetail.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -125,7 +125,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-	 <Page Include="Screens\RecipeDetail.xaml">
+    <Page Include="Screens\RecipeDetail.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -175,6 +175,10 @@
     <Resource Include="Sample\b1-2.jpg" />
     <Resource Include="Sample\b1-3.jpg" />
     <Resource Include="Sample\vit-nau-chao.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\left-arrow.png" />
+    <Resource Include="Images\right-arrow.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -5,40 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FoodRecipe.Screens"
         mc:Ignorable="d"
-        Title="Chi tiết công thức" Height="630" Width="1024" Background="#F65D4E"
+        Title="Chi tiết công thức" Height="520" Width="800" Background="#F65D4E"
         WindowStartupLocation="CenterScreen">
-    <StackPanel Orientation="Horizontal"  >
-        <StackPanel Width="174" Margin="0,50,0,10">
-            <Image Source="../Images/healthy-eating.png" Width="90"  Margin="0, 0, 0, 30"/>
-            <Button Background="Transparent" BorderThickness="0" Cursor="Hand" Click="Button_Click_List">
-                <StackPanel Orientation="Horizontal" Margin="10,10,10,10">
-                    <Image Source="../Images/book.png" Width="40"/>
-                    <Label Content="Danh sách món" Foreground="White" FontSize="15" FontWeight="Bold"/>
-                </StackPanel>
-            </Button>
-            <Button Background="Transparent" BorderThickness="0" Cursor="Hand" Click="Button_Click_Fav">
-                <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="10,10,10,10">
-                    <Image Source="../Images/like.png" Width="40" />
-                    <Label Content="Yêu thích" 
-                       Foreground="White" 
-                       FontSize="15" FontWeight="Bold"/>
-                </StackPanel>
-            </Button>
-            <Button Background="Transparent" BorderThickness="0" Cursor="Hand" Click="Button_Click_Add">
-                <StackPanel Orientation="Horizontal" Margin="10,10,10,10">
-                    <Image Source="../Images/add.png" Width="40" />
-                    <Label Content="Tạo món" Foreground="White" FontSize="15" FontWeight="Bold"/>
-                </StackPanel>
-            </Button>
-        </StackPanel>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
         <Border CornerRadius="50" 
                 Background="#faf9fd" 
                 BorderThickness="1" 
-                Margin="0,10,0,9.667" 
+                Margin="30,10,30,10" 
                 Padding="20, 30, 20, 10"
                 >
-            <StackPanel>
-                <Grid Height="520">
+                <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="6*"/>
@@ -51,19 +30,66 @@
                             <Run Text="{Binding Name}" />
                         </TextBlock>
                     </StackPanel>
-                    <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled" Grid.Row="1" Width="600">
-                        <StackPanel Name="imageStack" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-                            <Image Height="170" Margin="10" Source="../Sample/b1-1.jpg"/>
-                            <Image Height="170" Margin="10" Source="../Sample/b1-1.jpg"/>
-                            <Image Height="170" Margin="10" Source="../Sample/b1-1.jpg"/>
-                            <Image Height="170" Margin="10" Source="../Sample/b1-2.jpg"/>
-                            <Image Height="170" Margin="10" Source="../Sample/b1-3.jpg"/>
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="3*" />
+                            <ColumnDefinition Width="6*" />
+                            <ColumnDefinition Width="3*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="1" Grid.ColumnSpan="3" Name="imageStack" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <Image Margin="10" Source="../Sample/b1-1.jpg"/>
+                            <Image Margin="10" Source="../Sample/b1-1.jpg"/>
+                            <Image Margin="10" Source="../Sample/b1-1.jpg"/>
+                            <Image Margin="10" Source="../Sample/b1-2.jpg"/>
+                            <Image Margin="10" Source="../Sample/b1-3.jpg"/>
                         </StackPanel>
-                    </ScrollViewer>
-                    <ScrollViewer Grid.Row="2" Margin="10 15" VerticalScrollBarVisibility="Auto" Width="750">
+                        <Rectangle Opacity="0.5" Grid.Column="1">
+                            <Rectangle.Fill>
+                                <LinearGradientBrush StartPoint="1,0" EndPoint="0,0">
+                                    <GradientStop Color="Black" Offset="0.8" />
+                                    <GradientStop Color="Transparent" Offset="0.0" />
+                                </LinearGradientBrush>
+                            </Rectangle.Fill>
+                        </Rectangle>
+                    <Rectangle Opacity="0.5" Grid.Column="3">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush StartPoint="1,0" EndPoint="0,0">
+                                <GradientStop Color="Black" Offset="0.2" />
+                                <GradientStop Color="Transparent" Offset="1.0" />
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Image Tag="prev" MouseDown="Image_MouseDown" Source="/Images/left-arrow.png" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center">
+                            <Image.Style>
+                                <Style TargetType="{x:Type Image}">
+                                    <Setter Property="Height" Value="40" />
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Height" Value="50" />
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Image.Style>
+                        </Image>
+                        <Image Tag="next" MouseDown="Image_MouseDown" Source="/Images/right-arrow.png" Grid.Column="3" HorizontalAlignment="Right" VerticalAlignment="Center">
+                            <Image.Style>
+                                <Style TargetType="{x:Type Image}">
+                                    <Setter Property="Height" Value="40" />
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Height" Value="50" />
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Image.Style>
+                        </Image>
+                    </Grid>
+                    <ScrollViewer Grid.Row="2" Margin="10 15" VerticalScrollBarVisibility="Auto">
                         <TextBlock ScrollViewer.CanContentScroll="True"
                                     ScrollViewer.VerticalScrollBarVisibility="Auto"
-                                    FontSize="15" TextWrapping="Wrap" Width="720" Name="descriptionText">
+                                    FontSize="15" TextWrapping="Wrap" Name="descriptionText">
                         </TextBlock>
                     </ScrollViewer>
 
@@ -75,9 +101,7 @@
                         <Label Padding="10" BorderThickness="0 0 1 0" BorderBrush="White" Background="Gray" />
                         <Button BorderThickness="0" Padding="10" FontWeight="Bold" Foreground="White" Background="Gray">Xem video</Button>
                     </StackPanel>
-
                 </Grid>
-            </StackPanel>
         </Border>
-    </StackPanel>
+    </Grid>
 </Window>

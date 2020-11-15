@@ -144,7 +144,6 @@ namespace FoodRecipe.Screens
             var id = int.Parse(((Button)sender).Tag.ToString());
             var detailScreen = new RecipeDetail(id);
             detailScreen.Show();
-            this.Close();
         }
 
 
