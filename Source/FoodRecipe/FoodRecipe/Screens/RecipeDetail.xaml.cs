@@ -101,7 +101,7 @@ namespace FoodRecipe.Screens
             {
                 From = 0,
                 To = 1,
-                Duration = new Duration(TimeSpan.FromSeconds(0.5)),
+                Duration = new Duration(TimeSpan.FromSeconds(0.2)),
             };
             foreach (var element in imageStack.Children)
                 ((Image)element).BeginAnimation(OpacityProperty, da);

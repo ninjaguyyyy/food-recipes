@@ -39,11 +39,6 @@
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Column="1" Grid.ColumnSpan="3" Name="imageStack" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-                            <Image Margin="10" Source="../Sample/b1-1.jpg"/>
-                            <Image Margin="10" Source="../Sample/b1-1.jpg"/>
-                            <Image Margin="10" Source="../Sample/b1-1.jpg"/>
-                            <Image Margin="10" Source="../Sample/b1-2.jpg"/>
-                            <Image Margin="10" Source="../Sample/b1-3.jpg"/>
                         </StackPanel>
                         <Rectangle Opacity="0.5" Grid.Column="1">
                             <Rectangle.Fill>
