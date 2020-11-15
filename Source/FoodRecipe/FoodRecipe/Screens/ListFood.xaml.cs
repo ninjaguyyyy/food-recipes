@@ -31,6 +31,7 @@ namespace FoodRecipe.Screens
         private int totalFoods;
         private string sortBy;
         private string search;
+        private string modeSearch;
 
         public ListFood()
         {
@@ -39,7 +40,8 @@ namespace FoodRecipe.Screens
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            
+            modeSearch = ((ComboBoxItem)modeSearchComboBox.SelectedItem).Tag?.ToString();
+
             var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
             perPage = int.Parse(config.AppSettings.Settings["PerPage"].Value);
 
@@ -183,6 +185,8 @@ namespace FoodRecipe.Screens
             };
         }
 
+
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
@@ -191,14 +195,25 @@ namespace FoodRecipe.Screens
         private void searchButton_Click(object sender, RoutedEventArgs e)
         {
             string enteredSearch = searchTextBox.Text.Trim();
+            search = enteredSearch;
 
-            MessageBox.Show(SearchHelper.ConvertToUnSign(enteredSearch));
+            if(modeSearch == "smart")
+            {
+                search = SearchHelper.ConvertToUnSign(enteredSearch);
+            }
+            
 
-            //BindingList<Food> result = FoodDAO.SearchFoods(enteredSearch);
-            //foreach (Food i in result)
-            //{
-            //    MessageBox.Show(i.Name);
-            //}
+            BindingList<Food> result = FoodDAO.SearchFoods(search, modeSearch);
+            foreach (Food i in result)
+            {
+                MessageBox.Show(i.Name);
+            }
+        }
+
+        private void modeSearchComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            modeSearch = ((ComboBoxItem)modeSearchComboBox.SelectedItem).Tag?.ToString();
+            
         }
     }
 }

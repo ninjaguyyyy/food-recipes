@@ -97,7 +97,7 @@
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="60" />
                                         <ColumnDefinition Width="*" />
-                                        <ColumnDefinition Width="80" />
+                                        <ColumnDefinition Width="90" />
 
                                     </Grid.ColumnDefinitions>
                                     <Image Grid.Column="0" Source="../Images/magnifier.png" Width="20" Margin="20, 0,0,0"/>
@@ -105,12 +105,13 @@
                                              FontSize="15" Name="searchTextBox"/>
                                     <ComboBox Name="modeSearchComboBox"
                                               Style="{StaticResource ComboBoxTest2}"
-                                              Grid.Column="2" Width="70"  
+                                              Grid.Column="2" Width="80"  
                                               VerticalAlignment="Center"
+                                              FontSize="8"
+                                              SelectionChanged="modeSearchComboBox_SelectionChanged"
                                               >
-                                        <ComboBoxItem Tag="default" IsSelected="True">Chế độ</ComboBoxItem>
-                                        <ComboBoxItem Tag="exact">Chính xác</ComboBoxItem>
-                                        <ComboBoxItem Tag="smart">Thông minh</ComboBoxItem>
+                                        <ComboBoxItem IsSelected="true" Tag="exact">Tìm chính xác</ComboBoxItem>
+                                        <ComboBoxItem Tag="smart">Tìm thông minh</ComboBoxItem>
                                     </ComboBox>
                                 </Grid>
 
