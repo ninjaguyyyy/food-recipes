@@ -73,6 +73,18 @@ namespace FoodRecipe.DAO
             return result;
         }
 
+        public static BindingList<Food> SearchFoods(string searchKey)
+        {
+            var result = new BindingList<Food>();
+
+            XDocument xdocument = XDocument.Load("../../Db/DB.xml");
+            IEnumerable<XElement> foodsElements = xdocument.Root.Elements();
+            foodsElements = foodsElements.Where(e => e.Element("name").Value == searchKey);
+
+            result = ConvertListXmlElementToFoods(foodsElements);
+
+            return result;
+        }
         public static BindingList<Food> ConvertListXmlElementToFoods(IEnumerable<XElement> listElement)
         {
             var result = new BindingList<Food>();

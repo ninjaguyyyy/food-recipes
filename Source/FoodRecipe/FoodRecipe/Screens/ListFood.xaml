@@ -7,8 +7,55 @@
         mc:Ignorable="d"
         Title="ListFood" Height="630" Width="1024" Background="#F65D4E" Loaded="Window_Loaded">
 
-    
-        <DockPanel >
+    <Window.Resources>
+        <Style x:Key="ComboBoxTest2" TargetType="{x:Type ComboBox}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ComboBox">
+                        <Grid>
+                            <ToggleButton Grid.Column="2" Focusable="false" IsChecked="{Binding Path=IsDropDownOpen,Mode=TwoWay,RelativeSource={RelativeSource TemplatedParent}}" >
+                                <ToggleButton.Template>
+                                    <ControlTemplate>
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="5*" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Border x:Name="Border"  Grid.ColumnSpan="2" CornerRadius="5" Background="Beige" BorderBrush="Black" BorderThickness="1" />
+                                            <Border Grid.Column="0" CornerRadius="5,0,0,5"  Margin="1"  Background="AliceBlue"  BorderBrush="Black" BorderThickness="0,0,1,0" />
+                                            <Path x:Name="Arrow" Grid.Column="1"  Fill="Orange" HorizontalAlignment="Center" VerticalAlignment="Center" Data="M 0 0 L 4 4 L 8 0 Z"/>
+                                        </Grid>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="ToggleButton.IsMouseOver" Value="true">
+                                                <Setter TargetName="Border" Property="Background" Value="LightBlue" />
+                                            </Trigger>
+                                            <Trigger Property="ToggleButton.IsChecked" Value="true">
+                                                <Setter TargetName="Border" Property="Background" Value="LightBlue" />
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </ToggleButton.Template>
+                            </ToggleButton>
+                            <ContentPresenter Name="ContentSite" IsHitTestVisible="False"  Content="{TemplateBinding SelectionBoxItem}" ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}" ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}" Margin="3"  />
+                            <TextBox x:Name="PART_EditableTextBox" Visibility="Hidden" IsReadOnly="{TemplateBinding IsReadOnly}"/>
+                            <Popup Name="Popup" Placement="Bottom" IsOpen="{TemplateBinding IsDropDownOpen}" AllowsTransparency="True"  Focusable="False" PopupAnimation="Slide">
+                                <Grid  Name="DropDown" SnapsToDevicePixels="True" MinWidth="{TemplateBinding ActualWidth}" MaxHeight="{TemplateBinding MaxDropDownHeight}">
+                                    <Border x:Name="DropDownBorder" Background="LightBlue" />
+                                    <ScrollViewer SnapsToDevicePixels="True">
+                                        <StackPanel IsItemsHost="True" />
+                                    </ScrollViewer>
+                                </Grid>
+                            </Popup>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <DockPanel >
             <StackPanel DockPanel.Dock="Left" Width="174" Margin="0,50,0,10">
                 <Image Source="../Images/healthy-eating.png" Width="90"  Margin="0, 0, 0, 30"/>
                 <Button Background="Transparent" BorderThickness="0">
@@ -46,14 +93,31 @@
 
                         <StackPanel Orientation="Horizontal" >
                             <Border Width="700" BorderThickness="1" Background="White" BorderBrush="LightGray" CornerRadius="15">
-                                <DockPanel>
-                                    <Image Source="../Images/magnifier.png" Width="20" Margin="20, 0,0,0"/>
-                                    <TextBox Margin="20,0,20,0" BorderThickness="0" Padding="10, 10, 50, 10" FontSize="15"/>
-                                </DockPanel>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="60" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="80" />
+
+                                    </Grid.ColumnDefinitions>
+                                    <Image Grid.Column="0" Source="../Images/magnifier.png" Width="20" Margin="20, 0,0,0"/>
+                                    <TextBox Grid.Column="1" Margin="20,0,20,0" BorderThickness="0" Padding="10, 10, 50, 10" 
+                                             FontSize="15" Name="searchTextBox"/>
+                                    <ComboBox Name="modeSearchComboBox"
+                                              Style="{StaticResource ComboBoxTest2}"
+                                              Grid.Column="2" Width="70"  
+                                              VerticalAlignment="Center"
+                                              >
+                                        <ComboBoxItem Tag="default" IsSelected="True">Chế độ</ComboBoxItem>
+                                        <ComboBoxItem Tag="exact">Chính xác</ComboBoxItem>
+                                        <ComboBoxItem Tag="smart">Thông minh</ComboBoxItem>
+                                    </ComboBox>
+                                </Grid>
 
                             </Border>
 
-                            <Button Padding="10" BorderThickness="0" Background="#F65D4E" Cursor="Hand" Margin="20,0,0,0">
+                            <Button Name="searchButton" Click="searchButton_Click" Padding="10" BorderThickness="0" Background="#F65D4E" 
+                                    Cursor="Hand" Margin="20,0,0,0">
                                 <Image Source="../Images/loupe.png" Width="20"/>
                             </Button>
 
@@ -128,7 +192,9 @@
 
                                 <StackPanel Grid.Column="2" Orientation="Horizontal">
                                     <Label Margin="20, 0, 10, 0" Content="Sắp xếp: " />
-                                    <ComboBox Background="Red" Name="sortComboBox" SelectionChanged="sortComboBox_SelectionChanged">
+                                <ComboBox Style="{StaticResource ComboBoxTest2}"  Name="sortComboBox" 
+                                          Width="80"
+                                          SelectionChanged="sortComboBox_SelectionChanged">
                                         <ComboBoxItem Tag="default" IsSelected="True">Mặc định</ComboBoxItem>
                                         <ComboBoxItem Tag="az">Theo tên: A -> Z</ComboBoxItem>
                                         <ComboBoxItem Tag="za">Theo tên: Z -> A</ComboBoxItem>
