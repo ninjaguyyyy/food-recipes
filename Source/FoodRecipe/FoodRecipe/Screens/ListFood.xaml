@@ -146,7 +146,7 @@
                                 <ListView.ItemTemplate>
                                     <DataTemplate>
                                         <StackPanel Margin="15,0,15,12">
-                                            <Button Click="Button_Click_Detail" Background="Transparent" BorderThickness="0" Cursor="Hand">
+                                        <Button Click="Button_Click_Detail" Tag="{Binding Id}" Background="Transparent" BorderThickness="0" Cursor="Hand">
                                                 <Image Width="auto" Height="80" Source="{Binding ThumbnailPath}"/>
                                             </Button>
 

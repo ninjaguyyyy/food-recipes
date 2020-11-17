@@ -10,7 +10,8 @@
     <StackPanel Orientation="Horizontal"  >
         <StackPanel Width="174" Margin="0,50,0,10">
             <Image Source="../Images/healthy-eating.png" Width="90"  Margin="0, 0, 0, 30"/>
-            <Button Background="Transparent" BorderThickness="0" Cursor="Hand">
+            <Button x:Name="homeMenuButton" Background="Transparent" BorderThickness="0" Cursor="Hand" 
+                    Click="homeMenuButton_Click">
                 <StackPanel Orientation="Horizontal" Margin="10,10,10,10">
                     <Image Source="../Images/book.png" Width="40"/>
                     <Label Content="Danh sách món" Foreground="White" FontSize="15" FontWeight="Bold"/>
