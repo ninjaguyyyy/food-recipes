@@ -1,4 +1,5 @@
 ﻿using FoodRecipe.DTO;
+using FoodRecipe.Helper;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -73,6 +74,25 @@ namespace FoodRecipe.DAO
             return result;
         }
 
+        public static BindingList<Food> SearchFoods(string searchKey, string mode)
+        {
+            var result = new BindingList<Food>();
+
+            XDocument xdocument = XDocument.Load("../../Db/DB.xml");
+            IEnumerable<XElement> foodsElements = xdocument.Root.Elements();
+            if(mode == "exact")
+            {
+                foodsElements = foodsElements.Where(e => e.Element("name").Value == searchKey);
+            } else if(mode == "smart")
+            {
+                foodsElements = foodsElements.Where(e => SearchHelper.ConvertToUnSign(e.Element("name").Value) == searchKey);
+            }
+            
+
+            result = ConvertListXmlElementToFoods(foodsElements);
+
+            return result;
+        }
         public static BindingList<Food> ConvertListXmlElementToFoods(IEnumerable<XElement> listElement)
         {
             var result = new BindingList<Food>();

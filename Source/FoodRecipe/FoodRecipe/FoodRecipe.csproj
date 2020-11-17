@@ -67,7 +67,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DTO\Food.cs" />
+	 <Compile Include="DAO\FoodPreviewDAO.cs" />
+    <Compile Include="Db\DBUtils.cs" />
     <Compile Include="DTO\FoodPreview.cs" />
+    <Compile Include="Helper\SearchHelper.cs" />
     <Compile Include="Screens\FavoriteFood.xaml.cs">
       <DependentUpon>FavoriteFood.xaml</DependentUpon>
     </Compile>
