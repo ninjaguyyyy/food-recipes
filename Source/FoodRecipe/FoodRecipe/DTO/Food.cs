@@ -23,7 +23,7 @@ namespace FoodRecipe.DTO
         public bool IsFavorite { get; set; }
         public List<FoodStep> Steps { get => steps; set => steps = value; }
 
-        private List<FoodStep> steps = new List<FoodStep>();
+        public List<FoodStep> steps = new List<FoodStep>();
     }
 
     class FoodStep
@@ -32,5 +32,6 @@ namespace FoodRecipe.DTO
         public string DescriptionStep { get; set; }
         public string VideoStepLink { get; set; }
         public List<string> ImageStepPath { get; set; } = new List<string>();
+        //public string ImageStepPath { get; set; }
     }
 }

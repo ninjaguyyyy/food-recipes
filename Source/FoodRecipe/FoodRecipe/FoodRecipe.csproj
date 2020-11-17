@@ -59,18 +59,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="DAO\FoodDAO.cs" />
     <Compile Include="DAO\FoodPreviewDAO.cs" />
-    <Compile Include="Db\DBUtils.cs" />
+    <Compile Include="DAO\FoodDAO.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DTO\Food.cs" />
-	 <Compile Include="DAO\FoodPreviewDAO.cs" />
     <Compile Include="Db\DBUtils.cs" />
+    <Compile Include="DTO\Food.cs" />
     <Compile Include="DTO\FoodPreview.cs" />
     <Compile Include="Helper\SearchHelper.cs" />
+    <Compile Include="Screens\AddRecipe.xaml.cs">
+      <DependentUpon>AddRecipe.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Screens\FavoriteFood.xaml.cs">
       <DependentUpon>FavoriteFood.xaml</DependentUpon>
     </Compile>
@@ -114,12 +115,18 @@
     <Folder Include="Db\Pictures\" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Db\DB.xml" />
+    <Resource Include="Db\DB.xml">
+      <SubType>Designer</SubType>
+    </Resource>
     <None Include="Images\splash0.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Screens\AddRecipe.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Screens\FavoriteFood.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -182,6 +189,9 @@
   <ItemGroup>
     <Resource Include="Images\left-arrow.png" />
     <Resource Include="Images\right-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\UploadImage.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -130,6 +130,12 @@ namespace FoodRecipe.Screens
             this.Close();
         }
 
+        private void Button_Click_Add(object sender, RoutedEventArgs e)
+        {
+            var addScreen = new AddRecipe();
+            addScreen.Show();
+            this.Close();
+        }
 
         private void Button_Click_AddToFav(object sender, RoutedEventArgs e)
         {

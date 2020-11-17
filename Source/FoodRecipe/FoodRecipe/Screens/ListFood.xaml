@@ -72,7 +72,7 @@
                        FontSize="15" FontWeight="Bold"/>
                     </StackPanel>
                 </Button>
-                <Button Background="Transparent" BorderThickness="0" Cursor="Hand" >
+                <Button Background="Transparent" BorderThickness="0" Cursor="Hand" Click="Button_Click_Add">
                     <StackPanel Orientation="Horizontal" Margin="10,10,10,10">
                         <Image Source="../Images/add.png" Width="40" />
                         <Label Content="Tạo món" Foreground="White" FontSize="15" FontWeight="Bold"/>
