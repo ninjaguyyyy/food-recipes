@@ -145,7 +145,19 @@ namespace FoodRecipe.DAO
                     findedFood.Description = foodEl.Element("description").Value;
                     findedFood.ThumbnailPath = foodEl.Element("thumbnailPath").Value;
                     findedFood.IsFavorite = Boolean.Parse(foodEl.Element("isFavorite").Value);
-
+                    var steps = foodEl.Element("steps").Elements();
+                    foreach (var stepEl in steps)
+                    {
+                        FoodStep fs = new FoodStep();
+                        fs.DescriptionStep = stepEl.Element("stepdescription").Value;
+                        fs.StepName = stepEl.Element("stepname")?.Value;
+                        fs.VideoStepLink = stepEl.Element("stepvideo").Value;
+                        foreach (var img in stepEl.Element("stepimagepaths").Elements())
+                        {
+                            fs.ImageStepPath.Add(img.Value);
+                        }
+                        findedFood.Steps.Add(fs);
+                    }
                     result = findedFood;
                     break;
                 }

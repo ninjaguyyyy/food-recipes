@@ -21,14 +21,16 @@ namespace FoodRecipe.DTO
         public string ThumbnailPath { get; set; }
         public string VideoLink { get; set; }
         public bool IsFavorite { get; set; }
+        public List<FoodStep> Steps { get => steps; set => steps = value; }
 
-        public List<FoodStep> steps = new List<FoodStep>();
+        private List<FoodStep> steps = new List<FoodStep>();
     }
 
     class FoodStep
     {
+        public string StepName { get; set; }
         public string DescriptionStep { get; set; }
         public string VideoStepLink { get; set; }
-        public string ImageStepPath { get; set; }
+        public List<string> ImageStepPath { get; set; } = new List<string>();
     }
 }

@@ -156,6 +156,7 @@
                                                 </Button>
 
                                                 <Button HorizontalAlignment="Right" DockPanel.Dock="Right" Tag="{Binding Id}" Click="Button_Click_AddToFav" 
+
                                             Background="Transparent" BorderThickness="0" Cursor="Hand">
                                                     <Image Width="20" Source="../Images/heart.png" />
                                                 </Button>
