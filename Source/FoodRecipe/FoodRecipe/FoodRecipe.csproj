@@ -68,6 +68,7 @@
     <Compile Include="Db\DBUtils.cs" />
     <Compile Include="DTO\Food.cs" />
     <Compile Include="DTO\FoodPreview.cs" />
+    <Compile Include="Helper\ImagePathToAbsolutePathConverter.cs" />
     <Compile Include="Helper\SearchHelper.cs" />
     <Compile Include="Screens\AddRecipe.xaml.cs">
       <DependentUpon>AddRecipe.xaml</DependentUpon>

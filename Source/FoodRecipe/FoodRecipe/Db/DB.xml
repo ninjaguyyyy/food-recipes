@@ -1,9 +1,21 @@
-﻿<?xml version="1.0" encoding="utf-8"?><foods><record><id>1</id><name>canh chua</name><description>abcyuyrqwuyiquwy</description><thumbnailPath>https://www.huongnghiepaau.com/wp-content/uploads/2018/03/a12228b73ec867e8092bb529c347c8be.jpg</thumbnailPath><video /><isFavorite>True</isFavorite><steps><astep><stepname>Bước + 1</stepname><stepdescription>abchksadhakjshd</stepdescription><stepimagepaths><stepimagepath>../Sample/b1-2.jpg</stepimagepath><stepimagepath>../Sample/b1-1.jpg</stepimagepath><stepimagepath>../Sample/b1-3.jpg</stepimagepath></stepimagepaths><stepvideo></stepvideo></astep><astep><stepname>Bước + 1</stepname><stepdescription>dasdasdasd</stepdescription><stepimagepaths><stepimagepath>../Sample/b1-1.jpg</stepimagepath><stepimagepath>../Sample/b1-2.jpg</stepimagepath><stepimagepath>../Sample/b1-3.jpg</stepimagepath></stepimagepaths><stepvideo></stepvideo></astep><astep><stepname>Bước + 1</stepname><stepdescription>
-          - Gừng cạo vỏ, rửa sạch, thái nhỏ, chia thành 2 phần. Tỏi bóc vỏ, đập dập, băm nhỏ.
-          - Hành khô bóc vỏ, đập dập, băm nhỏ. Hành lá nhặt gốc, rửa sạch, băm nhỏ. Chanh bổ đôi, vắt lấy nước cốt, để riêng.
-          - Khoai môn gọt vỏ, rửa qua với nước cho sạch, cắt khoai thành những miếng vừa ăn dày khoảng 1,5 – 2cm. Ngâm khoai vào thau nước lạnh cho hết nhựa và không bị thâm đen. Ngâm khoảng 20 phút thì vớt ra để ráo.
-          - Khoai môn gọt vỏ, rửa qua với nước cho sạch, cắt khoai thành những miếng vừa ăn dày khoảng 1,5 – 2cm. Ngâm khoai vào thau nước lạnh cho hết nhựa và không bị thâm đen. Ngâm khoảng 20 phút thì vớt ra để ráo.
-          - Khoai môn gọt vỏ, rửa qua với nước cho sạch, cắt khoai thành những miếng vừa ăn dày khoảng 1,5 – 2cm. Ngâm khoai vào thau nước lạnh cho hết nhựa và không bị thâm đen. Ngâm khoảng 20 phút thì vớt ra để ráo.
-          - Khoai môn gọt vỏ, rửa qua với nước cho sạch, cắt khoai thành những miếng vừa ăn dày khoảng 1,5 – 2cm. Ngâm khoai vào thau nước lạnh cho hết nhựa và không bị thâm đen. Ngâm khoảng 20 phút thì vớt ra để ráo.
-          - Rau muống nhặt bỏ lá già, gốc rau lấy phần non, rửa sạch, ngâm nước muối loãng 15 phút rồi vớt ra để ráo.
-        </stepdescription><stepimagepaths><stepimagepath>../Sample/b1-1.jpg</stepimagepath><stepimagepath>../Sample/b1-3.jpg</stepimagepath><stepimagepath>../Sample/b1-3.jpg</stepimagepath><stepimagepath>../Sample/b1-3.jpg</stepimagepath><stepimagepath>../Sample/b1-2.jpg</stepimagepath></stepimagepaths><stepvideo></stepvideo></astep></steps></record><record><id>2</id><name>canh chua 1</name><description>abcyuyrqwuyiquwy</description><thumbnailPath>https://www.huongnghiepaau.com/wp-content/uploads/2018/03/a12228b73ec867e8092bb529c347c8be.jpg</thumbnailPath><video /><isFavorite>True</isFavorite><steps><astep><stepname>Bước + 1</stepname><stepdescription>abchksadhakjshd</stepdescription><stepimagepaths><stepimagepath>../Sample/b1-1.jpg</stepimagepath><stepimagepath>../Sample/b1-2.jpg</stepimagepath><stepimagepath>../Sample/b1-3.jpg</stepimagepath></stepimagepaths><stepvideo></stepvideo></astep><astep><stepname>Bước + 1</stepname><stepdescription>dasdasdasd</stepdescription><stepimagepaths><stepimagepath>../Sample/b1-1.jpg</stepimagepath><stepimagepath>../Sample/b1-2.jpg</stepimagepath><stepimagepath>../Sample/b1-3.jpg</stepimagepath></stepimagepaths><stepvideo></stepvideo></astep><astep><stepname>Bước + 1</stepname><stepdescription>dasdasdasda</stepdescription><stepimagepaths><stepimagepath>../Sample/b1-1.jpg</stepimagepath><stepimagepath>../Sample/b1-2.jpg</stepimagepath><stepimagepath>../Sample/b1-3.jpg</stepimagepath></stepimagepaths><stepvideo></stepvideo></astep></steps></record><record><id>3</id><name>mon</name><description>mon</description><thumbnailPath>../Db/Pictures\89/thumbnail.jpg</thumbnailPath><video /><isFavorite>False</isFavorite><steps><astep><stepname>Bước + 1</stepname><stepdescription>123</stepdescription><stepimagepaths><stepimagepath></stepimagepath></stepimagepaths><stepvideo>123</stepvideo></astep></steps></record><record><id>4</id><name>abc</name><description>abc</description><thumbnailPath>../Db/Pictures\35/thumbnail.jpg</thumbnailPath><video>abc</video><isFavorite>False</isFavorite><steps><astep><stepname>Bước + 1</stepname><stepdescription>123</stepdescription><stepimagepaths><stepimagepath>../Db/Pictures\35/0.jpg</stepimagepath></stepimagepaths><stepvideo>123</stepvideo></astep></steps></record></foods>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<foods>
+  <record>
+    <id>7</id>
+    <name>test2</name>
+    <description>aad</description>
+    <thumbnailPath>Images\75/thumbnail.jpg</thumbnailPath>
+    <video></video>
+    <isFavorite>False</isFavorite>
+    <steps>
+      <astep>
+        <stepname>Bước + 1</stepname>
+        <stepdescription>2</stepdescription>
+        <stepimagepaths>
+          <stepimagepath />
+        </stepimagepaths>
+        <stepvideo></stepvideo>
+      </astep>
+    </steps>
+  </record>
+</foods>

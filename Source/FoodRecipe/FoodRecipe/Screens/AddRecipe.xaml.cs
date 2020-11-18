@@ -53,17 +53,21 @@ namespace FoodRecipe.Screens
             myFood.steps = foodSteps;
 
             //create a new folder in /Pictues
-            string rootFloder = "../Db/Pictures";
+            //string rootFloder = "../Db/Pictures";
+            string rootFolder = "Images";
             int index = _rand.Next(100);
             //DateTime localDate = DateTime.Now;
             //DescriptionStep.Text = localDate.ToString();
             string childFolder = index.ToString();
-            string pathString = System.IO.Path.Combine(rootFloder, childFolder);
+
+            //string pathString = System.IO.Path.Combine(rootFloder, childFolder);
+            string pathString = System.IO.Path.Combine(rootFolder, childFolder);
             while (Directory.Exists(pathString))
             {
                 index = _rand.Next(100);
+                
                 childFolder = index.ToString();
-                pathString = System.IO.Path.Combine(rootFloder, childFolder);
+                pathString = System.IO.Path.Combine(rootFolder, childFolder);
             }
             Directory.CreateDirectory(pathString);
 
