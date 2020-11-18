@@ -33,8 +33,6 @@ namespace FoodRecipe.Db
                     {
                         stepItem.ImageStepPath.Add(fImg.Value);
                     }
-                    stepItem.VideoStepLink = fStep.Element("stepvideo").Value;
-
                     foodItem.Steps.Add(stepItem);
                 }
 
@@ -79,7 +77,7 @@ namespace FoodRecipe.Db
                 {
                     xmlWriter.WriteStartElement("astep");
                     xmlWriter.WriteStartElement("stepname");
-                    xmlWriter.WriteString($"Bước + {index + 1}");
+                    xmlWriter.WriteString(step.StepName);
                     xmlWriter.WriteEndElement(); //</stepname>
                     xmlWriter.WriteStartElement("stepdescription");
                     xmlWriter.WriteString(step.DescriptionStep);
@@ -92,9 +90,6 @@ namespace FoodRecipe.Db
                         xmlWriter.WriteEndElement(); //</stepimagepath>
                     }
                     xmlWriter.WriteEndElement(); //</stepimagepaths>
-                    xmlWriter.WriteStartElement("stepvideo");
-                    xmlWriter.WriteString(step.VideoStepLink);
-                    xmlWriter.WriteEndElement(); //</stepvideo>
                     xmlWriter.WriteEndElement(); //</astep>
                 }
 

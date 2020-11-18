@@ -182,7 +182,6 @@ namespace FoodRecipe.DAO
                         FoodStep fs = new FoodStep();
                         fs.DescriptionStep = stepEl.Element("stepdescription").Value;
                         fs.StepName = stepEl.Element("stepname")?.Value;
-                        fs.VideoStepLink = stepEl.Element("stepvideo").Value;
                         foreach (var img in stepEl.Element("stepimagepaths").Elements())
                         {
                             fs.ImageStepPath.Add(img.Value);

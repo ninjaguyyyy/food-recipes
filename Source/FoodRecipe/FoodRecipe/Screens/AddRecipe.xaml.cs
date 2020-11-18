@@ -3,6 +3,7 @@ using FoodRecipe.DTO;
 using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -14,7 +15,6 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace FoodRecipe.Screens
 {
@@ -28,14 +28,14 @@ namespace FoodRecipe.Screens
             InitializeComponent();
         }
 
-        private Random _rand = new Random();
-
         private Food myFood = new Food();
 
+        private ObservableCollection<string> stepImages = new ObservableCollection<string>();
+        private ObservableCollection<FoodStep> steps = new ObservableCollection<FoodStep>();
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            //binding data 
-            //this.DataContext = myFood;
+            this.stepImagesList.ItemsSource = stepImages;
+            this.stepsList.ItemsSource = steps;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -44,86 +44,51 @@ namespace FoodRecipe.Screens
             myFood.VideoLink = txtVideoLink.Text;
             myFood.Description = txtDescription.Text;
 
-            if (myFood.Name.Equals("") || myFood.Description.Equals("") || myFood.ThumbnailPath.Equals("") || foodSteps.Count == 0)
+            if (myFood.Name.Equals("") || myFood.Description.Equals("") || myFood.ThumbnailPath.Equals("") || steps.Count == 0)
             {
                 MessageBox.Show("Vui lòng điền đầy đủ các trường bắt buộc");
                 return;
             }
 
-            myFood.steps = foodSteps;
+            myFood.steps = steps.ToList();
 
-            //create a new folder in /Pictues
-            //string rootFloder = "../Db/Pictures";
-            string rootFolder = "Images";
-            int index = _rand.Next(100);
-            //DateTime localDate = DateTime.Now;
-            //DescriptionStep.Text = localDate.ToString();
-            string childFolder = index.ToString();
+            string imageRoot = "Images\\";
+            string newThumbPath = imageRoot + Guid.NewGuid().ToString() + Path.GetExtension(myFood.ThumbnailPath);
+            // Copy the food's thumb
+            File.Copy(myFood.ThumbnailPath, newThumbPath);
+            myFood.ThumbnailPath = newThumbPath;
 
-            //string pathString = System.IO.Path.Combine(rootFloder, childFolder);
-            string pathString = System.IO.Path.Combine(rootFolder, childFolder);
-            while (Directory.Exists(pathString))
+            foreach (var step in myFood.steps)
             {
-                index = _rand.Next(100);
-                
-                childFolder = index.ToString();
-                pathString = System.IO.Path.Combine(rootFolder, childFolder);
-            }
-            Directory.CreateDirectory(pathString);
-
-            string newImagePath = pathString + "/thumbnail.jpg";
-
-            File.Copy(myFood.ThumbnailPath, newImagePath);
-            myFood.ThumbnailPath = newImagePath;
-
-            for (int i = 0; i < myFood.steps.Count; i++)
-            {
-                newImagePath = pathString + $"/{i}.jpg";
-                if (myFood.steps[i].ImageStepPath.Count > 0)
-                {
-                    if (myFood.steps[i].ImageStepPath[0] != null)
-                    {
-                        System.IO.File.Copy(myFood.steps[i].ImageStepPath[0], newImagePath);
-                        myFood.steps[i].ImageStepPath[0] = newImagePath;
-                    }
+                for (int i = 0; i < step.ImageStepPath.Count; i++) {
+                    var path = step.ImageStepPath[i];
+                    var newImagePath = imageRoot + Guid.NewGuid().ToString() + Path.GetExtension(path);
+                    File.Copy(path, newImagePath);
+                    step.ImageStepPath[i] = newImagePath;
                 }
             }
-
             DBUtils.write(myFood);
-
             MessageBox.Show("Lưu thành công!");
         }
 
-        private List<FoodStep> foodSteps = new List<FoodStep>();
-        private int step = 0;
-        private string path_temp;
-
         private void Button_Add_Step(object sender, RoutedEventArgs e)
         {
-            List<string> pathTemp = new List<string>();
-            pathTemp.Add(path_temp);
-            foodSteps.Add(new FoodStep
+            steps.Add(new FoodStep
             {
                 DescriptionStep = DescriptionStep.Text,
-                VideoStepLink = VideoStepLink.Text,
-                ImageStepPath = pathTemp
+                StepName = StepName.Text,
+                ImageStepPath = stepImages.ToList()
             });
-
-            StepsBox.Text += StepLabel.Content + ": " + DescriptionStep.Text;
-            StepsBox.Text += Environment.NewLine;
-
+            // Reset the form
+            StepName.Text = "";
             DescriptionStep.Text = "";
-            VideoStepLink.Text = "";
-
-            step++;
-
-            StepLabel.Content = $"Bước {step + 1}";
+            stepImages.Clear();
         }
 
         private void Upload_Image_MouseDown(object sender, MouseButtonEventArgs e)
         {
             OpenFileDialog op = new OpenFileDialog();
-            op.Title = "Select a picture";
+            op.Title = "Chọn ảnh đại diện cho món ăn";
             op.Filter = "All supported graphics|*.jpg;*.jpeg;*.png|" +
               "JPEG (*.jpg;*.jpeg)|*.jpg;*.jpeg|" +
               "Portable Network Graphic (*.png)|*.png";
@@ -141,18 +106,17 @@ namespace FoodRecipe.Screens
         private void StepImage_MouseDown(object sender, MouseButtonEventArgs e)
         {
             OpenFileDialog op = new OpenFileDialog();
-            op.Title = "Select a picture";
+            op.Title = "Chọn các ảnh minh hoạ cho bước";
             op.Filter = "All supported graphics|*.jpg;*.jpeg;*.png|" +
               "JPEG (*.jpg;*.jpeg)|*.jpg;*.jpeg|" +
               "Portable Network Graphic (*.png)|*.png";
+            op.Multiselect = true;
             var o = op.ShowDialog();
             if (o == true)
             {
-                Step_Image.Source = new BitmapImage(new Uri(op.FileName));
-                Step_Image.Width = 90;
+                foreach (var name in op.FileNames)
+                stepImages.Add(name);
             }
-
-            path_temp = op.FileName;
         }
 
         private void Button_Click_Fav(object sender, RoutedEventArgs e)

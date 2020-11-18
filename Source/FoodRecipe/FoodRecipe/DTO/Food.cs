@@ -25,13 +25,4 @@ namespace FoodRecipe.DTO
 
         public List<FoodStep> steps = new List<FoodStep>();
     }
-
-    class FoodStep
-    {
-        public string StepName { get; set; }
-        public string DescriptionStep { get; set; }
-        public string VideoStepLink { get; set; }
-        public List<string> ImageStepPath { get; set; } = new List<string>();
-        //public string ImageStepPath { get; set; }
-    }
 }

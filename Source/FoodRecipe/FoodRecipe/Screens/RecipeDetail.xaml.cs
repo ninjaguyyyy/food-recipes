@@ -51,9 +51,10 @@ namespace FoodRecipe.Screens
                         };
                         BitmapImage bi = new BitmapImage();
                         bi.BeginInit();
-                        bi.UriSource = new Uri(steps[i].ImageStepPath[j], UriKind.Relative);
+                        bi.UriSource = new Uri(AppDomain.CurrentDomain.BaseDirectory + steps[i].ImageStepPath[j], UriKind.Absolute);
                         bi.EndInit();
                         image.Source = bi;
+                        RenderOptions.SetBitmapScalingMode(image, BitmapScalingMode.HighQuality);
                         imageStack.Children.Add(image);
                     }
                 }
