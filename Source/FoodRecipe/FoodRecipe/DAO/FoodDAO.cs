@@ -86,6 +86,9 @@ namespace FoodRecipe.DAO
             } else if(mode == "smart")
             {
                 foodsElements = foodsElements.Where(e => SearchHelper.ConvertToUnSign(e.Element("name").Value) == searchKey);
+            } else
+            {
+                // do not handle
             }
             
 

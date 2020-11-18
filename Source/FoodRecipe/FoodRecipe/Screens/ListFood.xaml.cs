@@ -212,10 +212,10 @@ namespace FoodRecipe.Screens
             
 
             BindingList<Food> result = FoodDAO.SearchFoods(search, modeSearch);
-            foreach (Food i in result)
-            {
-                MessageBox.Show(i.Name);
-            }
+            
+
+            _list = result;
+            dataListView.ItemsSource = _list;
         }
 
         private void modeSearchComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)

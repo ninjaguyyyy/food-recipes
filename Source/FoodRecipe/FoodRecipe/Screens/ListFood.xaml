@@ -113,6 +113,7 @@
                                               FontSize="8"
                                               SelectionChanged="modeSearchComboBox_SelectionChanged"
                                               >
+                                        <ComboBoxItem Tag="default">Mặc định tất cả</ComboBoxItem>
                                         <ComboBoxItem IsSelected="true" Tag="exact">Tìm chính xác</ComboBoxItem>
                                         <ComboBoxItem Tag="smart">Tìm thông minh</ComboBoxItem>
                                     </ComboBox>
