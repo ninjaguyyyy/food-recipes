@@ -115,5 +115,12 @@ namespace FoodRecipe.Screens
             var updatedScreen = new FavoriteFood();
             updatedScreen.Show();
         }
+
+        private void homeMenuButton_Click(object sender, RoutedEventArgs e)
+        {
+            var listfoodScreen = new ListFood();
+            listfoodScreen.Show();
+            this.Close();
+        }
     }
 }
