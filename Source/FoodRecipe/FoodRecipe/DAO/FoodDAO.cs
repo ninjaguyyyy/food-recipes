@@ -24,19 +24,39 @@ namespace FoodRecipe.DAO
             return result;
         }
 
-        public static int GetLengthFavs()
+        public static int CountProducts(string searchKey, string searchMode)
         {
             var result = 0;
 
             XDocument xdocument = XDocument.Load("../../Db/DB.xml");
-            IEnumerable<XElement> foods = xdocument.Root.Elements()
-                .Where(el => Boolean.Parse(el.Element("isFavorite").Value));
-            result = foods.Count();
+            IEnumerable<XElement> foodsElements = xdocument.Root.Elements();
+            
 
+            if(searchKey == "")
+            {
+                foodsElements = xdocument.Root.Elements();
+            } else
+            {
+                if (searchMode == "default")
+                {
+                    foodsElements = xdocument.Root.Elements();
+                }
+                else if (searchMode == "exact")
+                {
+                    foodsElements = foodsElements.Where(e => e.Element("name").Value == searchKey);
+                }
+                else
+                {
+                    foodsElements = foodsElements.Where(e => SearchHelper.ConvertToUnSign(e.Element("name").Value) == searchKey);
+                }
+            }
+            
+
+            result = foodsElements.Count();
             return result;
         }
 
-        public static BindingList<Food> GetAll(int perPage, int page, string sortBy)
+        public static BindingList<Food> GetProducts(int perPage, int page, string sortBy, string searchKey, string searchMode)
         {
             var result = new BindingList<Food>();
 
@@ -46,12 +66,30 @@ namespace FoodRecipe.DAO
             XDocument xdocument = XDocument.Load("../../Db/DB.xml");
             IEnumerable<XElement> foodsElements = xdocument.Root.Elements();
 
+            if(searchKey == "")
+            {
+                foodsElements = xdocument.Root.Elements();
+            } else
+            {
+                if (searchMode == "default")
+                {
+                    foodsElements = xdocument.Root.Elements();
+                }
+                else if (searchMode == "exact")
+                {
+                    foodsElements = foodsElements.Where(e => e.Element("name").Value == searchKey);
+                }
+                else
+                {
+                    foodsElements = foodsElements.Where(e => SearchHelper.ConvertToUnSign(e.Element("name").Value) == searchKey);
+                }
+            }
 
             if (sortBy == "az")
             {
                 foodsElements = foodsElements.OrderBy(s => s.Element("name").Value);
             }
-            
+
             if (sortBy == "za")
             {
                 foodsElements = foodsElements.OrderByDescending(s => s.Element("name").Value);
@@ -74,28 +112,18 @@ namespace FoodRecipe.DAO
             return result;
         }
 
-        public static BindingList<Food> SearchFoods(string searchKey, string mode)
+        public static int GetLengthFavs()
         {
-            var result = new BindingList<Food>();
+            var result = 0;
 
             XDocument xdocument = XDocument.Load("../../Db/DB.xml");
-            IEnumerable<XElement> foodsElements = xdocument.Root.Elements();
-            if(mode == "exact")
-            {
-                foodsElements = foodsElements.Where(e => e.Element("name").Value == searchKey);
-            } else if(mode == "smart")
-            {
-                foodsElements = foodsElements.Where(e => SearchHelper.ConvertToUnSign(e.Element("name").Value) == searchKey);
-            } else
-            {
-                // do not handle
-            }
-            
-
-            result = ConvertListXmlElementToFoods(foodsElements);
+            IEnumerable<XElement> foods = xdocument.Root.Elements()
+                .Where(el => Boolean.Parse(el.Element("isFavorite").Value));
+            result = foods.Count();
 
             return result;
         }
+
         public static BindingList<Food> ConvertListXmlElementToFoods(IEnumerable<XElement> listElement)
         {
             var result = new BindingList<Food>();

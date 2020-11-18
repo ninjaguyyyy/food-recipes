@@ -1,1 +1,112 @@
-﻿<?xml version="1.0" encoding="utf-8"?><foods><record><id>7</id><name>test2</name><description>aad</description><thumbnailPath>Images\75/thumbnail.jpg</thumbnailPath><video /><isFavorite>False</isFavorite><steps><astep><stepname>Bước + 1</stepname><stepdescription>2</stepdescription><stepimagepaths><stepimagepath></stepimagepath></stepimagepaths><stepvideo></stepvideo></astep></steps></record><record><id>2</id><name>test</name><description>aa</description><thumbnailPath>Images\64/thumbnail.jpg</thumbnailPath><video></video><isFavorite>False</isFavorite><steps><astep><stepname>Bước + 1</stepname><stepdescription>3</stepdescription><stepimagepaths><stepimagepath /></stepimagepaths><stepvideo></stepvideo></astep></steps></record></foods>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<foods>
+  <record>
+    <id>7</id>
+    <name>test2</name>
+    <description>aad</description>
+    <thumbnailPath>Images\75/thumbnail.jpg</thumbnailPath>
+    <video />
+    <isFavorite>False</isFavorite>
+    <steps>
+      <astep>
+        <stepname>Bước + 1</stepname>
+        <stepdescription>2</stepdescription>
+        <stepimagepaths>
+          <stepimagepath></stepimagepath>
+        </stepimagepaths>
+        <stepvideo></stepvideo>
+      </astep>
+    </steps>
+  </record>
+  <record>
+    <id>2</id>
+    <name>test</name>
+    <description>aa</description>
+    <thumbnailPath>Images\64/thumbnail.jpg</thumbnailPath>
+    <video></video>
+    <isFavorite>False</isFavorite>
+    <steps>
+      <astep>
+        <stepname>Bước + 1</stepname>
+        <stepdescription>3</stepdescription>
+        <stepimagepaths>
+          <stepimagepath />
+        </stepimagepaths>
+        <stepvideo></stepvideo>
+      </astep>
+    </steps>
+  </record>
+  <record>
+    <id>7</id>
+    <name>test2</name>
+    <description>aad</description>
+    <thumbnailPath>Images\75/thumbnail.jpg</thumbnailPath>
+    <video />
+    <isFavorite>False</isFavorite>
+    <steps>
+      <astep>
+        <stepname>Bước + 1</stepname>
+        <stepdescription>2</stepdescription>
+        <stepimagepaths>
+          <stepimagepath></stepimagepath>
+        </stepimagepaths>
+        <stepvideo></stepvideo>
+      </astep>
+    </steps>
+  </record>
+  <record>
+    <id>2</id>
+    <name>test</name>
+    <description>aa</description>
+    <thumbnailPath>Images\64/thumbnail.jpg</thumbnailPath>
+    <video></video>
+    <isFavorite>False</isFavorite>
+    <steps>
+      <astep>
+        <stepname>Bước + 1</stepname>
+        <stepdescription>3</stepdescription>
+        <stepimagepaths>
+          <stepimagepath />
+        </stepimagepaths>
+        <stepvideo></stepvideo>
+      </astep>
+    </steps>
+  </record>
+  <record>
+    <id>7</id>
+    <name>test2</name>
+    <description>aad</description>
+    <thumbnailPath>Images\75/thumbnail.jpg</thumbnailPath>
+    <video />
+    <isFavorite>False</isFavorite>
+    <steps>
+      <astep>
+        <stepname>Bước + 1</stepname>
+        <stepdescription>2</stepdescription>
+        <stepimagepaths>
+          <stepimagepath></stepimagepath>
+        </stepimagepaths>
+        <stepvideo></stepvideo>
+      </astep>
+    </steps>
+  </record>
+  <record>
+    <id>2</id>
+    <name>test</name>
+    <description>aa</description>
+    <thumbnailPath>Images\64/thumbnail.jpg</thumbnailPath>
+    <video></video>
+    <isFavorite>False</isFavorite>
+    <steps>
+      <astep>
+        <stepname>Bước + 1</stepname>
+        <stepdescription>3</stepdescription>
+        <stepimagepaths>
+          <stepimagepath />
+        </stepimagepaths>
+        <stepvideo></stepvideo>
+      </astep>
+    </steps>
+  </record>
+  
+</foods>
