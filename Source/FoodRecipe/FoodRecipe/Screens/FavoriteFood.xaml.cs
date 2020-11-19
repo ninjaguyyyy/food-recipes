@@ -122,5 +122,12 @@ namespace FoodRecipe.Screens
             listfoodScreen.Show();
             this.Close();
         }
+
+        private void addMenuButton_Click(object sender, RoutedEventArgs e)
+        {
+            var addfoodScreen = new AddRecipe();
+            addfoodScreen.Show();
+            this.Close();
+        }
     }
 }
