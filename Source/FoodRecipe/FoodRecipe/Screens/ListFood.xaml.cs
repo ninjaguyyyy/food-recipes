@@ -219,14 +219,18 @@ namespace FoodRecipe.Screens
 
         private void Button_Click_ChangePerPage(object sender, RoutedEventArgs e)
         {
-
+            int maxValue = 12;
             string enteredPerPage = perPageTextbox.Text;
-            if(int.Parse(enteredPerPage) > 12)
+            if(int.Parse(enteredPerPage) > maxValue)
             {
-                MessageBox.Show("Chương trình chỉ hỗ trợ tối đa 12 sản phẩm trên 1 trang", "Thông báo");
+                MessageBox.Show($"Chương trình chỉ hỗ trợ tối đa {maxValue} sản phẩm trên 1 trang cho màn hình mặc định. Và bé hơn 30 cho full màn hình", "Thông báo");
+                
+            }
+            if (int.Parse(enteredPerPage) > 30)
+            {
+                MessageBox.Show($"Chương trình chỉ hỗ trợ tối đa {maxValue} sản phẩm trên 1 trang cho màn hình mặc định. Và bé hơn 30 cho full màn hình", "Thông báo");
                 return;
             }
-
             var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
             config.AppSettings.Settings["PerPage"].Value = enteredPerPage;
             config.Save(ConfigurationSaveMode.Minimal);

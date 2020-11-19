@@ -1,757 +1,756 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <foods>
-	<record>
-		<id>1</id>
-		<name>Ram bắp</name>
-		<description>Ram Bắp - món khai vị cực hấp dẫn cho các bữa tiệc gia đình. Cách làm ram bắp đơn giản với lớp vỏ chả giò chiên giòn rụm, nhân bắp nếp nghiền bùi thơm, rất ngon miệng.</description>
-		<thumbnailPath>Images\a3d59c84-13d8-492c-be61-2e15a771f8d7.jpg</thumbnailPath>
-		<video  />
-		<isFavorite>True</isFavorite>
-		<steps>
-			<astep>
-				<stepname>Bước chuẩn bị</stepname>
-				<stepdescription>Chuẩn bị làm ram bắp:
+  <record>
+    <id>1</id>
+    <name>Ram bắp</name>
+    <description>Ram Bắp - món khai vị cực hấp dẫn cho các bữa tiệc gia đình. Cách làm ram bắp đơn giản với lớp vỏ chả giò chiên giòn rụm, nhân bắp nếp nghiền bùi thơm, rất ngon miệng.</description>
+    <thumbnailPath>Images\a3d59c84-13d8-492c-be61-2e15a771f8d7.jpg</thumbnailPath>
+    <video />
+    <isFavorite>False</isFavorite>
+    <steps>
+      <astep>
+        <stepname>Bước chuẩn bị</stepname>
+        <stepdescription>Chuẩn bị làm ram bắp:
 - Bóc sạch vỏ và râu của 2 trái bắp nếp, bào nhỏ hạt bắp.
 - Cho bắp đã bào vào cối giã và thêm gia vị với 1 muỗng cà phê hành tím băm, 1 muỗng cà phê hạt nêm, 1 muỗng cà phê đường, 1 muỗng cà phê tiêu và 10gr hành lá.
 - Quết nhuyễn bắp cho đến khi được hỗn hợp có độ sệt nhất định.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\1408d8b8-19b4-4167-8579-82e73f2b847b.jpg</stepimagepath>
-					<stepimagepath>Images\35675afa-6eab-4fdf-94bd-bda380b915a3.jpg</stepimagepath>
-					<stepimagepath>Images\85d9e9f2-073f-43ac-94a4-9dea72ccb85b.jpg</stepimagepath>
-					<stepimagepath>Images\095202e8-c03e-44c9-a6ce-5df8325d7ca8.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 1</stepname>
-				<stepdescription>Thấm ướt bánh tráng, cho một ít bắp vừa đủ ăn lên bánh tráng rồi cuốn lại.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\7327e635-15a5-419d-819d-b1ae89176ef3.jpg</stepimagepath>
-					<stepimagepath>Images\1f81204b-4ed5-4ed4-80b9-7a03ceae5892.jpg</stepimagepath>
-					<stepimagepath>Images\34c5ab58-bc7a-4f77-974b-336c8a8a9705.jpg</stepimagepath>
-					<stepimagepath>Images\6b5f3c45-5d10-44a1-8cb3-e1e0ba2fd286.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 2</stepname>
-				<stepdescription>Chiên ram bắp ngập dầu trong chảo trên lửa vừa.
+        <stepimagepaths>
+          <stepimagepath>Images\1408d8b8-19b4-4167-8579-82e73f2b847b.jpg</stepimagepath>
+          <stepimagepath>Images\35675afa-6eab-4fdf-94bd-bda380b915a3.jpg</stepimagepath>
+          <stepimagepath>Images\85d9e9f2-073f-43ac-94a4-9dea72ccb85b.jpg</stepimagepath>
+          <stepimagepath>Images\095202e8-c03e-44c9-a6ce-5df8325d7ca8.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 1</stepname>
+        <stepdescription>Thấm ướt bánh tráng, cho một ít bắp vừa đủ ăn lên bánh tráng rồi cuốn lại.</stepdescription>
+        <stepimagepaths>
+          <stepimagepath>Images\7327e635-15a5-419d-819d-b1ae89176ef3.jpg</stepimagepath>
+          <stepimagepath>Images\1f81204b-4ed5-4ed4-80b9-7a03ceae5892.jpg</stepimagepath>
+          <stepimagepath>Images\34c5ab58-bc7a-4f77-974b-336c8a8a9705.jpg</stepimagepath>
+          <stepimagepath>Images\6b5f3c45-5d10-44a1-8cb3-e1e0ba2fd286.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 2</stepname>
+        <stepdescription>Chiên ram bắp ngập dầu trong chảo trên lửa vừa.
 Đến khi ram bắp chín vàng giòn thì vớt ra, để cho trên giấy thấm dầu cho ráo.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\148b9e06-569b-4a88-a74b-4c7aa509b941.jpg</stepimagepath>
-					<stepimagepath>Images\a69871ac-6663-435b-8738-35df5e9c4c62.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 3</stepname>
-				<stepdescription>Cách làm nước chấm ram bắp: Bắc chảo nóng, cho vào chảo 1 muỗng canh tỏi băm, 10gr bắp nếp băm, 20gr đậu phộng, 10gr ớt băm, 10gr đường, 10gr nước tương và 20ml nước rồi đảo đều.
+        <stepimagepaths>
+          <stepimagepath>Images\148b9e06-569b-4a88-a74b-4c7aa509b941.jpg</stepimagepath>
+          <stepimagepath>Images\a69871ac-6663-435b-8738-35df5e9c4c62.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 3</stepname>
+        <stepdescription>Cách làm nước chấm ram bắp: Bắc chảo nóng, cho vào chảo 1 muỗng canh tỏi băm, 10gr bắp nếp băm, 20gr đậu phộng, 10gr ớt băm, 10gr đường, 10gr nước tương và 20ml nước rồi đảo đều.
 Đến khi hỗn hợp sôi cho 20ml nước bột bắp đến khi nước sốt chấm ram bắp sệt lại thì tắt bếp.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\639768dc-7f32-42ef-b674-2eb86b2bd179.jpg</stepimagepath>
-					<stepimagepath>Images\df1d5094-5739-49c6-a80f-1b925869da8b.jpg</stepimagepath>
-					<stepimagepath>Images\1402b356-18ba-4629-8dd8-5667498a68aa.jpg</stepimagepath>
-					<stepimagepath>Images\6612c1a5-d6ec-4f0b-b3a5-092b766cc512.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 4</stepname>
-				<stepdescription>Cách làm ram bắp ngon phải chuẩn bị thêm nước chấm đủ chua cay, mặn ngọt đậm đà và rau sống hái trong vườn còn tươi nguyên thì thật hấp dẫn.
+        <stepimagepaths>
+          <stepimagepath>Images\639768dc-7f32-42ef-b674-2eb86b2bd179.jpg</stepimagepath>
+          <stepimagepath>Images\df1d5094-5739-49c6-a80f-1b925869da8b.jpg</stepimagepath>
+          <stepimagepath>Images\1402b356-18ba-4629-8dd8-5667498a68aa.jpg</stepimagepath>
+          <stepimagepath>Images\6612c1a5-d6ec-4f0b-b3a5-092b766cc512.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 4</stepname>
+        <stepdescription>Cách làm ram bắp ngon phải chuẩn bị thêm nước chấm đủ chua cay, mặn ngọt đậm đà và rau sống hái trong vườn còn tươi nguyên thì thật hấp dẫn.
 Chả ram bắp vàng giòn, béo ngọt, tỏa mùi thơm phức. Đặc biệt trong những ngày tiết trời lành lạnh này, được ăn những miếng ram bắp vừa chiên xuống còn nóng hôi hổi, vừa thổi, vừa ăn thì không có gì thú vị bằng.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\00ed6e94-fc9d-4cf6-8b59-fac7d5340822.jpg</stepimagepath>
-					<stepimagepath>Images\94770397-4cc2-4fa7-86d5-9092b3fe9221.jpg</stepimagepath>
-					<stepimagepath>Images\e8c039a6-65a2-44c2-b782-34ae6c2ea2b5.jpg</stepimagepath>
-					<stepimagepath>Images\f9d58d92-8d40-4f99-85b8-f58cb5aa8b80.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-		</steps>
-	</record>
-	<record>
-		<id>2</id>
-		<name>Canh Bầu Nấu Tôm</name>
-		<description>Canh bầu nấu tôm là món canh ngon và quen thuộc của mọi gia đình. Vị thanh mát của bầu, kết hợp với vị ngọt của tôm sẽ là món ăn giải nhiệt cho những ngày nóng bức.</description>
-		<thumbnailPath>Images\fffa431d-3552-409f-af29-bd0cfc4553e1.jpeg</thumbnailPath>
-		<video  />
-		<isFavorite>False</isFavorite>
-		<steps>
-			<astep>
-				<stepname>Bước 1</stepname>
-				<stepdescription>Gọt vỏ, rửa sạch bầu, cắt thành miếng nhỏ vừa ăn. Tôm rửa sạch, lột vỏ, băm nhuyễn.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\9e9323bf-bd65-4018-85ee-57f4b201171f.jpeg</stepimagepath>
-					<stepimagepath>Images\43e23286-547a-4b41-8e56-c2ab8f097f50.jpeg</stepimagepath>
-					<stepimagepath>Images\242ec13a-bc07-44f8-b483-a5302ca1b4ed.jpeg</stepimagepath>
-					<stepimagepath>Images\b9df62d2-c451-405d-bd15-80e6a00a9755.jpeg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 2</stepname>
-				<stepdescription>Phi thơm 10gr tỏi băm, cho tôm xào đến khi tôm chuyển sang màu hồng nhạt thì cho 500ml nước vào, nấu sôi. Cho bầu vào, để sôi liu riu khoảng 5 phút, nêm vao 2 muỗng canh hạt nêm.
+        <stepimagepaths>
+          <stepimagepath>Images\00ed6e94-fc9d-4cf6-8b59-fac7d5340822.jpg</stepimagepath>
+          <stepimagepath>Images\94770397-4cc2-4fa7-86d5-9092b3fe9221.jpg</stepimagepath>
+          <stepimagepath>Images\e8c039a6-65a2-44c2-b782-34ae6c2ea2b5.jpg</stepimagepath>
+          <stepimagepath>Images\f9d58d92-8d40-4f99-85b8-f58cb5aa8b80.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+    </steps>
+  </record>
+  <record>
+    <id>2</id>
+    <name>Canh Bầu Nấu Tôm</name>
+    <description>Canh bầu nấu tôm là món canh ngon và quen thuộc của mọi gia đình. Vị thanh mát của bầu, kết hợp với vị ngọt của tôm sẽ là món ăn giải nhiệt cho những ngày nóng bức.</description>
+    <thumbnailPath>Images\fffa431d-3552-409f-af29-bd0cfc4553e1.jpeg</thumbnailPath>
+    <video />
+    <isFavorite>True</isFavorite>
+    <steps>
+      <astep>
+        <stepname>Bước 1</stepname>
+        <stepdescription>Gọt vỏ, rửa sạch bầu, cắt thành miếng nhỏ vừa ăn. Tôm rửa sạch, lột vỏ, băm nhuyễn.</stepdescription>
+        <stepimagepaths>
+          <stepimagepath>Images\9e9323bf-bd65-4018-85ee-57f4b201171f.jpeg</stepimagepath>
+          <stepimagepath>Images\43e23286-547a-4b41-8e56-c2ab8f097f50.jpeg</stepimagepath>
+          <stepimagepath>Images\242ec13a-bc07-44f8-b483-a5302ca1b4ed.jpeg</stepimagepath>
+          <stepimagepath>Images\b9df62d2-c451-405d-bd15-80e6a00a9755.jpeg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 2</stepname>
+        <stepdescription>Phi thơm 10gr tỏi băm, cho tôm xào đến khi tôm chuyển sang màu hồng nhạt thì cho 500ml nước vào, nấu sôi. Cho bầu vào, để sôi liu riu khoảng 5 phút, nêm vao 2 muỗng canh hạt nêm.
 Tiếp tục để sôi liu riu vài giây nữa, cho hành lá vào, tắt bếp.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\57003a5f-639a-4289-84e8-287455f1e9be.jpeg</stepimagepath>
-					<stepimagepath>Images\edfefebe-0cb0-4f66-a5ea-dde7afe3def0.jpeg</stepimagepath>
-					<stepimagepath>Images\cdb35969-4123-4711-bdc1-3a7fa561dca5.jpeg</stepimagepath>
-					<stepimagepath>Images\034225ff-6af7-4986-add3-7e19811961e1.jpeg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 3</stepname>
-				<stepdescription>
-					Cuối cùng, bạn múc canh ra bát, thêm ngò rí trang trí và cùng cả nhà thưởng thức.
+        <stepimagepaths>
+          <stepimagepath>Images\57003a5f-639a-4289-84e8-287455f1e9be.jpeg</stepimagepath>
+          <stepimagepath>Images\edfefebe-0cb0-4f66-a5ea-dde7afe3def0.jpeg</stepimagepath>
+          <stepimagepath>Images\cdb35969-4123-4711-bdc1-3a7fa561dca5.jpeg</stepimagepath>
+          <stepimagepath>Images\034225ff-6af7-4986-add3-7e19811961e1.jpeg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 3</stepname>
+        <stepdescription>Cuối cùng, bạn múc canh ra bát, thêm ngò rí trang trí và cùng cả nhà thưởng thức.
 Chỉ với vài công đoạn đơn giản là bạn đã có thể làm cho gia đình tô canh bầu nóng hổi, thanh ngọt, cùng thử ngay nhé!
 				</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\3832cea7-6eeb-4baf-9e38-747e3e749db6.jpeg</stepimagepath>
-					<stepimagepath>Images\9429fbaf-3c59-4959-976f-24c23b45c4fd.jpeg</stepimagepath>
-					<stepimagepath>Images\3bfa1b16-e6b4-4c71-ba8c-66800311960c.jpeg</stepimagepath>
-					<stepimagepath>Images\151b1e2f-3dd3-424c-98dc-1748183730fa.jpeg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-		</steps>
-	</record>
-	<record>
-		<id>3</id>
-		<name>Canh Giò Heo Nấu Khoai Môn</name>
-		<description>Canh giò heo bồi bổ cho phụ nữ mới sinh con, món canh dễ ăn hơn khi kết hợp nấu cùng nhiều nguyên liệu.</description>
-		<thumbnailPath>Images\6de3ff2b-db51-4ea0-92a3-2e7a222fb8bc.jpg</thumbnailPath>
-		<video  />
-		<isFavorite>False</isFavorite>
-		<steps>
-			<astep>
-				<stepname>Bước 1</stepname>
-				<stepdescription>Khoai môn mua về, đeo bao tay nylon vào gọt bỏ vỏ, cắt miếng vừa ăn.
+        <stepimagepaths>
+          <stepimagepath>Images\3832cea7-6eeb-4baf-9e38-747e3e749db6.jpeg</stepimagepath>
+          <stepimagepath>Images\9429fbaf-3c59-4959-976f-24c23b45c4fd.jpeg</stepimagepath>
+          <stepimagepath>Images\3bfa1b16-e6b4-4c71-ba8c-66800311960c.jpeg</stepimagepath>
+          <stepimagepath>Images\151b1e2f-3dd3-424c-98dc-1748183730fa.jpeg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+    </steps>
+  </record>
+  <record>
+    <id>3</id>
+    <name>Canh Giò Heo Nấu Khoai Môn</name>
+    <description>Canh giò heo bồi bổ cho phụ nữ mới sinh con, món canh dễ ăn hơn khi kết hợp nấu cùng nhiều nguyên liệu.</description>
+    <thumbnailPath>Images\6de3ff2b-db51-4ea0-92a3-2e7a222fb8bc.jpg</thumbnailPath>
+    <video />
+    <isFavorite>False</isFavorite>
+    <steps>
+      <astep>
+        <stepname>Bước 1</stepname>
+        <stepdescription>Khoai môn mua về, đeo bao tay nylon vào gọt bỏ vỏ, cắt miếng vừa ăn.
 Giò heo rửa sạch, chặt khoanh vừa ăn.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\2d125332-22d2-4a50-b00f-054d463fa00e.jpg</stepimagepath>
-					<stepimagepath>Images\99a23822-93ac-404c-8977-66664dadc90a.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 2</stepname>
-				<stepdescription>Bắc một nồi nước lên bếp. Đợi nước sôi thì cho giò heo vào trụng sơ và vớt ra tô để riêng.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\355c797c-2efe-4b1c-b355-9b0191b25774.jpg</stepimagepath>
-					<stepimagepath>Images\e34e4d3e-13a4-4ad6-ad31-ff83e36177dc.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 3</stepname>
-				<stepdescription>Sau đó cho vào nồi khoảng 1.5 lít nước, bắc lên bếp bật lửa.
+        <stepimagepaths>
+          <stepimagepath>Images\2d125332-22d2-4a50-b00f-054d463fa00e.jpg</stepimagepath>
+          <stepimagepath>Images\99a23822-93ac-404c-8977-66664dadc90a.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 2</stepname>
+        <stepdescription>Bắc một nồi nước lên bếp. Đợi nước sôi thì cho giò heo vào trụng sơ và vớt ra tô để riêng.</stepdescription>
+        <stepimagepaths>
+          <stepimagepath>Images\355c797c-2efe-4b1c-b355-9b0191b25774.jpg</stepimagepath>
+          <stepimagepath>Images\e34e4d3e-13a4-4ad6-ad31-ff83e36177dc.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 3</stepname>
+        <stepdescription>Sau đó cho vào nồi khoảng 1.5 lít nước, bắc lên bếp bật lửa.
 Đổ giò heo vừa trụng vào nồi, cắt thêm đầu hành và củ nén đập dập, 1 muỗng cà phê hạt nêm vào nấu cho thơm và ngọt nước.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\127895a3-4050-4906-abe2-26c6e4d030cc.jpg</stepimagepath>
-					<stepimagepath>Images\36ae693c-0b76-4421-b57f-be18191d607e.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 4</stepname>
-				<stepdescription>Nấu khoảng 15 phút vớt giò lên kiểm tra độ mềm tùy sở thích ăn dai hay mềm để nấu tiếp.
+        <stepimagepaths>
+          <stepimagepath>Images\127895a3-4050-4906-abe2-26c6e4d030cc.jpg</stepimagepath>
+          <stepimagepath>Images\36ae693c-0b76-4421-b57f-be18191d607e.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 4</stepname>
+        <stepdescription>Nấu khoảng 15 phút vớt giò lên kiểm tra độ mềm tùy sở thích ăn dai hay mềm để nấu tiếp.
 Nếu giò gần đạt thì cho khoai môn vào và nấu tiếp đến khi khoai mềm. Nêm 1 muỗng canh hạt nêm, 1 muỗng cà phê bột ngọt, 1/2 muỗng cà phê muối.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\8c417b26-f0d4-4632-9644-c8ec5824309c.jpg</stepimagepath>
-					<stepimagepath>Images\9b8959ab-58c3-4e5d-9b56-6b3b074b3cf2.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 5</stepname>
-				<stepdescription>Sau khi nêm nếm lại lần nữa thấy canh đã vừa ăn thì tắt bếp. 
+        <stepimagepaths>
+          <stepimagepath>Images\8c417b26-f0d4-4632-9644-c8ec5824309c.jpg</stepimagepath>
+          <stepimagepath>Images\9b8959ab-58c3-4e5d-9b56-6b3b074b3cf2.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 5</stepname>
+        <stepdescription>Sau khi nêm nếm lại lần nữa thấy canh đã vừa ăn thì tắt bếp. 
 Múc canh ra tô, rắc tiêu và hành lá cắt nhỏ lên trên.
 Vậy là có thể măm măm rồi nhé!</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\1cfec3fd-8fce-4003-b588-3de7fabc599b.jpg</stepimagepath>
-					<stepimagepath>Images\a57051dc-b592-4963-a5f3-7b8c945e8c63.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-		</steps>
-	</record>
-	<record>
-		<id>4</id>
-		<name>Đậu Hũ Chiên Sốt Cà Chua Chay</name>
-		<description>Đậu hũ chiên sốt cà chua là món ăn không còn xa lạ với nhiều người, nhất là các bạn sinh viên. Món này hội tụ 3 yếu tố ngon, bổ, rẻ.</description>
-		<thumbnailPath>Images\88fefb65-516f-4951-a702-b9b71f65fc25.jpg</thumbnailPath>
-		<video  />
-		<isFavorite>False</isFavorite>
-		<steps>
-			<astep>
-				<stepname>Bước 1</stepname>
-				<stepdescription>Đậu hũ chiên mua sẵn ngoài chợ, cắt thành miếng nhỏ, hình vuông vừa ăn.
+        <stepimagepaths>
+          <stepimagepath>Images\1cfec3fd-8fce-4003-b588-3de7fabc599b.jpg</stepimagepath>
+          <stepimagepath>Images\a57051dc-b592-4963-a5f3-7b8c945e8c63.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+    </steps>
+  </record>
+  <record>
+    <id>4</id>
+    <name>Đậu Hũ Chiên Sốt Cà Chua Chay</name>
+    <description>Đậu hũ chiên sốt cà chua là món ăn không còn xa lạ với nhiều người, nhất là các bạn sinh viên. Món này hội tụ 3 yếu tố ngon, bổ, rẻ.</description>
+    <thumbnailPath>Images\88fefb65-516f-4951-a702-b9b71f65fc25.jpg</thumbnailPath>
+    <video />
+    <isFavorite>False</isFavorite>
+    <steps>
+      <astep>
+        <stepname>Bước 1</stepname>
+        <stepdescription>Đậu hũ chiên mua sẵn ngoài chợ, cắt thành miếng nhỏ, hình vuông vừa ăn.
 Cà chua rửa sạch, cắt hạt lựu. Hành boa rô cắt nhỏ.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\ab68adcd-4ea8-40ea-ac98-4d5b9e71172a.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 2</stepname>
-				<stepdescription>Làm nóng 2 muỗng canh dầu ăn.
+        <stepimagepaths>
+          <stepimagepath>Images\ab68adcd-4ea8-40ea-ac98-4d5b9e71172a.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 2</stepname>
+        <stepdescription>Làm nóng 2 muỗng canh dầu ăn.
 Cho cà chua vào, đảo đều đến khi cà chua mềm.
 Thêm gia vị 2 muỗng canh nước tương, 1/2 muỗng cà phê bột ngọt, 1/2 muỗng cà phê muối, 1 muỗng cà phê đường trắng cho vừa ăn.
 Đổ 1/2 chén nước vào, nấu sôi khoảng 1 phút.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\75621595-2e09-423b-a45c-4d44bf4bf8e1.jpg</stepimagepath>
-					<stepimagepath>Images\d3e02657-1de9-4a08-b8d8-53544549c02b.jpg</stepimagepath>
-					<stepimagepath>Images\b0c8c0f7-724c-4eda-bbd4-54860d446713.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 3</stepname>
-				<stepdescription>Tiếp theo, cho đậu hũ vào, nấu lim rim nhỏ lửa cho ngấm phần sốt.
+        <stepimagepaths>
+          <stepimagepath>Images\75621595-2e09-423b-a45c-4d44bf4bf8e1.jpg</stepimagepath>
+          <stepimagepath>Images\d3e02657-1de9-4a08-b8d8-53544549c02b.jpg</stepimagepath>
+          <stepimagepath>Images\b0c8c0f7-724c-4eda-bbd4-54860d446713.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 3</stepname>
+        <stepdescription>Tiếp theo, cho đậu hũ vào, nấu lim rim nhỏ lửa cho ngấm phần sốt.
 Dùng đũa trở nhẹ tay miếng đậu hũ. Chú ý không để miếng đậu hũ bị nớt.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\ab204027-3fb8-45e8-91b5-93ee9a43e16e.jpg</stepimagepath>
-					<stepimagepath>Images\3edc58ab-dcd4-4b54-80a6-eaaea7187c38.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 4</stepname>
-				<stepdescription>Tắt bếp, cho món ăn ra đĩa, rắc hành boa rô lên để món ăn thêm màu sắc.
+        <stepimagepaths>
+          <stepimagepath>Images\ab204027-3fb8-45e8-91b5-93ee9a43e16e.jpg</stepimagepath>
+          <stepimagepath>Images\3edc58ab-dcd4-4b54-80a6-eaaea7187c38.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 4</stepname>
+        <stepdescription>Tắt bếp, cho món ăn ra đĩa, rắc hành boa rô lên để món ăn thêm màu sắc.
 Giờ chỉ việc ăn cùng cơm trắng, canh và món mặn nào.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\cb2e3457-c0df-4b2b-89a6-82addb06f87e.jpg</stepimagepath>
-					<stepimagepath>Images\bc8b11d5-6fe0-4be8-b6fe-6ddedddc4f8b.jpg</stepimagepath>
-					<stepimagepath>Images\6b530ddd-7fdd-4e22-9ad4-b9e1bc2cc1b9.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-		</steps>
-	</record>
-	<record>
-		<id>5</id>
-		<name>Xíu Mại Trứng Cút</name>
-		<description>Xíu mại có thể ăn với cơm hoặc bánh mì, được làm từ thịt băm mềm mại rất thích hợp cho các bé. Ngoài ra, mùi vị, độ mặn của món ăn sẽ mang đến cho bạn một cách cảm nhận mới, lạ lẫm chưa từng thấy.</description>
-		<thumbnailPath>Images\de5763cc-aad1-402a-81b2-330b46ea08be.jpg</thumbnailPath>
-		<video  />
-		<isFavorite>False</isFavorite>
-		<steps>
-			<astep>
-				<stepname>Bước 1</stepname>
-				<stepdescription>Múc 1 muỗng canh hỗn hợp vừa ướp bọc lấy trứng cút, để hở 1 đầu trứng cho đẹp.
+        <stepimagepaths>
+          <stepimagepath>Images\cb2e3457-c0df-4b2b-89a6-82addb06f87e.jpg</stepimagepath>
+          <stepimagepath>Images\bc8b11d5-6fe0-4be8-b6fe-6ddedddc4f8b.jpg</stepimagepath>
+          <stepimagepath>Images\6b530ddd-7fdd-4e22-9ad4-b9e1bc2cc1b9.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+    </steps>
+  </record>
+  <record>
+    <id>5</id>
+    <name>Xíu Mại Trứng Cút</name>
+    <description>Xíu mại có thể ăn với cơm hoặc bánh mì, được làm từ thịt băm mềm mại rất thích hợp cho các bé. Ngoài ra, mùi vị, độ mặn của món ăn sẽ mang đến cho bạn một cách cảm nhận mới, lạ lẫm chưa từng thấy.</description>
+    <thumbnailPath>Images\de5763cc-aad1-402a-81b2-330b46ea08be.jpg</thumbnailPath>
+    <video />
+    <isFavorite>False</isFavorite>
+    <steps>
+      <astep>
+        <stepname>Bước 1</stepname>
+        <stepdescription>Múc 1 muỗng canh hỗn hợp vừa ướp bọc lấy trứng cút, để hở 1 đầu trứng cho đẹp.
 Làm lần lượt đến hết trứng cút.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\8ace0b21-50a8-4ac9-ae6a-27df792a5fde.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 2</stepname>
-				<stepdescription>Củ sắn gọt vỏ rửa sạch, cắt nhỏ hạt lựu rồi vắt bớt nước.
+        <stepimagepaths>
+          <stepimagepath>Images\8ace0b21-50a8-4ac9-ae6a-27df792a5fde.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 2</stepname>
+        <stepdescription>Củ sắn gọt vỏ rửa sạch, cắt nhỏ hạt lựu rồi vắt bớt nước.
 Hành tây bóc vỏ, rửa sạch, cắt hạt lựu</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\43ef68d2-8f97-480e-bcd9-5a9078fd9ced.jpg</stepimagepath>
-					<stepimagepath>Images\6a6a86df-4eb7-428d-8b6c-19a238b057f6.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 3</stepname>
-				<stepdescription>Cho viên thịt vào xửng, hấp cách thủy khoảng 10-15 phút cho thịt chín.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\469ca43b-b6bb-460e-a3a0-c8555b8f84e6.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 4</stepname>
-				<stepdescription>
+        <stepimagepaths>
+          <stepimagepath>Images\43ef68d2-8f97-480e-bcd9-5a9078fd9ced.jpg</stepimagepath>
+          <stepimagepath>Images\6a6a86df-4eb7-428d-8b6c-19a238b057f6.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 3</stepname>
+        <stepdescription>Cho viên thịt vào xửng, hấp cách thủy khoảng 10-15 phút cho thịt chín.</stepdescription>
+        <stepimagepaths>
+          <stepimagepath>Images\469ca43b-b6bb-460e-a3a0-c8555b8f84e6.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 4</stepname>
+        <stepdescription>
 					Ướp thịt heo bằm, giò sống, củ sắn và 1/2 lượng hành tây vừa cắt với 1/2 muỗng cà phê muối, 1/2 muỗng cà phê bột ngọt, 1/2 muỗng canh đường, 1/2 muỗng cà phê tiêu, 1/2 muỗng cà phê nước mắm, 1 muỗng canh dần ăn, 1 muỗng cà phê tỏi băm trong 20 phút
 				</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\f538dcda-2699-4787-9605-8a5d86078ed8.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 5</stepname>
-				<stepdescription>
+        <stepimagepaths>
+          <stepimagepath>Images\f538dcda-2699-4787-9605-8a5d86078ed8.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 5</stepname>
+        <stepdescription>
 					Cà chua bỏ hạt qua rây, lấy lại nước cà, cắt hạt lựu phần thịt quả.
 				</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\cc0c7a00-5c2e-4080-b3c4-8e5f31b384cd.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 6</stepname>
-				<stepdescription>Đun nóng 1 muỗng canh dầu ăn, cho lượng hành tây còn lại vào xào thơm.
+        <stepimagepaths>
+          <stepimagepath>Images\cc0c7a00-5c2e-4080-b3c4-8e5f31b384cd.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 6</stepname>
+        <stepdescription>Đun nóng 1 muỗng canh dầu ăn, cho lượng hành tây còn lại vào xào thơm.
 Sau đó, cho cà chua và 1 muỗng canh sốt cà chua vào.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\760a1558-41c1-4a4c-acdb-6966fe89fd7a.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 7</stepname>
-				<stepdescription>Khi cà chua chín nhừ, nêm vào 1/2 muỗng canh nước mắm, 1/2 muỗng cà phê đường, 1 muỗng cà phê bột ngọt, khuấy đều rồi cho xíu mại đã hấp vào, đun thêm 2-3 phút là được.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\5ced685a-2294-4af6-9c44-f0831711e1a0.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-		</steps>
-	</record>
-	<record>
-		<id>6</id>
-		<name>Xíu Mại Sốt Cà Chua</name>
-		<description>Xíu mại sốt cà chua là món ngon mỗi ngày dùng để ăn với cơm hoặc bánh mì. Xíu mại sốt cà chua với đủ chất dinh dưỡng, từng viên xíu mại thấm vị chua chua của nước sốt và phần nhân bên trong có vị bùi thơm.</description>
-		<thumbnailPath>Images\cb42fc1c-a374-4aec-b117-3f6666a4ca23.jpg</thumbnailPath>
-		<video  />
-		<isFavorite>False</isFavorite>
-		<steps>
-			<astep>
-				<stepname>Bước 1</stepname>
-				<stepdescription>Cắt nhỏ hành lá.
+        <stepimagepaths>
+          <stepimagepath>Images\760a1558-41c1-4a4c-acdb-6966fe89fd7a.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 7</stepname>
+        <stepdescription>Khi cà chua chín nhừ, nêm vào 1/2 muỗng canh nước mắm, 1/2 muỗng cà phê đường, 1 muỗng cà phê bột ngọt, khuấy đều rồi cho xíu mại đã hấp vào, đun thêm 2-3 phút là được.</stepdescription>
+        <stepimagepaths>
+          <stepimagepath>Images\5ced685a-2294-4af6-9c44-f0831711e1a0.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+    </steps>
+  </record>
+  <record>
+    <id>6</id>
+    <name>Xíu Mại Sốt Cà Chua</name>
+    <description>Xíu mại sốt cà chua là món ngon mỗi ngày dùng để ăn với cơm hoặc bánh mì. Xíu mại sốt cà chua với đủ chất dinh dưỡng, từng viên xíu mại thấm vị chua chua của nước sốt và phần nhân bên trong có vị bùi thơm.</description>
+    <thumbnailPath>Images\cb42fc1c-a374-4aec-b117-3f6666a4ca23.jpg</thumbnailPath>
+    <video />
+    <isFavorite>False</isFavorite>
+    <steps>
+      <astep>
+        <stepname>Bước 1</stepname>
+        <stepdescription>Cắt nhỏ hành lá.
 Cho thịt heo bằm vào chén, nêm 1 muỗng cà phê muối, 1 muỗng cà phê đường, 1/2 muỗng cà phê hạt nêm, 1 muỗng cà phê tiêu, thêm 1 ít hành lá cắt nhỏ vào cùng.
 Trộn đều rồi vo thành những viên nhỏ vừa ăn.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\7072b3b5-ca4f-4d60-8d07-a47f57b2b943.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 2</stepname>
-				<stepdescription>Rửa sạch cà chua.
+        <stepimagepaths>
+          <stepimagepath>Images\7072b3b5-ca4f-4d60-8d07-a47f57b2b943.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 2</stepname>
+        <stepdescription>Rửa sạch cà chua.
 Cắt đôi cà chua rồi bỏ bớt hạt, tiếp tục cắt hạt lựu nhỏ rồi cho vào chén.
 Việc bỏ hạt giúp các bé ăn dễ tiêu hơn. Nếu kĩ hơn, bạn cũng có thể chần trước cà chua trong nước sôi rồi bỏ vỏ để khi ăn xíu mại sốt cà chua không bị khó tiêu.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\87b04404-23b0-49b0-a78a-e53bd84a169c.jpg</stepimagepath>
-					<stepimagepath>Images\4063522a-6f03-452e-993b-99e906d7d28e.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 3</stepname>
-				<stepdescription>Làm nước sốt cà chua cho xíu mại sốt cà chua: Bắc chảo lên bếp, cho 1 muỗng canh dầu ăn vào, đổ hết phần đầu hành vào phi thơm.
+        <stepimagepaths>
+          <stepimagepath>Images\87b04404-23b0-49b0-a78a-e53bd84a169c.jpg</stepimagepath>
+          <stepimagepath>Images\4063522a-6f03-452e-993b-99e906d7d28e.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 3</stepname>
+        <stepdescription>Làm nước sốt cà chua cho xíu mại sốt cà chua: Bắc chảo lên bếp, cho 1 muỗng canh dầu ăn vào, đổ hết phần đầu hành vào phi thơm.
 Cho cà chua vào đảo nhanh tay, thêm 1 muỗng canh tương cà và nêm nếm cho vừa miệng.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\f7ea5b6f-7681-42aa-976e-d2161f160f1d.jpg</stepimagepath>
-					<stepimagepath>Images\3679328e-59a5-4cd1-beaf-b11d41be787f.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 4</stepname>
-				<stepdescription>Khi cà chua vừa chín tới, cho tiếp xíu mại vào, nấu trên lửa vừa.
+        <stepimagepaths>
+          <stepimagepath>Images\f7ea5b6f-7681-42aa-976e-d2161f160f1d.jpg</stepimagepath>
+          <stepimagepath>Images\3679328e-59a5-4cd1-beaf-b11d41be787f.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 4</stepname>
+        <stepdescription>Khi cà chua vừa chín tới, cho tiếp xíu mại vào, nấu trên lửa vừa.
 Khi sôi lên thì hạ lửa liu riu cho sốt cà chua thấm đều vào viên xíu mại. Múc xíu mại sốt cà chua ra tô, dùng với bánh mì để ăn sáng cũng rất ngon.
 Hãy thực hiện cách làm xíu mại sốt cà chua để làm phong phú cho món ngon gia đình hằng ngày nhé!</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\3920602f-3b2e-4844-80de-d1e1c531c1e2.jpg</stepimagepath>
-					<stepimagepath>Images\62281f9f-3d0c-481e-b2f8-dbb5533003fa.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-		</steps>
-	</record>
-	<record>
-		<id>7</id>
-		<name>Mực Xào Chua Ngọt</name>
-		<description>Một chút vị chua chua ngọt ngọt ăn cùng với những miếng mực thơm giòn chắc chắc sẽ làm bữa cơm của bạn cực kì hấp dẫn.</description>
-		<thumbnailPath>Images\80f9f11f-9a77-4104-a9c6-87e07f06e6aa.jpg</thumbnailPath>
-		<video  />
-		<isFavorite>False</isFavorite>
-		<steps>
-			<astep>
-				<stepname>Bước 1</stepname>
-				<stepdescription>Làm sạch mực: Mực sau khi mua về cần được làm sạch để đảm bảo mực không còn bị nhớt, tanh.
+        <stepimagepaths>
+          <stepimagepath>Images\3920602f-3b2e-4844-80de-d1e1c531c1e2.jpg</stepimagepath>
+          <stepimagepath>Images\62281f9f-3d0c-481e-b2f8-dbb5533003fa.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+    </steps>
+  </record>
+  <record>
+    <id>7</id>
+    <name>Mực Xào Chua Ngọt</name>
+    <description>Một chút vị chua chua ngọt ngọt ăn cùng với những miếng mực thơm giòn chắc chắc sẽ làm bữa cơm của bạn cực kì hấp dẫn.</description>
+    <thumbnailPath>Images\80f9f11f-9a77-4104-a9c6-87e07f06e6aa.jpg</thumbnailPath>
+    <video />
+    <isFavorite>False</isFavorite>
+    <steps>
+      <astep>
+        <stepname>Bước 1</stepname>
+        <stepdescription>Làm sạch mực: Mực sau khi mua về cần được làm sạch để đảm bảo mực không còn bị nhớt, tanh.
 Để làm sạch mực, bạn lộn phần thân mực, bỏ phần túi mực, xương sống và mắt sau đó rửa kỹ với nước dấm ăn và muối.
 Sau đó rửa kĩ lại với nước lạnh và để ráo. Cắt miếng vừa ăn và khứa miếng mực.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\78c8c539-17df-4804-b1d6-30193ec34789.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 2</stepname>
-				<stepdescription>Rửa sạch và thái miếng vừa ăn các loại cà chua, thơm, dưa leo, hành lá, hành tây.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\077d7c5c-f76f-4633-ba89-35e2ecd07bc4.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 3</stepname>
-				<stepdescription>Sau khi chuẩn bị các nguyên liệu xong, bạn tiến hành ướp mực trước khi xào để mực được ngấm gia vị.
+        <stepimagepaths>
+          <stepimagepath>Images\78c8c539-17df-4804-b1d6-30193ec34789.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 2</stepname>
+        <stepdescription>Rửa sạch và thái miếng vừa ăn các loại cà chua, thơm, dưa leo, hành lá, hành tây.</stepdescription>
+        <stepimagepaths>
+          <stepimagepath>Images\077d7c5c-f76f-4633-ba89-35e2ecd07bc4.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 3</stepname>
+        <stepdescription>Sau khi chuẩn bị các nguyên liệu xong, bạn tiến hành ướp mực trước khi xào để mực được ngấm gia vị.
 Cho vào bát mực ½ thìa canh hành tỏi băm nhuyễn.
 Tiếp đến, bạn cho phần nước tương, hạt nêm, bột ngọt vào trộn đều cho mực thật ngấm và để mực chờ trong khoảng 20 – 30 phút.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\feb03bc3-bf05-4dff-8716-8be840608d99.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 4</stepname>
-				<stepdescription>Phi thơm hành tỏi cho mực vào đảo với lửa lớn và nhanh tay, sau đó bạn trút mực ra bát để xào tiếp phần rau củ.
+        <stepimagepaths>
+          <stepimagepath>Images\feb03bc3-bf05-4dff-8716-8be840608d99.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 4</stepname>
+        <stepdescription>Phi thơm hành tỏi cho mực vào đảo với lửa lớn và nhanh tay, sau đó bạn trút mực ra bát để xào tiếp phần rau củ.
 Xào cà chua trước cho hơi mềm và ra nước sau đó cho thơm, dưa leo, hành tây vào đảo đều.
 Nêm nếm gia vị vừa ăn và cho vào 1/2 chén nước sôi. 
 Cuối cùng cho hành lá, cần tây vào.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\5cd3033b-5846-4917-a323-c66942aec188.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 5</stepname>
-				<stepdescription>Khi hỗn hợp rau củ đã chín vừa bạn cho phần mực đã xào vào đảo đều và nhanh tay để mực vẫn giữ được độ giòn.
+        <stepimagepaths>
+          <stepimagepath>Images\5cd3033b-5846-4917-a323-c66942aec188.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 5</stepname>
+        <stepdescription>Khi hỗn hợp rau củ đã chín vừa bạn cho phần mực đã xào vào đảo đều và nhanh tay để mực vẫn giữ được độ giòn.
 Trình bày ra đĩa và trang trí.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\3c79b6cc-2d19-4003-abf9-da929dd226de.jpg</stepimagepath>
-					<stepimagepath>Images\8fddb7a1-18d4-40ca-b3cc-2824598b496f.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-		</steps>
-	</record>
-	<record>
-		<id>8</id>
-		<name>Cá Basa Kho Tộ</name>
-		<description>Cá Basa Kho Tộ có vị ngọt béo đặc trưng sẽ khiến cho bữa cơm của gia đình bạn thêm hấp dẫn bội phần đấy!</description>
-		<thumbnailPath>Images\d09b1b97-71c4-4208-9542-fa32b92f881f.jpg</thumbnailPath>
-		<video  />
-		<isFavorite>False</isFavorite>
-		<steps>
-			<astep>
-				<stepname>Bước 1</stepname>
-				<stepdescription>Rửa sạch các miếng cá basa, để ráo, ướp cá với ½ muỗng cà phê muối khoảng 15 phút.
+        <stepimagepaths>
+          <stepimagepath>Images\3c79b6cc-2d19-4003-abf9-da929dd226de.jpg</stepimagepath>
+          <stepimagepath>Images\8fddb7a1-18d4-40ca-b3cc-2824598b496f.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+    </steps>
+  </record>
+  <record>
+    <id>8</id>
+    <name>Cá Basa Kho Tộ</name>
+    <description>Cá Basa Kho Tộ có vị ngọt béo đặc trưng sẽ khiến cho bữa cơm của gia đình bạn thêm hấp dẫn bội phần đấy!</description>
+    <thumbnailPath>Images\d09b1b97-71c4-4208-9542-fa32b92f881f.jpg</thumbnailPath>
+    <video />
+    <isFavorite>False</isFavorite>
+    <steps>
+      <astep>
+        <stepname>Bước 1</stepname>
+        <stepdescription>Rửa sạch các miếng cá basa, để ráo, ướp cá với ½ muỗng cà phê muối khoảng 15 phút.
 Hành lá cắt nhuyễn.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\40a26c68-c7fd-42ea-830f-7db89057b813.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 2</stepname>
-				<stepdescription>Cách kho cá basa:
+        <stepimagepaths>
+          <stepimagepath>Images\40a26c68-c7fd-42ea-830f-7db89057b813.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 2</stepname>
+        <stepdescription>Cách kho cá basa:
 - Bắc chảo không dính lên bếp, cho một muỗng dầu ăn và 2 muỗng cà phê đường vào chảo.
 - Đợi cho đến khi đường tan và chuyển màu cánh gián thì cho 1 muỗng tỏi và hành băm nhỏ vào phi thơm, tắt bếp.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\7c34b0a6-a68c-47d9-9734-7d78c3756f62.jpeg</stepimagepath>
-					<stepimagepath>Images\63fd6cff-d5f2-430a-98f2-e1d66bb16955.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 3</stepname>
-				<stepdescription>Cách làm cá basa kho tộ:
+        <stepimagepaths>
+          <stepimagepath>Images\7c34b0a6-a68c-47d9-9734-7d78c3756f62.jpeg</stepimagepath>
+          <stepimagepath>Images\63fd6cff-d5f2-430a-98f2-e1d66bb16955.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 3</stepname>
+        <stepdescription>Cách làm cá basa kho tộ:
 - Cho cá vào chảo trên, thêm 1 muỗng nước mắm và 3 muỗng cà phê đường, bật bếp để lửa to cho sôi bùng lên thì giảm xuống ở mức lửa nhỏ nhất, thêm 2 muỗng nước lọc, thả ớt trái vào, đun đến khi nước sệt lại là được.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\66418a37-bd8a-43f9-bedb-3c8ccb197ca7.jpg</stepimagepath>
-					<stepimagepath>Images\7ef444cb-b53a-49e9-99ff-125f29886785.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 4</stepname>
-				<stepdescription>Tắt bếp, rải hành lá vào cùng chút tiêu sẽ giúp cá khô tộ thơm ngon hơn nhé.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\2094a7da-66aa-4e00-ad8f-495a63629b90.jpg</stepimagepath>
-					<stepimagepath>Images\1db65de1-8121-47bc-954c-3ed952952972.jpeg</stepimagepath>
-					<stepimagepath>Images\904e392c-c4e7-4f59-b248-f271db346a73.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 5</stepname>
-				<stepdescription>Dùng cá basa kho tộ với cơm nóng là nhất luôn.
+        <stepimagepaths>
+          <stepimagepath>Images\66418a37-bd8a-43f9-bedb-3c8ccb197ca7.jpg</stepimagepath>
+          <stepimagepath>Images\7ef444cb-b53a-49e9-99ff-125f29886785.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 4</stepname>
+        <stepdescription>Tắt bếp, rải hành lá vào cùng chút tiêu sẽ giúp cá khô tộ thơm ngon hơn nhé.</stepdescription>
+        <stepimagepaths>
+          <stepimagepath>Images\2094a7da-66aa-4e00-ad8f-495a63629b90.jpg</stepimagepath>
+          <stepimagepath>Images\1db65de1-8121-47bc-954c-3ed952952972.jpeg</stepimagepath>
+          <stepimagepath>Images\904e392c-c4e7-4f59-b248-f271db346a73.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 5</stepname>
+        <stepdescription>Dùng cá basa kho tộ với cơm nóng là nhất luôn.
 Nước kho cá basa có thể chấm kèm dưa leo và rau sống ăn rất ngon. Cách làm cá basa kho tộ rất đơn giản, thích hợp cho các bạn lần đầu làm món cá kho tại nhà.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\e6ff39f5-2c0c-4854-940c-6be33ab94101.jpeg</stepimagepath>
-					<stepimagepath>Images\21d0c349-9711-405b-aeec-22975b93c15a.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-		</steps>
-	</record>
-	<record>
-		<id>9</id>
-		<name>Cá Mó Chiên Mắm Tỏi</name>
-		<description>Cá mó chiên mắm tỏi với thịt cá mó chiên chín vàng, ngấm đều mắm tỏi, vị mằn mặn, béo béo rất kích thích đầu lưỡi!</description>
-		<thumbnailPath>Images\28f15b6a-df2e-42f9-8f22-30c9880b3520.jpg</thumbnailPath>
-		<video  />
-		<isFavorite>False</isFavorite>
-		<steps>
-			<astep>
-				<stepname>Bước 1</stepname>
-				<stepdescription>Cá mó rửa sạch, ngâm với nước muối 10 phút rồi vớt ra để ráo nước.
+        <stepimagepaths>
+          <stepimagepath>Images\e6ff39f5-2c0c-4854-940c-6be33ab94101.jpeg</stepimagepath>
+          <stepimagepath>Images\21d0c349-9711-405b-aeec-22975b93c15a.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+    </steps>
+  </record>
+  <record>
+    <id>9</id>
+    <name>Cá Mó Chiên Mắm Tỏi</name>
+    <description>Cá mó chiên mắm tỏi với thịt cá mó chiên chín vàng, ngấm đều mắm tỏi, vị mằn mặn, béo béo rất kích thích đầu lưỡi!</description>
+    <thumbnailPath>Images\28f15b6a-df2e-42f9-8f22-30c9880b3520.jpg</thumbnailPath>
+    <video />
+    <isFavorite>False</isFavorite>
+    <steps>
+      <astep>
+        <stepname>Bước 1</stepname>
+        <stepdescription>Cá mó rửa sạch, ngâm với nước muối 10 phút rồi vớt ra để ráo nước.
 Đun nóng 2 muỗng canh dầu ăn rồi cho cá vào chiên.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\740b7c96-9524-44a3-9c07-a60d479645ae.jpg</stepimagepath>
-					<stepimagepath>Images\3f19cb48-7777-426e-be18-a6657c8e688a.jpg</stepimagepath>
-					<stepimagepath>Images\7a6a6db6-af33-4ac6-8240-9fa1e75e5cc7.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 2</stepname>
-				<stepdescription>Ớt, tỏi băm nhuyễn rồi trộn với 2 muỗng canh nước mắm, 1 muỗng canh đường thành hỗn hợp nước mắm tỏi ớt sền sệt.
+        <stepimagepaths>
+          <stepimagepath>Images\740b7c96-9524-44a3-9c07-a60d479645ae.jpg</stepimagepath>
+          <stepimagepath>Images\3f19cb48-7777-426e-be18-a6657c8e688a.jpg</stepimagepath>
+          <stepimagepath>Images\7a6a6db6-af33-4ac6-8240-9fa1e75e5cc7.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 2</stepname>
+        <stepdescription>Ớt, tỏi băm nhuyễn rồi trộn với 2 muỗng canh nước mắm, 1 muỗng canh đường thành hỗn hợp nước mắm tỏi ớt sền sệt.
 Khi cá vàng đều các mạt thì cho hỗn hợp nước mắm tỏi ớt vào chảo cá, để cá ngấm vị thêm 3 phút là tắt bếp.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\9b03dbb2-a019-4d65-85f5-9bad82ba1a66.jpg</stepimagepath>
-					<stepimagepath>Images\898d7d91-e92e-435d-902d-7a2777d302f2.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 3</stepname>
-				<stepdescription>Cho cá ra đĩa dùng với cơm nóng.
+        <stepimagepaths>
+          <stepimagepath>Images\9b03dbb2-a019-4d65-85f5-9bad82ba1a66.jpg</stepimagepath>
+          <stepimagepath>Images\898d7d91-e92e-435d-902d-7a2777d302f2.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 3</stepname>
+        <stepdescription>Cho cá ra đĩa dùng với cơm nóng.
 Cá mó chiên mắm tỏi với thịt cá mó chiên chín vàng, ngấm đều mắm tỏi, vị mằn mặn, béo béo rất kích thích đầu lưỡi.
 Món này ăn với cơm nóng là bao sạch nồi cơm luôn nhé!</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\1cd5071b-4573-42cd-80e3-73a0960b00ca.jpg</stepimagepath>
-					<stepimagepath>Images\25f86695-c96b-42f5-9a1d-65dd9ff6471d.jpg</stepimagepath>
-					<stepimagepath>Images\0553a4a1-4737-4c2f-a065-afc80e2dce30.jpg</stepimagepath>
-					<stepimagepath>Images\13c7202a-afac-4a53-98b2-56ca0554ec65.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-		</steps>
-	</record>
-	<record>
-		<id>10</id>
-		<name>Cá Ngừ Kho Thơm</name>
-		<description>Cá ngừ kho thơm là một món ngon gia đình bổ dưỡng và hấp dẫn với hương vị thơm ngon khó cưỡng.</description>
-		<thumbnailPath>Images\30366bab-eb82-41c1-a618-3241dd251327.jpg</thumbnailPath>
-		<video  />
-		<isFavorite>False</isFavorite>
-		<steps>
-			<astep>
-				<stepname>Bước 1</stepname>
-				<stepdescription>Làm sạch cá ngừ: rửa cá với muối, chà xát nhẹ và xả nhiều lần dưới vòi nước sạch để cá bớt đi mùi tanh.
+        <stepimagepaths>
+          <stepimagepath>Images\1cd5071b-4573-42cd-80e3-73a0960b00ca.jpg</stepimagepath>
+          <stepimagepath>Images\25f86695-c96b-42f5-9a1d-65dd9ff6471d.jpg</stepimagepath>
+          <stepimagepath>Images\0553a4a1-4737-4c2f-a065-afc80e2dce30.jpg</stepimagepath>
+          <stepimagepath>Images\13c7202a-afac-4a53-98b2-56ca0554ec65.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+    </steps>
+  </record>
+  <record>
+    <id>10</id>
+    <name>Cá Ngừ Kho Thơm</name>
+    <description>Cá ngừ kho thơm là một món ngon gia đình bổ dưỡng và hấp dẫn với hương vị thơm ngon khó cưỡng.</description>
+    <thumbnailPath>Images\30366bab-eb82-41c1-a618-3241dd251327.jpg</thumbnailPath>
+    <video />
+    <isFavorite>False</isFavorite>
+    <steps>
+      <astep>
+        <stepname>Bước 1</stepname>
+        <stepdescription>Làm sạch cá ngừ: rửa cá với muối, chà xát nhẹ và xả nhiều lần dưới vòi nước sạch để cá bớt đi mùi tanh.
 Cắt cá ngừ thành từng khứa dày khoảng 1 - 1.5cm (nếu mua cá ngừ cắt sẵn thì giữ nguyên nhé).
 Cho vào chảo 2 muỗng canh dầu ăn, gắp cá ngừ vào chiên vàng 2 mặt.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\1766643b-063a-4273-8c6d-6188aeb250ea.jpg</stepimagepath>
-					<stepimagepath>Images\332a5acc-006c-412c-87ed-85aa0daf0866.jpg</stepimagepath>
-					<stepimagepath>Images\a153e429-9885-4fe7-ae7c-31361f5ae248.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 2</stepname>
-				<stepdescription>Cắt lát 200gr thơm.
+        <stepimagepaths>
+          <stepimagepath>Images\1766643b-063a-4273-8c6d-6188aeb250ea.jpg</stepimagepath>
+          <stepimagepath>Images\332a5acc-006c-412c-87ed-85aa0daf0866.jpg</stepimagepath>
+          <stepimagepath>Images\a153e429-9885-4fe7-ae7c-31361f5ae248.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 2</stepname>
+        <stepdescription>Cắt lát 200gr thơm.
 Cắt múi cau 200gr cà chua. Bắc chảo, làm nóng 1 muỗng canh dầu ăn sau đó cho 15gr tỏi băm, 15gr đầu hành lá băm vào phi thơm.
 Thêm 1 muỗng canh ớt bột vào xào để tạo màu và vị cay the cho cá kho.
 Đổ thơm và cà chua vào tiếp tục xào sơ cho cả 2 vừa chín mềm.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\58096bcb-2197-472e-af49-b01a4d300db3.jpg</stepimagepath>
-					<stepimagepath>Images\88938e98-c234-437c-8215-40cf1577f075.jpg</stepimagepath>
-					<stepimagepath>Images\5b1ce4b5-9485-44cf-a6ff-4ca3e157d8d1.jpg</stepimagepath>
-					<stepimagepath>Images\a193046c-154e-4fff-8881-1faeadc75dea.jpg</stepimagepath>
-					<stepimagepath>Images\afd2aea3-9222-4a2d-b37f-5013efce6f3f.jpg</stepimagepath>
-					<stepimagepath>Images\2aeff92a-094f-4abe-a53e-b008abbfe4d0.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 3</stepname>
-				<stepdescription>Nêm nếm gia vị cho thơm và cà chua gồm: 1 muỗng cà phê hạt nêm, 1 muỗng cà phê muối, 1 muỗng cà phê đường, 2 muỗng canh nước mắm, xào đều.
+        <stepimagepaths>
+          <stepimagepath>Images\58096bcb-2197-472e-af49-b01a4d300db3.jpg</stepimagepath>
+          <stepimagepath>Images\88938e98-c234-437c-8215-40cf1577f075.jpg</stepimagepath>
+          <stepimagepath>Images\5b1ce4b5-9485-44cf-a6ff-4ca3e157d8d1.jpg</stepimagepath>
+          <stepimagepath>Images\a193046c-154e-4fff-8881-1faeadc75dea.jpg</stepimagepath>
+          <stepimagepath>Images\afd2aea3-9222-4a2d-b37f-5013efce6f3f.jpg</stepimagepath>
+          <stepimagepath>Images\2aeff92a-094f-4abe-a53e-b008abbfe4d0.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 3</stepname>
+        <stepdescription>Nêm nếm gia vị cho thơm và cà chua gồm: 1 muỗng cà phê hạt nêm, 1 muỗng cà phê muối, 1 muỗng cà phê đường, 2 muỗng canh nước mắm, xào đều.
 Chế vào nồi 400ml nước dùng gà, 300ml nước dừa tươi, 1 muỗng cà phê đường phèn để nước kho có vị ngọt thanh. Đun cho nước cá kho sôi lên thì gắp cá ngừ chiên vào, thêm đầu hành và ớt trái cho có màu sắc rồi hạ lửa nhỏ kho liu riu 30 phút cho cá thấm gia vị. Tắt bếp.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\e6e3be46-06ee-4dbe-a2c5-e8ebc421bf36.jpg</stepimagepath>
-					<stepimagepath>Images\ff76f910-7ec0-42c1-b065-fbf43b4c76d4.jpg</stepimagepath>
-					<stepimagepath>Images\0c9220a2-6a61-409c-a2e0-635956190fe9.jpg</stepimagepath>
-					<stepimagepath>Images\73a30edd-b1fa-41ce-98b9-910e5a88d07b.jpg</stepimagepath>
-					<stepimagepath>Images\211fdca0-4346-494c-aa0b-c35a8b1ea2df.jpg</stepimagepath>
-					<stepimagepath>Images\cd2c6293-2a37-4cc2-9810-49ddde654b5b.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 4</stepname>
-				<stepdescription>
+        <stepimagepaths>
+          <stepimagepath>Images\e6e3be46-06ee-4dbe-a2c5-e8ebc421bf36.jpg</stepimagepath>
+          <stepimagepath>Images\ff76f910-7ec0-42c1-b065-fbf43b4c76d4.jpg</stepimagepath>
+          <stepimagepath>Images\0c9220a2-6a61-409c-a2e0-635956190fe9.jpg</stepimagepath>
+          <stepimagepath>Images\73a30edd-b1fa-41ce-98b9-910e5a88d07b.jpg</stepimagepath>
+          <stepimagepath>Images\211fdca0-4346-494c-aa0b-c35a8b1ea2df.jpg</stepimagepath>
+          <stepimagepath>Images\cd2c6293-2a37-4cc2-9810-49ddde654b5b.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 4</stepname>
+        <stepdescription>
 					Cách ăn cá ngừ kho thơm có 2 kiểu, thứ nhất là múc vào tô một ít tỏi ớt băm, sau đó múc nước kho vào khuấy lên, cuối cùng gắp thơm và cá ngừ kho vào là hoàn chỉnh tô cá kho thơm thức mũi, dọn ra bàn ăn cùng với các món ăn gia đình khác, ăn đến đâu gắp đến đó, vừa ăn cả nhà vừa trò chuyện quây quần.
 Cách thứ hai đơn giản hơn là cho bún và rau sống vào tô sẵn rồi chan nước kho cùng cá kho vào, cứ thế trộn đều lên và ăn thôi.
 Cách ăn nào cũng có nét hay, cũng ngon lành và chất phát đúng kiểu miền Trung.
 				</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\f633eea8-7e13-405a-9d92-4ebee7915ff4.jpg</stepimagepath>
-					<stepimagepath>Images\24e7b5da-997b-4278-b314-5ed43731c910.jpg</stepimagepath>
-					<stepimagepath>Images\5fe17231-d083-4382-aea8-eeadc4b29ab0.jpg</stepimagepath>
-					<stepimagepath>Images\18b86e10-8b75-4793-9ec2-302f19db777c.jpg</stepimagepath>
-					<stepimagepath>Images\d28c0312-7188-4e26-b91e-a1440f3520f4.jpg</stepimagepath>
-					<stepimagepath>Images\fe36fb17-e8d3-4fa1-8cdd-079792ae65d0.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 5</stepname>
-				<stepdescription>Món cá ngừ kho thơm hấp dẫn, ngon lành chuẩn vị miền Trung đã sẵn sàng trên mâm cơm của cả nhà rồi.
+        <stepimagepaths>
+          <stepimagepath>Images\f633eea8-7e13-405a-9d92-4ebee7915ff4.jpg</stepimagepath>
+          <stepimagepath>Images\24e7b5da-997b-4278-b314-5ed43731c910.jpg</stepimagepath>
+          <stepimagepath>Images\5fe17231-d083-4382-aea8-eeadc4b29ab0.jpg</stepimagepath>
+          <stepimagepath>Images\18b86e10-8b75-4793-9ec2-302f19db777c.jpg</stepimagepath>
+          <stepimagepath>Images\d28c0312-7188-4e26-b91e-a1440f3520f4.jpg</stepimagepath>
+          <stepimagepath>Images\fe36fb17-e8d3-4fa1-8cdd-079792ae65d0.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 5</stepname>
+        <stepdescription>Món cá ngừ kho thơm hấp dẫn, ngon lành chuẩn vị miền Trung đã sẵn sàng trên mâm cơm của cả nhà rồi.
 Tuy nhiên muốn có nồi cá kho ngon, đúng điệu thì không hẳn chị em nào cũng biết, đặc biệt khi nguyên liệu là cá ngừ.
 Với cách kho cá ngon này, đảm bảo ai cũng có thể vào bếp và trổ tài nấu cho mọi người trong gia đình ăn rồi đó.
 Chị em nội trợ còn chờ gì mà không nhanh tay lưu lại ngay công thức cá ngừ kho thơm đậm đà, ngon lành và đẹp này nào.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\9e7dbeab-e0ed-46a2-b148-f929ca046e62.jpg</stepimagepath>
-					<stepimagepath>Images\6d49b4bc-5219-452e-a1a8-727f24c00a84.jpg</stepimagepath>
-					<stepimagepath>Images\86f0530b-eb67-4e6b-a3b9-c57c0e33abeb.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-		</steps>
-	</record>
-	<record>
-		<id>11</id>
-		<name>Bún Cá Ngừ</name>
-		<description>Bún cá ngừ là món ăn dân dã đặc trưng của người dân miền Trung.</description>
-		<thumbnailPath>Images\fc56d30c-b568-4ccb-baf2-526c282aa73b.jpg</thumbnailPath>
-		<video  />
-		<isFavorite>False</isFavorite>
-		<steps>
-			<astep>
-				<stepname>Bước 1</stepname>
-				<stepdescription>Rửa sạch cá ngừ, cắt khúc vừa ăn, để riêng phần đầu cá để nấu nước dùng.
+        <stepimagepaths>
+          <stepimagepath>Images\9e7dbeab-e0ed-46a2-b148-f929ca046e62.jpg</stepimagepath>
+          <stepimagepath>Images\6d49b4bc-5219-452e-a1a8-727f24c00a84.jpg</stepimagepath>
+          <stepimagepath>Images\86f0530b-eb67-4e6b-a3b9-c57c0e33abeb.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+    </steps>
+  </record>
+  <record>
+    <id>11</id>
+    <name>Bún Cá Ngừ</name>
+    <description>Bún cá ngừ là món ăn dân dã đặc trưng của người dân miền Trung.</description>
+    <thumbnailPath>Images\fc56d30c-b568-4ccb-baf2-526c282aa73b.jpg</thumbnailPath>
+    <video />
+    <isFavorite>False</isFavorite>
+    <steps>
+      <astep>
+        <stepname>Bước 1</stepname>
+        <stepdescription>Rửa sạch cá ngừ, cắt khúc vừa ăn, để riêng phần đầu cá để nấu nước dùng.
 Ướp cá ngừ với một 1 muỗng cà phê muối, 1 muỗng cà phê bột ngọt và 1 muỗng cà phê tiêu.
 Nấu 1.5 lít nước dùng xương heo với hành tím và một chút muối trong 1 tiếng rồi cho đầu cá ngừ vào ninh thêm 30 phút nữa.
 Lọc xương heo và đầu cá để lấy nước dùng đem nấu bún cá ngừ nhé.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\f3a2dc0a-99c5-4d99-850d-8e45bd4fb417.jpg</stepimagepath>
-					<stepimagepath>Images\63498f63-f2e7-4dd9-8fdc-b89d48dfaf4c.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 2</stepname>
-				<stepdescription>Cách nấu bún cá ngừ:
+        <stepimagepaths>
+          <stepimagepath>Images\f3a2dc0a-99c5-4d99-850d-8e45bd4fb417.jpg</stepimagepath>
+          <stepimagepath>Images\63498f63-f2e7-4dd9-8fdc-b89d48dfaf4c.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 2</stepname>
+        <stepdescription>Cách nấu bún cá ngừ:
 - Rửa sạch cà chua, thái múi cau. Rửa sạch thơm, cắt miếng nhỏ vừa ăn.
 - Cắt nhuyễn hành lá xanh, cắt khúc đầu hành trắng dài khoảng 5cm.
 - Bắc chảo nóng với một chút dầu ăn, cho hành tím băm, sả đập dập và đầu hành vào phi thơm.
 - Cho 200gr thơm và 200gr cà chua vào xào sơ qua khoảng 2 phút rồi cho vào nồi 1,5l nước dùng đã hầm.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\25bc25a2-335a-4e11-80e8-0eb606f061ce.jpg</stepimagepath>
-					<stepimagepath>Images\bcf5edf6-60b3-4630-b3a9-79889274ebf2.jpg</stepimagepath>
-					<stepimagepath>Images\1ffd6ef9-a4f6-467f-8710-fb1378706447.jpg</stepimagepath>
-					<stepimagepath>Images\a9974bc4-6205-4a55-96cc-41a0f6f55f8f.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 3</stepname>
-				<stepdescription>Khi nước dùng bún cá ngừ sôi thì nêm 2 muỗng canh nước mắm, 2 muỗng canh đường, nửa muỗng canh hạt nêm, nửa muỗng canh ớt khô.
+        <stepimagepaths>
+          <stepimagepath>Images\25bc25a2-335a-4e11-80e8-0eb606f061ce.jpg</stepimagepath>
+          <stepimagepath>Images\bcf5edf6-60b3-4630-b3a9-79889274ebf2.jpg</stepimagepath>
+          <stepimagepath>Images\1ffd6ef9-a4f6-467f-8710-fb1378706447.jpg</stepimagepath>
+          <stepimagepath>Images\a9974bc4-6205-4a55-96cc-41a0f6f55f8f.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 3</stepname>
+        <stepdescription>Khi nước dùng bún cá ngừ sôi thì nêm 2 muỗng canh nước mắm, 2 muỗng canh đường, nửa muỗng canh hạt nêm, nửa muỗng canh ớt khô.
 Sau đó cho cá ngừ vào luộc chín. Nước dùng bún cá ngừ sôi trở lại vớt phần cá đã nấu ra dĩa.
 Nhặt sạch rau sống, cắt thành sợi dài rồi trộn chung bắp chuối và giá để ăn kèm bún cá ngừ.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\df1c41e9-a1ec-4995-8bf8-debf125514ea.jpg</stepimagepath>
-					<stepimagepath>Images\929d867d-1cf1-4b4b-8128-fe7a341b4b45.jpg</stepimagepath>
-					<stepimagepath>Images\f360af98-bfaf-4c58-b7cb-1f07b8f101a9.jpg</stepimagepath>
-					<stepimagepath>Images\a75d78d2-b2a4-4577-9942-53642d8d8fa0.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 4</stepname>
-				<stepdescription>Bày trí bún cá ngừ:
+        <stepimagepaths>
+          <stepimagepath>Images\df1c41e9-a1ec-4995-8bf8-debf125514ea.jpg</stepimagepath>
+          <stepimagepath>Images\929d867d-1cf1-4b4b-8128-fe7a341b4b45.jpg</stepimagepath>
+          <stepimagepath>Images\f360af98-bfaf-4c58-b7cb-1f07b8f101a9.jpg</stepimagepath>
+          <stepimagepath>Images\a75d78d2-b2a4-4577-9942-53642d8d8fa0.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 4</stepname>
+        <stepdescription>Bày trí bún cá ngừ:
 - Trụng bún qua với nước sôi, chan nước dùng và cho miếng cá ngừ lên mặt, rắc một ít rau mùi và tiêu cho thơm.
 Món bún cá ngừ là một món ăn ngon và bổ dưỡng, rất thích hợp làm món ăn sáng hoặc phục vụ những bữa ăn tối cho cả nhà.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\3f947d4a-a8ab-4b65-b5ea-f8a393e25859.jpg</stepimagepath>
-					<stepimagepath>Images\7ce9df4d-12a3-443f-88db-88df5a4e7c70.jpg</stepimagepath>
-					<stepimagepath>Images\0cf2a24e-a282-4702-afb3-b9362c1c32b8.jpg</stepimagepath>
-					<stepimagepath>Images\1889d6b5-c846-4787-8ca6-366c015f2a9b.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-		</steps>
-	</record>
-	<record>
-		<id>12</id>
-		<name>Tôm Rim Nước Dừa</name>
-		<description>Tôm rim nước dừa là một món ăn vô cùng đơn giản với những nguyên liệu vô cùng thân quen.</description>
-		<thumbnailPath>Images\05097dab-262a-4a98-8ab9-ec905ad10171.jpg</thumbnailPath>
-		<video  />
-		<isFavorite>False</isFavorite>
-		<steps>
-			<astep>
-				<stepname>Bước 1</stepname>
-				<stepdescription>Tôm cắt bỏ đầu, chân rồi rửa sạch. Ướp với 1/2 muỗng cà phê muối, 1/2 muỗng cà phê hạt nêm trong 15 phút.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\27f05bad-4e3f-47df-bafb-aedc4502bbd8.jpg</stepimagepath>
-					<stepimagepath>Images\25072815-90ee-449f-89dc-d3a0c9de7e56.jpg</stepimagepath>
-					<stepimagepath>Images\af5c9d97-f394-458e-95ac-5cd7a62aecf2.jpg</stepimagepath>
-					<stepimagepath>Images\7ac57511-15a4-47d7-ac7e-314983bb00b1.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 2</stepname>
-				<stepdescription>Đặt nồi Tchef Saucepan lên bếp, quét một lớp dầu mỏng, phi thơm 5gr tỏi băm.
+        <stepimagepaths>
+          <stepimagepath>Images\3f947d4a-a8ab-4b65-b5ea-f8a393e25859.jpg</stepimagepath>
+          <stepimagepath>Images\7ce9df4d-12a3-443f-88db-88df5a4e7c70.jpg</stepimagepath>
+          <stepimagepath>Images\0cf2a24e-a282-4702-afb3-b9362c1c32b8.jpg</stepimagepath>
+          <stepimagepath>Images\1889d6b5-c846-4787-8ca6-366c015f2a9b.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+    </steps>
+  </record>
+  <record>
+    <id>12</id>
+    <name>Tôm Rim Nước Dừa</name>
+    <description>Tôm rim nước dừa là một món ăn vô cùng đơn giản với những nguyên liệu vô cùng thân quen.</description>
+    <thumbnailPath>Images\05097dab-262a-4a98-8ab9-ec905ad10171.jpg</thumbnailPath>
+    <video />
+    <isFavorite>False</isFavorite>
+    <steps>
+      <astep>
+        <stepname>Bước 1</stepname>
+        <stepdescription>Tôm cắt bỏ đầu, chân rồi rửa sạch. Ướp với 1/2 muỗng cà phê muối, 1/2 muỗng cà phê hạt nêm trong 15 phút.</stepdescription>
+        <stepimagepaths>
+          <stepimagepath>Images\27f05bad-4e3f-47df-bafb-aedc4502bbd8.jpg</stepimagepath>
+          <stepimagepath>Images\25072815-90ee-449f-89dc-d3a0c9de7e56.jpg</stepimagepath>
+          <stepimagepath>Images\af5c9d97-f394-458e-95ac-5cd7a62aecf2.jpg</stepimagepath>
+          <stepimagepath>Images\7ac57511-15a4-47d7-ac7e-314983bb00b1.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 2</stepname>
+        <stepdescription>Đặt nồi Tchef Saucepan lên bếp, quét một lớp dầu mỏng, phi thơm 5gr tỏi băm.
 Khi tỏi đã dậy thì cho tôm vào đảo nhanh tay rồi nêm 2 muỗng canh nước mắm.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\206e4412-4193-4c7a-9d6b-6ed99f85ad04.jpg</stepimagepath>
-					<stepimagepath>Images\b83689dd-8eb6-4b31-990b-66debe78ed68.jpg</stepimagepath>
-					<stepimagepath>Images\15691a1a-bb1a-410a-ab54-8ce9377c6e3b.jpg</stepimagepath>
-					<stepimagepath>Images\b52126ef-cf4b-4221-ac25-bd2ff9854658.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 3</stepname>
-				<stepdescription>Cuối cùng cho 250ml nước dừa vào rồi đậy nắp, nấu với lửa vừa đến khi nước trong nồi cạn bớt, tôm áo một lớp nước sốt nâu bóng thì tắt bếp.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\6d802182-46a5-4721-8202-a77383f014e9.jpg</stepimagepath>
-					<stepimagepath>Images\b983aadb-bbb0-40e8-9cee-77dcac2c5295.jpg</stepimagepath>
-					<stepimagepath>Images\13985c54-b19b-42c9-8399-54b750e6c920.jpg</stepimagepath>
-					<stepimagepath>Images\0be67040-4ea3-43c6-b477-6b1eeaf2fcff.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 4</stepname>
-				<stepdescription>Với những bước làm đơn giản cùng sự hỗ trợ của nồi Tchef Saucepan, bạn đã có thể thực hiện được món tôm rim nước dừa vô cùng nhanh chóng rồi.
+        <stepimagepaths>
+          <stepimagepath>Images\206e4412-4193-4c7a-9d6b-6ed99f85ad04.jpg</stepimagepath>
+          <stepimagepath>Images\b83689dd-8eb6-4b31-990b-66debe78ed68.jpg</stepimagepath>
+          <stepimagepath>Images\15691a1a-bb1a-410a-ab54-8ce9377c6e3b.jpg</stepimagepath>
+          <stepimagepath>Images\b52126ef-cf4b-4221-ac25-bd2ff9854658.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 3</stepname>
+        <stepdescription>Cuối cùng cho 250ml nước dừa vào rồi đậy nắp, nấu với lửa vừa đến khi nước trong nồi cạn bớt, tôm áo một lớp nước sốt nâu bóng thì tắt bếp.</stepdescription>
+        <stepimagepaths>
+          <stepimagepath>Images\6d802182-46a5-4721-8202-a77383f014e9.jpg</stepimagepath>
+          <stepimagepath>Images\b983aadb-bbb0-40e8-9cee-77dcac2c5295.jpg</stepimagepath>
+          <stepimagepath>Images\13985c54-b19b-42c9-8399-54b750e6c920.jpg</stepimagepath>
+          <stepimagepath>Images\0be67040-4ea3-43c6-b477-6b1eeaf2fcff.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 4</stepname>
+        <stepdescription>Với những bước làm đơn giản cùng sự hỗ trợ của nồi Tchef Saucepan, bạn đã có thể thực hiện được món tôm rim nước dừa vô cùng nhanh chóng rồi.
 Món này sẽ giúp thực đơn bữa cơm gia đình bạn trở nên phong phú hơn, đưa cơm hơn. Bạn còn ngại gì mà chưa thử?</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\587ee64f-a428-429d-b391-60e2dd194b95.jpg</stepimagepath>
-					<stepimagepath>Images\8d06ce7c-1130-49cc-877c-f0c12e76eac5.jpg</stepimagepath>
-					<stepimagepath>Images\c0cb9fda-a571-4baa-a27f-c5edca45a6ce.jpg</stepimagepath>
-					<stepimagepath>Images\14de800c-70df-4a18-8ab0-eee33ac1e065.jpg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-		</steps>
-	</record>
-	<record>
-		<id>13</id>
-		<name>Bún Mắm Nêm Đà Nẵng</name>
-		<description>Không biết đã biết bao nhiêu vát ba lô đi Đà Nẵng, nhưng lúc nào Đà Nẵng cũng có sức cuốn hút ghê gớm lắm và hình như năm nào cũng phải đi Đà Nẵng một lần. Rồi cứ một lần Bún Mắm Nêm Đà Nẵng</description>
-		<thumbnailPath>Images\b8a78835-0943-4af1-a633-aae6553f91a6.jpeg</thumbnailPath>
-		<video>https://youtu.be/hOaeTjJo-Xs</video>
-		<isFavorite>False</isFavorite>
-		<steps>
-			<astep>
-				<stepname>Bước 1</stepname>
-				<stepdescription>Một trong những nguyên liệu tạo nên sự thành công của món ăn là phải mua được mắm nêm cá cơm hoặc mắm nêm cá thu.
+        <stepimagepaths>
+          <stepimagepath>Images\587ee64f-a428-429d-b391-60e2dd194b95.jpg</stepimagepath>
+          <stepimagepath>Images\8d06ce7c-1130-49cc-877c-f0c12e76eac5.jpg</stepimagepath>
+          <stepimagepath>Images\c0cb9fda-a571-4baa-a27f-c5edca45a6ce.jpg</stepimagepath>
+          <stepimagepath>Images\14de800c-70df-4a18-8ab0-eee33ac1e065.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+    </steps>
+  </record>
+  <record>
+    <id>13</id>
+    <name>Bún Mắm Nêm Đà Nẵng</name>
+    <description>Không biết đã biết bao nhiêu vát ba lô đi Đà Nẵng, nhưng lúc nào Đà Nẵng cũng có sức cuốn hút ghê gớm lắm và hình như năm nào cũng phải đi Đà Nẵng một lần. Rồi cứ một lần Bún Mắm Nêm Đà Nẵng</description>
+    <thumbnailPath>Images\b8a78835-0943-4af1-a633-aae6553f91a6.jpeg</thumbnailPath>
+    <video>https://youtu.be/hOaeTjJo-Xs</video>
+    <isFavorite>False</isFavorite>
+    <steps>
+      <astep>
+        <stepname>Bước 1</stepname>
+        <stepdescription>Một trong những nguyên liệu tạo nên sự thành công của món ăn là phải mua được mắm nêm cá cơm hoặc mắm nêm cá thu.
 Với Ric một chai mắm ngon là khi vừa mở nắp chai, mọi người sẽ nghe được cái âm thanh quyến rũ… “Xịt” như kiểu ai lén thả mìn thúi banh nhà lòng chợ, banh não 😂😂😂.
 Mình thì hay dùng loại mắm cá cơm của Dì Cẩn, loại chưa pha nha.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\57639f23-bbb6-4c7a-bb12-bbda1b2dae35.jpeg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 2</stepname>
-				<stepdescription>Nguyên liệu pha nước chấm: 4tbsp mắm nêm cá cơm. Bạn nào mua được mắm nêm cá thu thì càng ngon nha.
+        <stepimagepaths>
+          <stepimagepath>Images\57639f23-bbb6-4c7a-bb12-bbda1b2dae35.jpeg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 2</stepname>
+        <stepdescription>Nguyên liệu pha nước chấm: 4tbsp mắm nêm cá cơm. Bạn nào mua được mắm nêm cá thu thì càng ngon nha.
 2tbsp nước sôi, ½ trái thơm (trái dứa), 2tbsp đường, tỏi &amp; ớt tuỳ thích.</stepdescription>
-				<stepimagepaths  />
-			</astep>
-			<astep>
-				<stepname>Bước 3</stepname>
-				<stepdescription>Lưu ý: Khi pha nước chấm, đường mọi người nhớ cho sau cùng nha.
+        <stepimagepaths />
+      </astep>
+      <astep>
+        <stepname>Bước 3</stepname>
+        <stepdescription>Lưu ý: Khi pha nước chấm, đường mọi người nhớ cho sau cùng nha.
 Vì tuỳ theo trái thơm, có loại chua, ngọt mà mình cân bằng lại với lượng đường cho phù hợp. Bạn nào không có thơm thì có thể dùng chanh nha.
 				</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\28a43be6-38ed-44d8-8b23-0538015f6be4.jpeg</stepimagepath>
-					<stepimagepath>Images\f00e6843-4167-41e7-a9c5-801837429c7c.jpeg</stepimagepath>
-					<stepimagepath>Images\6e33c50b-ebdb-4b66-a8a2-a41216dc3e25.jpeg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 4</stepname>
-				<stepdescription>Thịt ba chỉ hoặc tai heo.
+        <stepimagepaths>
+          <stepimagepath>Images\28a43be6-38ed-44d8-8b23-0538015f6be4.jpeg</stepimagepath>
+          <stepimagepath>Images\f00e6843-4167-41e7-a9c5-801837429c7c.jpeg</stepimagepath>
+          <stepimagepath>Images\6e33c50b-ebdb-4b66-a8a2-a41216dc3e25.jpeg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 4</stepname>
+        <stepdescription>Thịt ba chỉ hoặc tai heo.
 Thịt ba chỉ luộc trong nước sôi từ 15-20 phút.
 Thông thường khi luộc thịt heo, Ric thường cho thêm 1 cốc rượu trắng &amp; 1 muỗng cafe muối để thịt được ngon &amp; thơm hơn.
 Thịt sau khi luộc, ngâm vào nước lạnh khoảng 7-10 phút rồi cắt thành từng lát mỏng</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\ff3cc715-6b74-4598-b50c-75b878907b82.jpeg</stepimagepath>
-					<stepimagepath>Images\d2bc166b-2205-455d-b451-8c7dd53f3293.jpeg</stepimagepath>
-					<stepimagepath>Images\8da382bd-1f92-4409-9770-51a412f12fc4.jpeg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 5</stepname>
-				<stepdescription>Mít non - Nguyên liệu không nên thiếu để thưởng thức trọn vẹn tinh thần của món ăn.
+        <stepimagepaths>
+          <stepimagepath>Images\ff3cc715-6b74-4598-b50c-75b878907b82.jpeg</stepimagepath>
+          <stepimagepath>Images\d2bc166b-2205-455d-b451-8c7dd53f3293.jpeg</stepimagepath>
+          <stepimagepath>Images\8da382bd-1f92-4409-9770-51a412f12fc4.jpeg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 5</stepname>
+        <stepdescription>Mít non - Nguyên liệu không nên thiếu để thưởng thức trọn vẹn tinh thần của món ăn.
 Mít non sau khi mua về, mọi người gọt bỏ phần vỏ xanh rồi rửa qua nước có bỏ thêm vài lát chanh hoặc ít giấm chua để mít không bị đen.
 Cắt khúc rồi luộc mít trong nước sôi từ 7-10 phút sau đó vớt ra cho vào nước lạnh và xé nhỏ.
 Lưu ý: Khi gọt mít nhớ thoa dầu lên dao, để ko lát dễ rửa nha... mà xui, đàn ông vào bếp vẫn hậu đậu... thú thật là mình quên thoa😭😭😭</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\4147969f-5d17-4b36-8148-f0a3d82b1186.jpeg</stepimagepath>
-					<stepimagepath>Images\bfe45c1f-482b-4fde-9081-1d170ada43a4.jpeg</stepimagepath>
-					<stepimagepath>Images\13482306-caec-4906-aa52-53d205c192c4.jpeg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 6</stepname>
-				<stepdescription>Đu đủ xanh: Gọt vỏ &amp; bào mỏng ngâm qua nước cho thêm ½ muỗng cafe muối để loại bớt nhựa và giữ độ giòn.
+        <stepimagepaths>
+          <stepimagepath>Images\4147969f-5d17-4b36-8148-f0a3d82b1186.jpeg</stepimagepath>
+          <stepimagepath>Images\bfe45c1f-482b-4fde-9081-1d170ada43a4.jpeg</stepimagepath>
+          <stepimagepath>Images\13482306-caec-4906-aa52-53d205c192c4.jpeg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 6</stepname>
+        <stepdescription>Đu đủ xanh: Gọt vỏ &amp; bào mỏng ngâm qua nước cho thêm ½ muỗng cafe muối để loại bớt nhựa và giữ độ giòn.
 Rau Xanh: Xà lách, cải non, ngò rí, rau chuối, giá đỗ &amp; ít húng lủi</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\d57cad52-f2f5-4038-b24c-4830ce8edbe9.jpeg</stepimagepath>
-					<stepimagepath>Images\d6995c06-e0aa-49a9-bd16-916e1830cbb1.jpeg</stepimagepath>
-					<stepimagepath>Images\416fd774-8191-4390-ba82-778abb1bae71.jpeg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 7</stepname>
-				<stepdescription>Chả cây, nem chua cắt khúc.👨‍🍳
+        <stepimagepaths>
+          <stepimagepath>Images\d57cad52-f2f5-4038-b24c-4830ce8edbe9.jpeg</stepimagepath>
+          <stepimagepath>Images\d6995c06-e0aa-49a9-bd16-916e1830cbb1.jpeg</stepimagepath>
+          <stepimagepath>Images\416fd774-8191-4390-ba82-778abb1bae71.jpeg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 7</stepname>
+        <stepdescription>Chả cây, nem chua cắt khúc.👨‍🍳
 Ngoài ra bạn nào có điều kiện có thể thêm chả bò hoặc heo quay cũng làm món ăn thêm phần hấp dẫn nha.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\403b23eb-4529-4bb8-8e7e-94dab1924751.jpeg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-			<astep>
-				<stepname>Bước 8</stepname>
-				<stepdescription>Cho rau xanh và bún tươi vào tô.
+        <stepimagepaths>
+          <stepimagepath>Images\403b23eb-4529-4bb8-8e7e-94dab1924751.jpeg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>Bước 8</stepname>
+        <stepdescription>Cho rau xanh và bún tươi vào tô.
 Xếp thịt luộc, mít non, nem chả &amp; thịt heo quay lên trên. Rồi thêm 1 ít dầu màu điều, đậu phộng rang và hành phi.
 Dọn kèm với mắm nêm là có thể thưởng thức rồi nhé.</stepdescription>
-				<stepimagepaths>
-					<stepimagepath>Images\3da7bf6e-6872-480f-b559-9d1ffb60a976.jpeg</stepimagepath>
-					<stepimagepath>Images\23275de3-264a-43bf-aa9f-20ec2b8bc4cc.jpeg</stepimagepath>
-					<stepimagepath>Images\d5a30726-a556-4245-8fdd-dc73760affb1.jpeg</stepimagepath>
-				</stepimagepaths>
-			</astep>
-		</steps>
-	</record>
+        <stepimagepaths>
+          <stepimagepath>Images\3da7bf6e-6872-480f-b559-9d1ffb60a976.jpeg</stepimagepath>
+          <stepimagepath>Images\23275de3-264a-43bf-aa9f-20ec2b8bc4cc.jpeg</stepimagepath>
+          <stepimagepath>Images\d5a30726-a556-4245-8fdd-dc73760affb1.jpeg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+    </steps>
+  </record>
 </foods>

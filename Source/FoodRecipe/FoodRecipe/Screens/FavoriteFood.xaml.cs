@@ -95,8 +95,9 @@ namespace FoodRecipe.Screens
 
         private void Button_Click_Detail(object sender, RoutedEventArgs e)
         {
-            var favScreen = new FavoriteFood();
-            favScreen.Show();
+            var id = int.Parse(((Button)sender).Tag.ToString());
+            var detailScreen = new RecipeDetail(id);
+            detailScreen.Show();
         }
 
         private void Button_Click_RemoveFav(object sender, RoutedEventArgs e)
@@ -120,6 +121,13 @@ namespace FoodRecipe.Screens
         {
             var listfoodScreen = new ListFood();
             listfoodScreen.Show();
+            this.Close();
+        }
+
+        private void addMenuButton_Click(object sender, RoutedEventArgs e)
+        {
+            var addfoodScreen = new AddRecipe();
+            addfoodScreen.Show();
             this.Close();
         }
     }

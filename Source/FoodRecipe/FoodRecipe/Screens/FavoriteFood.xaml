@@ -32,7 +32,7 @@
                        FontSize="15" FontWeight="Bold"/>
                 </StackPanel>
             </Button>
-            <Button Background="Transparent" BorderThickness="0" Cursor="Hand">
+            <Button x:Name="addMenuButton" Background="Transparent" BorderThickness="0" Cursor="Hand" Click="addMenuButton_Click">
                 <StackPanel Orientation="Horizontal" Margin="10,10,10,10">
                     <Image Source="../Images/add.png" Width="40" />
                     <Label Content="Tạo món" Foreground="White" FontSize="15" FontWeight="Bold"/>
@@ -73,7 +73,7 @@
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <StackPanel Margin="5" Width="150">
-                                    <Button Click="Button_Click_Detail" Background="Transparent" BorderThickness="0" Cursor="Hand">
+                                    <Button Tag="{Binding Id}" Click="Button_Click_Detail" Background="Transparent" BorderThickness="0" Cursor="Hand">
                                         <Image Width="auto" Height="120" Source="{Binding ThumbnailPath, Converter={StaticResource converter}}"/>
                                     </Button>
 
