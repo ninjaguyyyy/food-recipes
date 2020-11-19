@@ -3,10 +3,13 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:FoodRecipe.Screens"
+        xmlns:local="clr-namespace:FoodRecipe.Screens" xmlns:local1="clr-namespace:FoodRecipe.Helper"
         mc:Ignorable="d"
         Title="FavoriteFood" Height="630" Width="1024" Background="#F65D4E" Loaded="Window_Loaded">
 
+    <Window.Resources>
+        <local1:ImagePathToAbsolutePathConverter x:Key="converter"></local1:ImagePathToAbsolutePathConverter>
+    </Window.Resources>
     <StackPanel Orientation="Horizontal"  >
         <StackPanel Width="174" Margin="0,50,0,10">
             <Image Source="../Images/healthy-eating.png" Width="90"  Margin="0, 0, 0, 30"/>
@@ -78,7 +81,8 @@
                             <DataTemplate>
                                 <StackPanel Margin="0,0,0,15">
                                     <Button Click="Button_Click_Detail" Background="Transparent" BorderThickness="0" Cursor="Hand">
-                                        <Image Width="160" Height="80" Source="{Binding ThumbnailPath}"/>
+                                        <Image Width="160" Height="80" 
+                                               Source="{Binding ThumbnailPath, Converter={StaticResource converter}}"/>
                                     </Button>
 
                                     <DockPanel >

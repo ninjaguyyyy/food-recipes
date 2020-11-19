@@ -1,3 +1,61 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <foods>
+  <record>
+    <id>1</id>
+    <name>Ram bắp</name>
+    <description>Ram Bắp - món khai vị cực hấp dẫn cho các bữa tiệc gia đình. Cách làm ram bắp đơn giản với lớp vỏ chả giò chiên giòn rụm, nhân bắp nếp nghiền bùi thơm, rất ngon miệng. Ram bắp Quảng Ngãi thường ăn với các loại rau thơm, dưa leo cuộn bánh tráng chấm nước sốt tỏi ớt chua cay sẽ càng dậy mùi và đúng điệu. Nguyên liệu làm ram bắp dễ tìm và cách làm ram bắp tôm lại đơn giản, làm ngay mời cả nhà nhé!</description>
+    <thumbnailPath>Images\a3d59c84-13d8-492c-be61-2e15a771f8d7.jpg</thumbnailPath>
+    <video>https://youtu.be/xfaYBFzTIts</video>
+    <isFavorite>True</isFavorite>
+    <steps>
+      <astep>
+        <stepname>1</stepname>
+        <stepdescription>Chuẩn bị làm ram bắp: Bóc sạch vỏ và râu của 2 trái bắp nếp, bào nhỏ hạt bắp. Cho bắp đã bào vào cối giã và thêm gia vị với 1 muỗng cà phê hành tím băm, 1 muỗng cà phê hạt nêm, 1 muỗng cà phê đường, 1 muỗng cà phê tiêu và 10gr hành lá. Quết nhuyễn bắp cho đến khi được hỗn hợp có độ sệt nhất định.</stepdescription>
+        <stepimagepaths>
+          <stepimagepath>Images\1408d8b8-19b4-4167-8579-82e73f2b847b.jpg</stepimagepath>
+          <stepimagepath>Images\35675afa-6eab-4fdf-94bd-bda380b915a3.jpg</stepimagepath>
+          <stepimagepath>Images\85d9e9f2-073f-43ac-94a4-9dea72ccb85b.jpg</stepimagepath>
+          <stepimagepath>Images\095202e8-c03e-44c9-a6ce-5df8325d7ca8.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>2</stepname>
+        <stepdescription>Cách làm ram bắp: Thấm ướt bánh tráng, cho một ít bắp vừa đủ ăn lên bánh tráng rồi cuốn lại.</stepdescription>
+        <stepimagepaths>
+          <stepimagepath>Images\7327e635-15a5-419d-819d-b1ae89176ef3.jpg</stepimagepath>
+          <stepimagepath>Images\1f81204b-4ed5-4ed4-80b9-7a03ceae5892.jpg</stepimagepath>
+          <stepimagepath>Images\34c5ab58-bc7a-4f77-974b-336c8a8a9705.jpg</stepimagepath>
+          <stepimagepath>Images\6b5f3c45-5d10-44a1-8cb3-e1e0ba2fd286.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>3</stepname>
+        <stepdescription>Chiên ram bắp ngập dầu trong chảo trên lửa vừa. Đến khi ram bắp chín vàng giòn thì vớt ra, để cho trên giấy thấm dầu cho ráo.</stepdescription>
+        <stepimagepaths>
+          <stepimagepath>Images\148b9e06-569b-4a88-a74b-4c7aa509b941.jpg</stepimagepath>
+          <stepimagepath>Images\a69871ac-6663-435b-8738-35df5e9c4c62.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>4</stepname>
+        <stepdescription>Cách làm nước chấm ram bắp: Bắc chảo nóng, cho vào chảo 1 muỗng canh tỏi băm, 10gr bắp nếp băm, 20gr đậu phộng, 10gr ớt băm, 10gr đường, 10gr nước tương và 20ml nước rồi đảo đều. Đến khi hỗn hợp sôi cho 20ml nước bột bắp đến khi nước sốt chấm ram bắp sệt lại thì tắt bếp.</stepdescription>
+        <stepimagepaths>
+          <stepimagepath>Images\639768dc-7f32-42ef-b674-2eb86b2bd179.jpg</stepimagepath>
+          <stepimagepath>Images\df1d5094-5739-49c6-a80f-1b925869da8b.jpg</stepimagepath>
+          <stepimagepath>Images\1402b356-18ba-4629-8dd8-5667498a68aa.jpg</stepimagepath>
+          <stepimagepath>Images\6612c1a5-d6ec-4f0b-b3a5-092b766cc512.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+      <astep>
+        <stepname>5</stepname>
+        <stepdescription>Cách làm ram bắp ngon phải chuẩn bị thêm nước chấm đủ chua cay, mặn ngọt đậm đà và rau sống hái trong vườn còn tươi nguyên thì thật hấp dẫn. Chả ram bắp vàng giòn, béo ngọt, tỏa mùi thơm phức. Đặc biệt trong những ngày tiết trời lành lạnh này, được ăn những miếng ram bắp vừa chiên xuống còn nóng hôi hổi, vừa thổi, vừa ăn thì không có gì thú vị bằng.</stepdescription>
+        <stepimagepaths>
+          <stepimagepath>Images\00ed6e94-fc9d-4cf6-8b59-fac7d5340822.jpg</stepimagepath>
+          <stepimagepath>Images\94770397-4cc2-4fa7-86d5-9092b3fe9221.jpg</stepimagepath>
+          <stepimagepath>Images\e8c039a6-65a2-44c2-b782-34ae6c2ea2b5.jpg</stepimagepath>
+          <stepimagepath>Images\f9d58d92-8d40-4f99-85b8-f58cb5aa8b80.jpg</stepimagepath>
+        </stepimagepaths>
+      </astep>
+    </steps>
+  </record>
 </foods>
