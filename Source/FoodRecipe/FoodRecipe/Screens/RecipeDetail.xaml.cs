@@ -22,11 +22,12 @@ namespace FoodRecipe.Screens
     public partial class RecipeDetail : Window
     {
         private DTO.Food food = null;
-        private int currentStepIndex = 0;
+        private int currentStepIndex = -1;
         public void LoadStepList()
         {
             var steps = food.Steps;
             stepStack.Children.Clear();
+            
             for (int i = 0; i < steps.Count; i++)
             {
                 Button button = new Button() {

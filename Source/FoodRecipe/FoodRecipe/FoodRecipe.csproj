@@ -186,19 +186,10 @@
     <Resource Include="Images\pagination.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\left-arrow.png" />
-    <Resource Include="Images\right-arrow.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\UploadImage.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\favicon.ico">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\00ed6e94-fc9d-4cf6-8b59-fac7d5340822.jpg">
@@ -861,6 +852,17 @@
     <None Include="Images\fffa431d-3552-409f-af29-bd0cfc4553e1.jpeg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\right-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\left-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\favicon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FoodRecipe.Screens"
         mc:Ignorable="d"
+        xmlns:local1="clr-namespace:FoodRecipe.Helper"
         Title="Chi tiết công thức" Height="650" Width="850" Background="#F65D4E"
         WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <local1:ImagePathToAbsolutePathConverter x:Key="converter"></local1:ImagePathToAbsolutePathConverter>
+    </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
@@ -39,8 +43,9 @@
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Column="1" Grid.ColumnSpan="3" Name="imageStack" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-                        </StackPanel>
-                        <Rectangle Opacity="0.5" Grid.Column="1" Name="rectLeft">
+                        <Image Source="{Binding ThumbnailPath, Converter={StaticResource converter}}" />
+                    </StackPanel>
+                        <Rectangle Visibility="Hidden" Opacity="0.5" Grid.Column="1" Name="rectLeft">
                             <Rectangle.Fill>
                                 <LinearGradientBrush StartPoint="1,0" EndPoint="0,0">
                                     <GradientStop Color="Black" Offset="0.8" />
@@ -48,7 +53,7 @@
                                 </LinearGradientBrush>
                             </Rectangle.Fill>
                         </Rectangle>
-                        <Rectangle Opacity="0.5" Grid.Column="3" Name="rectRight">
+                        <Rectangle Opacity="0.5" Grid.Column="3" Name="rectRight" Visibility="Hidden">
                             <Rectangle.Fill>
                                 <LinearGradientBrush StartPoint="1,0" EndPoint="0,0">
                                     <GradientStop Color="Black" Offset="0.2" />
@@ -56,7 +61,7 @@
                                 </LinearGradientBrush>
                             </Rectangle.Fill>
                         </Rectangle>
-                        <Image Name="arrowLeft" Tag="prev" MouseDown="Image_MouseDown" Source="/Images/left-arrow.png" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center">
+                        <Image Name="arrowLeft" Visibility="Hidden" Tag="prev" MouseDown="Image_MouseDown" Source="/Images/left-arrow.png" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center">
                             <Image.Style>
                                 <Style TargetType="{x:Type Image}">
                                     <Setter Property="Height" Value="40" />
@@ -68,7 +73,7 @@
                                 </Style>
                             </Image.Style>
                         </Image>
-                        <Image Name="arrowRight" Tag="next" MouseDown="Image_MouseDown" Source="/Images/right-arrow.png" Grid.Column="3" HorizontalAlignment="Right" VerticalAlignment="Center">
+                        <Image Visibility="Hidden" Name="arrowRight" Tag="next" MouseDown="Image_MouseDown" Source="/Images/right-arrow.png" Grid.Column="3" HorizontalAlignment="Right" VerticalAlignment="Center">
                             <Image.Style>
                                 <Style TargetType="{x:Type Image}">
                                     <Setter Property="Height" Value="40" />
@@ -84,7 +89,7 @@
                     <ScrollViewer Grid.Row="2" Margin="35 25 35 10" VerticalScrollBarVisibility="Auto" Name="detailBox">
                         <TextBlock ScrollViewer.CanContentScroll="True"
                                     ScrollViewer.VerticalScrollBarVisibility="Auto"
-                                    FontSize="15" TextWrapping="Wrap" Name="descriptionText">
+                                    FontSize="15" TextWrapping="Wrap" Name="descriptionText" Text="{Binding Description}">
                         </TextBlock>
                     </ScrollViewer>
 

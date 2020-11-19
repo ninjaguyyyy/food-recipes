@@ -74,7 +74,7 @@
                             <DataTemplate>
                                 <StackPanel Margin="5" Width="150">
                                     <Button Tag="{Binding Id}" Click="Button_Click_Detail" Background="Transparent" BorderThickness="0" Cursor="Hand">
-                                        <Image Width="auto" Height="120" Source="{Binding ThumbnailPath, Converter={StaticResource converter}}"/>
+                                        <Image Source="{Binding ThumbnailPath, Converter={StaticResource converter}}"/>
                                     </Button>
 
                                     <Grid>
@@ -89,7 +89,7 @@
                                             <Image Width="20" Source="../Images/broken-heart.png" RenderOptions.BitmapScalingMode="HighQuality" VerticalAlignment="Center" />
                                         </Button>
                                     </Grid>
-                                    <TextBlock Text="{Binding Description}" FontSize="10" TextWrapping="Wrap" />
+                                    <!--<TextBlock Text="{Binding Description}" FontSize="10" TextWrapping="Wrap" />-->
 
                                 </StackPanel>
                             </DataTemplate>

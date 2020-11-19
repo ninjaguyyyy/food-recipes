@@ -159,7 +159,7 @@
                             <DataTemplate>
                                 <StackPanel Margin="5" Width="150">
                                     <Button Click="Button_Click_Detail" Tag="{Binding Id}" Background="Transparent" BorderThickness="0" Cursor="Hand">
-                                        <Image Width="auto" Height="120" Source="{Binding ThumbnailPath, Converter={StaticResource converter}}" />
+                                        <Image Source="{Binding ThumbnailPath, Converter={StaticResource converter}}" />
                                     </Button>
                                     <Grid>
                                         <Grid.ColumnDefinitions>
@@ -173,7 +173,7 @@
                                             <Image Width="20" Source="../Images/heart.png" RenderOptions.BitmapScalingMode="HighQuality" VerticalAlignment="Center" />
                                         </Button>
                                     </Grid>
-                                    <TextBlock Text="{Binding Description}" FontSize="10" TextWrapping="Wrap" />
+                                    <!--<TextBlock Text="{Binding Description}" FontSize="10" TextWrapping="Wrap" />-->
                                 </StackPanel>
                             </DataTemplate>
                         </ListView.ItemTemplate>
