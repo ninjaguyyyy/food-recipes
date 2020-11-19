@@ -41,12 +41,12 @@ Food Recipes - Phần mềm Window về công thức nấu món ăn
     - Hiển thị chi tiết các bước nấu món ăn.
     - Có danh sách hình ảnh dạng carousel
     - Có animation
+    - Có xem video trên Internet
 5. **Chức năng Add Recipe**
     - Cho phép thêm món ăn với đầy đủ các trường đã yêu cầu
 ## 👎 Các chức năng chưa làm được
-1. Chưa hỗ trợ xem video (**Detail Screen**)
-2. Cảnh giới 4, 5, 6 phần search (**Search Screen**)
-3. Chưa hỗ trợ lưu lại thông tin sắp xếp (**Home Screen**)
+1. Cảnh giới 4, 5, 6 phần search (**Search Screen**)
+2. Chưa hỗ trợ lưu lại thông tin sắp xếp (**Home Screen**)
 ## 👎 Các chức năng làm thêm
 **Không có.**
 ## 🎉 Các điểm đặc sắc
@@ -54,8 +54,8 @@ Food Recipes - Phần mềm Window về công thức nấu món ăn
 ## 💣 Các con đường bất hạnh
 **Không có.**
 ## 💌 Điểm đề nghị
-Số điểm đề nghị: **8** điểm
+Số điểm đề nghị: **9** điểm
 ## 📌 Link Youtube demo
-Link: 
+Link: https://youtu.be/o_VBco37jHQ
 ## 🔒 Quyền sử dụng Project
 Có thể share cho các khóa sau
