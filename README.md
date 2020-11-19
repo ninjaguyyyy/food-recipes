@@ -10,17 +10,17 @@ Food Recipes - Phần mềm Window về công thức nấu món ăn
 `Demo: `
 ## 🤵 Thông tin nhóm thực hiện
 
-`Họ tên` Nguyễn Hữu Chí  
-`Mssv` 1712299  
-`Email` nguyenhuuchi3006@gmail.com
+`Họ tên` Võ Hoài An  
+`Mssv` 1712265  
+`Email` vohoaian.tn@gmail.com
 
 `Họ tên` Nguyễn Hữu Chí  
 `Mssv` 1712299  
 `Email` nguyenhuuchi3006@gmail.com
 
-`Họ tên` Nguyễn Hữu Chí  
-`Mssv` 1712299  
-`Email` nguyenhuuchi3006@gmail.com
+`Họ tên` Trần Lê Khánh Hồng  
+`Mssv` 1712465	  
+`Email` khanhhong141049@gmail.com
 ## 👍 Các chức năng đã làm được
 1. Chức năng Splash Screen
     - Hiển thị thông tin chào mừng khi ứng dụng khởi chạy.
