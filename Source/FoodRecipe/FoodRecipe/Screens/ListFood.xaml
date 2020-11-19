@@ -150,20 +150,22 @@
                                 </ListView.ItemsPanel>
                                 <ListView.ItemTemplate>
                                     <DataTemplate>
-                                        <StackPanel Margin="15,0,15,12">
-                                        <Button Click="Button_Click_Detail" Tag="{Binding Id}" Background="Transparent" BorderThickness="0" Cursor="Hand">
-                                                <Image Width="auto" Height="80" 
+                                        <StackPanel Margin="15,0,15,12" Width="145">
+                                            <Button Width="145" Click="Button_Click_Detail" 
+                                                    Tag="{Binding Id}" 
+                                                    Background="Transparent" BorderThickness="0" Cursor="Hand">
+                                                <Image Width="145" Height="80" 
                                                        Source="{Binding ThumbnailPath, Converter={StaticResource converter}}" />
                                             </Button>
 
-                                        <DockPanel >
+                                            <DockPanel >
                                                 <Button DockPanel.Dock="Left" Click="Button_Click_Detail" Background="Transparent" BorderThickness="0" Cursor="Hand">
                                                     <TextBlock Text="{Binding Name}" FontWeight="Bold" Margin="5,5,0,0"/>
                                                 </Button>
 
                                                 <Button HorizontalAlignment="Right" DockPanel.Dock="Right" Tag="{Binding Id}" Click="Button_Click_AddToFav" 
 
-                                            Background="Transparent" BorderThickness="0" Cursor="Hand">
+                                                    Background="Transparent" BorderThickness="0" Cursor="Hand">
                                                     <Image Width="20" Source="../Images/heart.png" />
                                                 </Button>
                                             </DockPanel>
