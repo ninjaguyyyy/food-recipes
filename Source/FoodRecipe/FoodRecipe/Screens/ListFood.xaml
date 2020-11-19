@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FoodRecipe.Screens" xmlns:local1="clr-namespace:FoodRecipe.Helper"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Title="ListFood" Height="630" Width="1024" Background="#F65D4E" Loaded="Window_Loaded">
 
     <Window.Resources>
