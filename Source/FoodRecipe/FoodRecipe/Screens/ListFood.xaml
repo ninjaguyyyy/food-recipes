@@ -5,9 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FoodRecipe.Screens" xmlns:local1="clr-namespace:FoodRecipe.Helper"
         mc:Ignorable="d"
-        WindowStartupLocation="CenterScreen"
-        Title="ListFood" Height="630" Width="1024" Background="#F65D4E" Loaded="Window_Loaded">
-
+        Title="ListFood" Height="630" Width="1024" Background="#F65D4E" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <Style x:Key="ComboBoxTest2" TargetType="{x:Type ComboBox}">
             <Setter Property="Template">
@@ -59,173 +57,163 @@
     </Window.Resources>
 
     
-    <DockPanel >
-            <StackPanel DockPanel.Dock="Left" Width="174" Margin="0,50,0,10">
-                <Image Source="../Images/healthy-eating.png" Width="90"  Margin="0, 0, 0, 30"/>
-                <Button Background="Transparent" BorderThickness="0">
-                    <StackPanel Orientation="Horizontal" Margin="10,10,10,10">
-                        <Image Source="../Images/book.png" Width="40"/>
-                        <Label Content="Danh sách món" Foreground="White" FontSize="15" FontWeight="Bold"/>
-                    </StackPanel>
-                </Button>
-                <Button Background="Transparent" BorderThickness="0" Cursor="Hand" Click="Button_Click_Fav">
-                    <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="10,10,10,10">
-                        <Image Source="../Images/like.png" Width="40" />
-                        <Label Content="Yêu thích" 
-                       Foreground="White" 
-                       FontSize="15" FontWeight="Bold"/>
-                    </StackPanel>
-                </Button>
-                <Button Background="Transparent" BorderThickness="0" Cursor="Hand" Click="Button_Click_Add">
-                    <StackPanel Orientation="Horizontal" Margin="10,10,10,10">
-                        <Image Source="../Images/add.png" Width="40" />
-                        <Label Content="Tạo món" Foreground="White" FontSize="15" FontWeight="Bold"/>
-                    </StackPanel>
-                </Button>
-            </StackPanel>
-            <StackPanel Margin="0, 0, 20, 0">
-                <Border CornerRadius="50" 
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="174" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <StackPanel Margin="0,50,0,10">
+            <Image Source="../Images/healthy-eating.png" Width="90"  Margin="0, 0, 0, 30" RenderOptions.BitmapScalingMode="HighQuality" />
+            <Button Background="Transparent" BorderThickness="0">
+                <StackPanel Orientation="Horizontal" Margin="10,10,10,10">
+                    <Image Source="../Images/book.png" Width="40"/>
+                    <Label Content="Danh sách món" Foreground="White" FontSize="15" FontWeight="Bold"/>
+                </StackPanel>
+            </Button>
+            <Button Background="Transparent" BorderThickness="0" Cursor="Hand" Click="Button_Click_Fav">
+                <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="10,10,10,10">
+                    <Image Source="../Images/like.png" Width="40" />
+                    <Label Content="Yêu thích" 
+                    Foreground="White" 
+                    FontSize="15" FontWeight="Bold"/>
+                </StackPanel>
+            </Button>
+            <Button Background="Transparent" BorderThickness="0" Cursor="Hand" Click="Button_Click_Add">
+                <StackPanel Orientation="Horizontal" Margin="10,10,10,10">
+                    <Image Source="../Images/add.png" Width="40" />
+                    <Label Content="Tạo món" Foreground="White" FontSize="15" FontWeight="Bold"/>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+        <Border CornerRadius="50" 
                 Background="#faf9fd" 
                 BorderThickness="1" 
-                Margin="0,10,0,9.667" 
-                Padding="20, 30, 20, 30"
+                Margin="0,10,25,10" 
+                Padding="20, 20, 20, 25"
+                Grid.Column="1"
                 >
-                    <StackPanel Orientation="Vertical">
-                        <StackPanel HorizontalAlignment="Center" Margin="0, 0, 0, 10">
-                            <Label Content="Danh sách tất cả" FontSize="23" FontWeight="Bold" Foreground="#F65D4E"/>
-                        </StackPanel>
-
-                        <StackPanel Orientation="Horizontal" >
-                            <Border Width="700" BorderThickness="1" Background="White" BorderBrush="LightGray" CornerRadius="15">
-                                <Grid>
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="60" />
-                                        <ColumnDefinition Width="*" />
-                                        <ColumnDefinition Width="90" />
-
-                                    </Grid.ColumnDefinitions>
-                                    <Image Grid.Column="0" 
-                                           Source="../Images/magnifier.png" Width="20" Margin="20, 0,0,0"/>
-                                    <TextBox Grid.Column="1" Margin="20,0,20,0" BorderThickness="0" Padding="10, 10, 50, 10" 
-                                             FontSize="15" Name="searchTextBox"/>
-                                    <ComboBox Name="modeSearchComboBox"
-                                              Style="{StaticResource ComboBoxTest2}"
-                                              Grid.Column="2" Width="80"  
-                                              VerticalAlignment="Center"
-                                              FontSize="8"
-                                              SelectionChanged="modeSearchComboBox_SelectionChanged"
-                                              >
-                                        <ComboBoxItem Tag="default">Mặc định tất cả</ComboBoxItem>
-                                        <ComboBoxItem IsSelected="true" Tag="exact">Tìm chính xác</ComboBoxItem>
-                                        <ComboBoxItem Tag="smart">Tìm thông minh</ComboBoxItem>
-                                    </ComboBox>
-                                </Grid>
-
-                            </Border>
-
-                            <Button Name="searchButton" Click="searchButton_Click" Padding="10" BorderThickness="0" Background="#F65D4E" 
-                                    Cursor="Hand" Margin="20,0,0,0">
-                                <Image Source="../Images/loupe.png" Width="20"/>
-                            </Button>
-
-                        </StackPanel>
-
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="9*" />
+                </Grid.RowDefinitions>
+                <StackPanel HorizontalAlignment="Center" Margin="0, 0, 0, 10">
+                    <Label Content="Danh sách món ăn" FontSize="23" FontWeight="Bold" Foreground="#F65D4E"/>
+                </StackPanel>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="9*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Border BorderThickness="1" Background="White" BorderBrush="LightGray" CornerRadius="15" VerticalAlignment="Center">
                         <Grid>
-                            <Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="60" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="140" />
 
-                                <RowDefinition Height="*" />
-                                <RowDefinition Height="auto" />
-                            </Grid.RowDefinitions>
-
-                            <ListView Name="dataListView" 
-                          ScrollViewer.HorizontalScrollBarVisibility="Disabled"
-                          Margin="0,20,0,0" Grid.Row="0"
-                          BorderThickness="0"
-                          Background="Transparent"
-                              >
-
-                                <ListView.ItemsPanel>
-                                    <ItemsPanelTemplate>
-                                        <WrapPanel />
-                                    </ItemsPanelTemplate>
-                                </ListView.ItemsPanel>
-                                <ListView.ItemTemplate>
-                                    <DataTemplate>
-                                        <StackPanel Margin="15,0,15,12" Width="145">
-                                            <Button Width="145" Click="Button_Click_Detail" 
-                                                    Tag="{Binding Id}" 
-                                                    Background="Transparent" BorderThickness="0" Cursor="Hand">
-                                                <Image Width="145" Height="80" 
-                                                       Source="{Binding ThumbnailPath, Converter={StaticResource converter}}" />
-                                            </Button>
-
-                                            <DockPanel >
-                                                <Button DockPanel.Dock="Left" Click="Button_Click_Detail" Background="Transparent" BorderThickness="0" Cursor="Hand">
-                                                    <TextBlock Text="{Binding Name}" FontWeight="Bold" Margin="5,5,0,0"/>
-                                                </Button>
-
-                                                <Button HorizontalAlignment="Right" DockPanel.Dock="Right" Tag="{Binding Id}" Click="Button_Click_AddToFav" 
-
-                                                    Background="Transparent" BorderThickness="0" Cursor="Hand">
-                                                    <Image Width="20" Source="../Images/heart.png" />
-                                                </Button>
-                                            </DockPanel>
-
-                                        </StackPanel>
-                                    </DataTemplate>
-                                </ListView.ItemTemplate>
-
-                            </ListView>
-
-
-                            <Grid HorizontalAlignment="Center" Grid.Row="1" Width="700">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="auto" />
-                                    <ColumnDefinition Width="*" />
-                                    <ColumnDefinition Width="auto" />
-                                </Grid.ColumnDefinitions>
-
-                                <StackPanel Grid.Column="0" Orientation="Horizontal">
-                                    <Label Content="Hiển thị mỗi trang: " />
-                                    <TextBox x:Name="perPageTextbox" Height="auto" VerticalAlignment="Center" Padding="5, 0, 5, 0"/>
-                                    <Button Click="Button_Click_ChangePerPage" 
-                                    Cursor="Hand" BorderThickness="0" Background="Transparent" Margin="5, 0, 0,0">
-                                        <Image Source="../Images/pagination.png" Width="20"/>
-                                    </Button>
-                                </StackPanel>
-
-
-                                <StackPanel x:Name="pagingStackPanel" 
-                                    Orientation="Horizontal" HorizontalAlignment="Center" 
-                                    Grid.Column="1">
-
-                                </StackPanel>
-
-                                <StackPanel Grid.Column="2" Orientation="Horizontal">
-                                    <Label Margin="20, 0, 10, 0" Content="Sắp xếp: " />
-                                <ComboBox Style="{StaticResource ComboBoxTest2}"  Name="sortComboBox" 
-                                          Width="80"
-                                          SelectionChanged="sortComboBox_SelectionChanged">
-                                        <ComboBoxItem Tag="default" IsSelected="True">Mặc định</ComboBoxItem>
-                                        <ComboBoxItem Tag="az">Theo tên: A -> Z</ComboBoxItem>
-                                        <ComboBoxItem Tag="za">Theo tên: Z -> A</ComboBoxItem>
-                                        <ComboBoxItem Tag="newold">Theo ngày tạo: Mới -> Cũ</ComboBoxItem>
-                                        <ComboBoxItem Tag="oldnew">Theo ngày tạo: Cũ -> Mới</ComboBoxItem>
-                                    </ComboBox>
-                                </StackPanel>
-
-
-                            </Grid>
-
-
-
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Column="0" Source="../Images/magnifier.png" RenderOptions.BitmapScalingMode="HighQuality" Width="20" Margin="20, 0,0,0"/>
+                            <TextBox Grid.Column="1" Margin="20,0,20,0" BorderThickness="0" Padding="10, 10, 50, 10" 
+                                        FontSize="15" Name="searchTextBox"/>
+                            <ComboBox Name="modeSearchComboBox"
+                                        Style="{StaticResource ComboBoxTest2}"
+                                        Grid.Column="2"
+                                        VerticalAlignment="Center"
+                                        FontSize="14"
+                                        SelectionChanged="modeSearchComboBox_SelectionChanged"
+                                        Margin="0,0,10,0"
+                                        >
+                                <ComboBoxItem Tag="default">Tất cả</ComboBoxItem>
+                                <ComboBoxItem IsSelected="true" Tag="exact">Tìm chính xác</ComboBoxItem>
+                                <ComboBoxItem Tag="smart">Tìm không dấu</ComboBoxItem>
+                            </ComboBox>
                         </Grid>
+                    </Border>
+
+                    <Button Grid.Column="1" Name="searchButton" Click="searchButton_Click" Padding="10" BorderThickness="0" Background="#F65D4E" 
+                            Cursor="Hand" Margin="20,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left">
+                        <Image Source="../Images/loupe.png" Width="20" RenderOptions.BitmapScalingMode="HighQuality" />
+                    </Button>
+
+                </Grid>
+
+                <Grid Grid.Row="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+
+                    <ListView Name="dataListView" 
+                    ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                    Margin="0,20,0,0" Grid.Row="0"
+                    BorderThickness="0"
+                    Background="Transparent">
+                        <ListView.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapPanel />
+                            </ItemsPanelTemplate>
+                        </ListView.ItemsPanel>
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Margin="5" Width="150">
+                                    <Button Click="Button_Click_Detail" Tag="{Binding Id}" Background="Transparent" BorderThickness="0" Cursor="Hand">
+                                        <Image Width="auto" Height="120" Source="{Binding ThumbnailPath, Converter={StaticResource converter}}" />
+                                    </Button>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="5*" />
+                                            <ColumnDefinition Width="2*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Button Grid.Column="0" Click="Button_Click_Detail" Background="Transparent" Tag="{Binding Id}" BorderThickness="0" Cursor="Hand">
+                                            <TextBlock Text="{Binding Name}" FontWeight="Bold" FontSize="14" TextAlignment="Center" TextWrapping="Wrap" />
+                                        </Button>
+                                        <Button Grid.Column="1" VerticalAlignment="Center" Tag="{Binding Id}" Click="Button_Click_AddToFav" Background="Transparent" BorderThickness="0" Cursor="Hand" Margin="10,0">
+                                            <Image Width="20" Source="../Images/heart.png" RenderOptions.BitmapScalingMode="HighQuality" VerticalAlignment="Center" />
+                                        </Button>
+                                    </Grid>
+                                    <TextBlock Text="{Binding Description}" FontSize="10" TextWrapping="Wrap" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+
+                    </ListView>
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="180" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="180" />
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0" Orientation="Horizontal">
+                            <Label Content="Hiển thị mỗi trang: " FontSize="13" />
+                            <TextBox x:Name="perPageTextbox" Height="auto" FontSize="13" VerticalAlignment="Center" Padding="5, 0, 5, 0"/>
+                            <Button Click="Button_Click_ChangePerPage" 
+                            Cursor="Hand" BorderThickness="0" Background="Transparent" Margin="5, 0, 0,0">
+                                <Image Source="../Images/pagination.png" Width="20" RenderOptions.BitmapScalingMode="HighQuality" />
+                            </Button>
+                        </StackPanel>
+                        <StackPanel x:Name="pagingStackPanel" 
+                            Orientation="Horizontal" HorizontalAlignment="Center" 
+                            Grid.Column="1">
+                        </StackPanel>
+                        <ComboBox Grid.Column="2" Style="{StaticResource ComboBoxTest2}" Name="sortComboBox" 
+                            SelectionChanged="sortComboBox_SelectionChanged" FontSize="13" Margin="0,0,10,0"
+                            VerticalAlignment="Center">
+                            <ComboBoxItem Tag="default" IsSelected="True">Chọn cách sắp xếp</ComboBoxItem>
+                            <ComboBoxItem Tag="oldnew">Cũ nhất</ComboBoxItem>
+                            <ComboBoxItem Tag="newold">Mới nhất</ComboBoxItem>
+                            <ComboBoxItem Tag="az">A -> Z</ComboBoxItem>
+                            <ComboBoxItem Tag="za">Z -> A</ComboBoxItem>
+                        </ComboBox>
+                    </Grid>
+                </Grid>
 
 
-                    </StackPanel>
-                </Border>
-            </StackPanel>
-        </DockPanel>
+            </Grid>
+        </Border>
+        </Grid>
   
    
 </Window>

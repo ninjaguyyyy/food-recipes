@@ -97,12 +97,12 @@ namespace FoodRecipe.DAO
 
             if (sortBy == "newold")
             {
-                foodsElements = foodsElements.OrderBy(s => Convert.ToDateTime(s.Element("createdAt").Value));
+                foodsElements = foodsElements.OrderByDescending(s => int.Parse(s.Element("id").Value));
             }
 
             if (sortBy == "oldnew")
             {
-                foodsElements = foodsElements.OrderByDescending(s => Convert.ToDateTime(s.Element("createdAt").Value));
+                foodsElements = foodsElements.OrderBy(s => int.Parse(s.Element("id").Value));
             }
 
             foodsElements = foodsElements.Skip(skipValue).Take(perPage);
@@ -175,6 +175,7 @@ namespace FoodRecipe.DAO
                     findedFood.Name = foodEl.Element("name").Value;
                     findedFood.Description = foodEl.Element("description").Value;
                     findedFood.ThumbnailPath = foodEl.Element("thumbnailPath").Value;
+                    findedFood.VideoLink = foodEl.Element("video").Value;
                     findedFood.IsFavorite = Boolean.Parse(foodEl.Element("isFavorite").Value);
                     var steps = foodEl.Element("steps").Elements();
                     foreach (var stepEl in steps)

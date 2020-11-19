@@ -110,10 +110,10 @@ namespace FoodRecipe.Screens
             }
 
             MessageBox.Show("Đã xóa khỏi danh sách yêu thích", "Thông báo");
-
-            this.Close();
             var updatedScreen = new FavoriteFood();
             updatedScreen.Show();
+            this.Close();
+            
         }
 
         private void homeMenuButton_Click(object sender, RoutedEventArgs e)

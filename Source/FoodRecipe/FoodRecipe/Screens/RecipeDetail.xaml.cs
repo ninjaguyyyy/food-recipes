@@ -27,7 +27,7 @@ namespace FoodRecipe.Screens
         {
             var steps = food.Steps;
             stepStack.Children.Clear();
-            for (int i = 0; i<steps.Count; i++)
+            for (int i = 0; i < steps.Count; i++)
             {
                 Button button = new Button() {
                     BorderThickness = (currentStepIndex == i) ? new Thickness(1) : new Thickness(0),
@@ -44,6 +44,20 @@ namespace FoodRecipe.Screens
                 {
                     descriptionText.Text = steps[i].DescriptionStep;
                     imageStack.Children.Clear();
+                    if (steps[i].ImageStepPath.Count == 0)
+                    {
+                        imagesBox.Visibility = Visibility.Collapsed;
+                        detailBox.SetValue(Grid.RowProperty, 1);
+                    } else
+                    {
+                        imagesBox.Visibility = Visibility.Visible;
+                        detailBox.SetValue(Grid.RowProperty, 2);
+                        if (steps[i].ImageStepPath.Count == 1)
+                            arrowLeft.Visibility = arrowRight.Visibility = rectLeft.Visibility = rectRight.Visibility = Visibility.Hidden;
+                        else
+                            arrowLeft.Visibility = arrowRight.Visibility = rectLeft.Visibility = rectRight.Visibility = Visibility.Visible;
+
+                    }
                     for (int j = 0; j < steps[i].ImageStepPath.Count; j++)
                     {
                         Image image = new Image() {
@@ -77,23 +91,13 @@ namespace FoodRecipe.Screens
             food = FoodDAO.getById(id.ToString());
             this.DataContext = food;
             LoadStepList();
-        }
-
-        private void Button_Click_Fav(object sender, RoutedEventArgs e)
-        {
-            var favScreen = new FavoriteFood();
-            favScreen.Show();
-        }
-
-
-        private void Button_Click_Add(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Button_Click_List(object sender, RoutedEventArgs e)
-        {
-
+            if (food.VideoLink != null && food.VideoLink.Length > 0)
+            {
+                videoLink.Visibility = Visibility.Visible;
+            } else
+            {
+                videoLink.Visibility = Visibility.Collapsed;
+            }
         }
 
         private void Image_MouseDown(object sender, MouseButtonEventArgs e)
@@ -119,6 +123,21 @@ namespace FoodRecipe.Screens
                 imageStack.Children.RemoveAt(imageStack.Children.Count - 1);
                 imageStack.Children.Insert(0, el);
             }
+        }
+
+        private void Hyperlink_RequestNavigate(object sender, System.Windows.Navigation.RequestNavigateEventArgs e)
+        {
+
+        }
+
+        private void videoLink_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start((this.DataContext as DTO.Food).VideoLink);
+        }
+
+        private void returnButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

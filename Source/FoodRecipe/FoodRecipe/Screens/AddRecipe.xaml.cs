@@ -73,12 +73,38 @@ namespace FoodRecipe.Screens
 
         private void Button_Add_Step(object sender, RoutedEventArgs e)
         {
-            steps.Add(new FoodStep
+            // Check
+            if (StepName.Text.Length == 0)
             {
-                DescriptionStep = DescriptionStep.Text,
-                StepName = StepName.Text,
-                ImageStepPath = stepImages.ToList()
-            });
+                MessageBox.Show("Vui lòng nhập Tên bước", "Thiếu dữ liệu cần thiết");
+                return;
+            }
+            if (DescriptionStep.Text.Length == 0)
+            {
+                MessageBox.Show("Vui lòng nhập Cách thực hiện", "Thiếu dữ liệu cần thiết");
+                return;
+            }
+
+            if (currentSelectedStep != -1)
+            {
+                steps.Insert(currentSelectedStep, new FoodStep
+                {
+                    DescriptionStep = DescriptionStep.Text,
+                    StepName = StepName.Text,
+                    ImageStepPath = stepImages.ToList()
+                });
+                steps.RemoveAt(currentSelectedStep + 1);
+                currentSelectedStep = -1;
+                addStepButton.Content = "Thêm";
+            } else
+            {
+                steps.Add(new FoodStep
+                {
+                    DescriptionStep = DescriptionStep.Text,
+                    StepName = StepName.Text,
+                    ImageStepPath = stepImages.ToList()
+                });
+            }
             // Reset the form
             StepName.Text = "";
             DescriptionStep.Text = "";
@@ -131,6 +157,35 @@ namespace FoodRecipe.Screens
             var listScreen = new ListFood();
             listScreen.Show();
             this.Close();
+        }
+
+        private void Button_Reset_Step(object sender, RoutedEventArgs e)
+        {
+            currentSelectedStep = -1;
+            addStepButton.Content = "Thêm";
+            // Reset the form
+            StepName.Text = "";
+            DescriptionStep.Text = "";
+            stepImages.Clear();
+        }
+
+        private int currentSelectedStep = -1;
+        private void TextBlock_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ClickCount == 2)
+            {
+                addStepButton.Content = "Lưu";
+                var step = (((TextBlock)sender).Tag as FoodStep);
+                currentSelectedStep = steps.IndexOf(step);
+
+                StepName.Text = step.StepName;
+                DescriptionStep.Text = step.DescriptionStep;
+                stepImages.Clear();
+                foreach (var stepImg in step.ImageStepPath)
+                {
+                    stepImages.Add(stepImg);
+                }
+            }
         }
     }
 }

@@ -3,17 +3,20 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:FoodRecipe.Screens" xmlns:local1="clr-namespace:FoodRecipe.Helper"
+        xmlns:local="clr-namespace:FoodRecipe.Screens"
+        xmlns:local1="clr-namespace:FoodRecipe.Helper"
         mc:Ignorable="d"
-        WindowStartupLocation="CenterScreen"
-        Title="FavoriteFood" Height="630" Width="1024" Background="#F65D4E" Loaded="Window_Loaded">
-
+        Title="FavoriteFood" Height="630" Width="1024" Background="#F65D4E" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <local1:ImagePathToAbsolutePathConverter x:Key="converter"></local1:ImagePathToAbsolutePathConverter>
     </Window.Resources>
-    <StackPanel Orientation="Horizontal"  >
-        <StackPanel Width="174" Margin="0,50,0,10">
-            <Image Source="../Images/healthy-eating.png" Width="90"  Margin="0, 0, 0, 30"/>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="174" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <StackPanel Margin="0,50,0,10">
+            <Image Source="../Images/healthy-eating.png" RenderOptions.BitmapScalingMode="HighQuality" Width="90"  Margin="0, 0, 0, 30"/>
             <Button x:Name="homeMenuButton" Background="Transparent" BorderThickness="0" Cursor="Hand" 
                     Click="homeMenuButton_Click">
                 <StackPanel Orientation="Horizontal" Margin="10,10,10,10">
@@ -37,42 +40,31 @@
             </Button>
         </StackPanel>
         <Border CornerRadius="50" 
-                        Background="#faf9fd" 
-                        BorderThickness="1" 
-                        Margin="0,10,0,9.667" 
-                        Padding="20, 30, 20, 30"
-                        >
-            <StackPanel>
-                <StackPanel HorizontalAlignment="Center">
+                Background="#faf9fd" 
+                BorderThickness="1" 
+                Margin="0,10,25,10" 
+                Padding="20, 20, 20, 25"
+                Grid.Column="1"
+                >
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="10*" />
+                </Grid.RowDefinitions>
+                <StackPanel HorizontalAlignment="Center" Margin="0, 0, 0, 10">
                     <Label Content="Danh sách yêu thích" FontSize="23" FontWeight="Bold" Foreground="#F65D4E"/>
                 </StackPanel>
-                <StackPanel Orientation="Horizontal" >
-                    <Border Width="700" BorderThickness="1" Background="White" BorderBrush="LightGray" CornerRadius="15">
-                        <DockPanel>
-                            <Image Source="../Images/magnifier.png" Width="20" Margin="20, 0,0,0"/>
-                            <TextBox Margin="20,0,20,0" BorderThickness="0" Padding="10, 10, 50, 10" FontSize="15"/>
-                        </DockPanel>
-
-                    </Border>
-
-                    <Button Padding="10" BorderThickness="0" Background="#F65D4E" Margin="20,0,0,0">
-                        <Image Source="../Images/loupe.png" Width="20"/>
-                    </Button>
-
-                </StackPanel>
-                <Grid>
+                <Grid Grid.Row="1">
                     <Grid.RowDefinitions>
-
                         <RowDefinition Height="*" />
                         <RowDefinition Height="auto" />
                     </Grid.RowDefinitions>
 
                     <ListView Name="dataListView" 
                                   ScrollViewer.HorizontalScrollBarVisibility="Disabled"
-                                  Margin="0,50,0,0" Grid.Row="0"
+                                  Margin="0,20,0,0" Grid.Row="0"
                                   BorderThickness="0"
-                                  Background="Transparent"
-                                  Width="700">
+                                  Background="Transparent">
                         <ListView.ItemsPanel>
                             <ItemsPanelTemplate>
                                 <WrapPanel />
@@ -80,22 +72,25 @@
                         </ListView.ItemsPanel>
                         <ListView.ItemTemplate>
                             <DataTemplate>
-                                <StackPanel Margin="0,0,0,15">
+                                <StackPanel Margin="5" Width="150">
                                     <Button Click="Button_Click_Detail" Background="Transparent" BorderThickness="0" Cursor="Hand">
-                                        <Image Width="160" Height="80" 
-                                               Source="{Binding ThumbnailPath, Converter={StaticResource converter}}"/>
+                                        <Image Width="auto" Height="120" Source="{Binding ThumbnailPath, Converter={StaticResource converter}}"/>
                                     </Button>
 
-                                    <DockPanel >
-
-                                        <Button DockPanel.Dock="Left" Click="Button_Click_Detail" Background="Transparent" BorderThickness="0" Cursor="Hand">
-                                            <TextBlock Text="{Binding Name}" FontWeight="Bold" Margin="5,5,0,0"/>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="5*" />
+                                            <ColumnDefinition Width="2*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Button Grid.Column="0" Tag="{Binding Id}" Click="Button_Click_Detail" Background="Transparent" BorderThickness="0" Cursor="Hand">
+                                            <TextBlock Text="{Binding Name}" FontWeight="Bold" FontSize="14" TextAlignment="Center" TextWrapping="Wrap" />
                                         </Button>
-
-                                        <Button DockPanel.Dock="Right" Tag="{Binding Id}" Click="Button_Click_RemoveFav" Background="Transparent" BorderThickness="0" Cursor="Hand">
-                                            <Image Width="20" Source="../Images/broken-heart.png" />
+                                        <Button Grid.Column="1" VerticalAlignment="Center" Tag="{Binding Id}" Click="Button_Click_RemoveFav" Background="Transparent" BorderThickness="0" Cursor="Hand" Margin="10,0">
+                                            <Image Width="20" Source="../Images/broken-heart.png" RenderOptions.BitmapScalingMode="HighQuality" VerticalAlignment="Center" />
                                         </Button>
-                                    </DockPanel>
+                                    </Grid>
+                                    <TextBlock Text="{Binding Description}" FontSize="10" TextWrapping="Wrap" />
+
                                 </StackPanel>
                             </DataTemplate>
                         </ListView.ItemTemplate>
@@ -105,7 +100,7 @@
                     </StackPanel>
                 </Grid>
                 
-            </StackPanel>
+            </Grid>
         </Border>
-    </StackPanel>
+    </Grid>
 </Window>
